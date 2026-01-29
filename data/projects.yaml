@@ -1,0 +1,39 @@
+active_projects:
+  - name: "Awareness In Action Series"
+    status: "Episodes 1-4 drafted, publishing Q1 2026"
+    description: "Applying network infrastructure principles to human systems"
+    url: "/awareness-in-action"
+
+  - name: "Virgil OS Development"
+    status: "PoC phase - 5-model pipeline operational"
+    description: "Multi-model AI orchestration for cognitive load management"
+    url: "/cyw-framework/virgil-os"
+    tech_stack:
+      - "Perplexity (research)"
+      - "Claude (narrative)"
+      - "Gemini (clarity)"
+      - "DeepSeek (critique)"
+      - "ChatGPT (integration)"
+
+  - name: "Amazon Internal Mobility"
+    status: "Preparing application for April 2025"
+    target_roles:
+      - "Process Assistant"
+      - "RME Tech"
+    positioning: "Systems thinking + precision documentation + morale building"
+
+  - name: "Patent Filings"
+    status: "Documentation in progress, deadline Dec 30, 2025"
+    inventions:
+      - "Triangle Test Protocol"
+      - "Four-Gate Authorization"
+
+  - name: "timothywheels.com Infrastructure"
+    status: "Architecture phase, deployment Q1 2026"
+    description: "Content hub for CYW framework, poetry, case studies"
+
+completed_projects:
+  - name: "DeVry NETW212 CapEx/OpEx Multi-Endpoint Routing"
+    completed: "January 2026"
+    outcome: "Academic version submitted, premium version archived for website"
+    url: "/case-studies/devry-capex-opex-routing"

@@ -1,0 +1,51 @@
+timeline:
+  - year: "2006-2025"
+    title: "Homeless & System Navigation"
+    description: "15-20 years navigating resilience systems across Atlanta, Columbus, Houston, Austin"
+    nodes:
+      - "Salvation Army (food, shelter, employment, ID assistance)"
+      - "Travelers Aid (bus vouchers)"
+      - "Tend/Gig Pro (warehouse sorting work)"
+
+  - year: "2003-2014"
+    title: "Professional Poetry Career"
+    description: "Performance poet on national platforms"
+    highlights:
+      - "Def Poetry Jam"
+      - "BET's Lyric Cafe"
+      - "Joyce Littell's V-103 Quiet Storm"
+      - "Celebrity performances"
+
+  - year: "1999-2000"
+    title: "Military Service"
+    description: "U.S. Air Force - systems operations experience"
+
+  - year: "2024-Present"
+    title: "DeVry University CIS Program"
+    description: "Currently sophomore, 3.87 GPA"
+    roles:
+      - "NSLS Executive Membership Outreach Coordinator"
+      - "Student under Dr. Kyle Flowers (NSLS President)"
+
+  - year: "2025-Present"
+    title: "Amazon ORF3"
+    description: "Waterspider, Suffolk VA"
+    achievements:
+      - "Associate Activities Committee member"
+      - "Poetry event organizer & performer"
+      - "Comprehensive facility audit documentation"
+    targets:
+      - "Internal mobility to Process Assistant or RME Tech (April 2025)"
+
+  - year: "December 2025"
+    title: "Contruil LLC Launch"
+    description: "Control Your World (CYW) framework development"
+    products:
+      - "Value Farming Pipeline"
+      - "Triangle Test Protocol (patent pending)"
+      - "Four-Gate Authorization (patent pending)"
+      - "Virgil OS multi-model orchestration"
+
+  - year: "Q1 2026"
+    title: "Live2Lead Speaking Engagement"
+    description: "Leadership development conference presentation"

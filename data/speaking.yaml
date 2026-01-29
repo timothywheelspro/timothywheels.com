@@ -1,0 +1,30 @@
+upcoming:
+  - event: "Live2Lead Q1 2026"
+    date: "TBD Q1 2026"
+    location: "TBD"
+    topic: "Systems Thinking for Leadership Infrastructure"
+    status: "Confirmed"
+
+  - event: "Amazon ORF3 Poetry Events"
+    recurring: true
+    frequency: "Monthly"
+    last_performance: "2026-01-27"
+    next_performance: "2026-02-TBD"
+
+past:
+  - event: "Def Poetry Jam"
+    year: "2010s"
+    role: "Featured Poet"
+
+  - event: "BET's Lyric Cafe"
+    year: "2010s"
+    role: "Guest Performer"
+
+  - event: "Joyce Littell's V-103 Quiet Storm"
+    year: "2010s"
+    role: "Radio Performance"
+
+  - event: "Amazon ORF3 Poetry Event"
+    date: "2026-01-27"
+    role: "Performer"
+    notes: "First poetry event, 2 performers total, opened the event"

@@ -1,0 +1,67 @@
+baseURL: "https://timothywheels.com"
+languageCode: "en-us"
+title: "Timothy 'Fly' Wheels"
+theme: "PaperMod"
+
+params:
+  author: "Timothy Wheels"
+  description: "Systems thinker, infrastructure architect, and poet applying network principles to human decision-making"
+  tagline: "Control Your World - Applied Systems Thinking"
+
+  social:
+    linkedin: "https://linkedin.com/in/timothy-wheels"
+    email: "fly@timothywheels.com"
+
+  keywords:
+    - "systems thinking"
+    - "infrastructure architecture"
+    - "CYW framework"
+    - "leadership development"
+    - "poetry performance"
+
+  menu:
+    main:
+      - name: "Awareness In Action"
+        url: "/awareness-in-action"
+        weight: 1
+      - name: "Poetry"
+        url: "/poetry"
+        weight: 2
+      - name: "CYW Framework"
+        url: "/cyw-framework"
+        weight: 3
+      - name: "Case Studies"
+        url: "/case-studies"
+        weight: 4
+      - name: "About"
+        url: "/about"
+        weight: 5
+
+  homepage:
+    hero:
+      title: "Timothy 'Fly' Wheels"
+      subtitle: "Systems Thinker | Infrastructure Architect | Poet"
+      cta_text: "Read Awareness In Action"
+      cta_link: "/awareness-in-action"
+
+    featured_content:
+      - type: "latest_episode"
+      - type: "recent_poetry"
+      - type: "cyw_overview"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: "monokai"
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+  page: ["HTML"]
+  section: ["HTML", "RSS"]
+
+taxonomies:
+  tag: "tags"
+  series: "series"
+  category: "categories"
