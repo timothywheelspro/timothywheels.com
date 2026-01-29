@@ -112,19 +112,6 @@ This isn't productivity advice. This is infrastructure engineering applied to hu
 
 ---
 
-## What People Say
-
-*"Fly has a gift for seeing patterns most people miss. He treats every challenge like a system that can be understood and optimized."*  
--- Dr. Kyle Flowers, NSLS President, DeVry University
-
-*"His detailed audit work showed a level of analytical thinking we rarely see at this scale."*  
--- Amazon ORF3 Leadership
-
-*"Watching Fly perform poetry is like watching someone compress an entire systems architecture lecture into three minutes of emotional truth."*  
--- Amazon Associate Activities Committee Member
-
----
-
 ## Connect
 
 **Website:** [timothywheels.com](https://timothywheels.com)  
