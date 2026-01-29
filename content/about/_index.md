@@ -1,17 +1,8 @@
 ---
 title: "Timothy 'Fly' Wheels"
 subtitle: "Systems Thinker | Infrastructure Architect | Poet"
-tagline: "Applying network architecture principles to human decision-making and creative workflows"
-layout: "single"
 type: "page"
-url: "/about/"
-cover:
-  image: "/images/profile/headshot-professional.jpg"
-  alt: "Timothy Fly Wheels"
-  caption: "Systems Thinker | Infrastructure Architect | Poet"
-social:
-  linkedin: "https://linkedin.com/in/timothy-wheels"
-email: "fly@timothywheels.com"
+layout: "single"
 ---
 
 ![Timothy "Fly" Wheels](/images/profile/headshot-professional.jpg)
@@ -33,6 +24,7 @@ Through it all, I've been building the **Control Your World (CYW) framework** --
 ### Systems Thinking and Infrastructure Architecture
 
 I treat human systems the same way network engineers treat data infrastructure:
+
 - **Layer 0 (Physical):** Raw experiences and events
 - **Layer 1 (Data Link):** Documentation and capture systems
 - **Layer 2 (Network):** Routing protocols for value distribution
@@ -122,11 +114,14 @@ This isn't productivity advice. This is infrastructure engineering applied to hu
 
 ## What People Say
 
-*"Fly has a gift for seeing patterns most people miss. He treats every challenge like a system that can be understood and optimized."* - Dr. Kyle Flowers, NSLS President, DeVry University
+*"Fly has a gift for seeing patterns most people miss. He treats every challenge like a system that can be understood and optimized."*  
+-- Dr. Kyle Flowers, NSLS President, DeVry University
 
-*"His detailed audit work showed a level of analytical thinking we rarely see at this scale."* - Amazon ORF3 Leadership
+*"His detailed audit work showed a level of analytical thinking we rarely see at this scale."*  
+-- Amazon ORF3 Leadership
 
-*"Watching Fly perform poetry is like watching someone compress an entire systems architecture lecture into three minutes of emotional truth."* - Amazon Associate Activities Committee Member
+*"Watching Fly perform poetry is like watching someone compress an entire systems architecture lecture into three minutes of emotional truth."*  
+-- Amazon Associate Activities Committee Member
 
 ---
 
@@ -134,7 +129,7 @@ This isn't productivity advice. This is infrastructure engineering applied to hu
 
 **Website:** [timothywheels.com](https://timothywheels.com)  
 **LinkedIn:** [linkedin.com/in/timothy-wheels](https://linkedin.com/in/timothy-wheels)  
-**Email:** fly@timothywheels.com  
+**Email:** [fly@timothywheels.com](mailto:fly@timothywheels.com)  
 **Company:** Contruil LLC
 
 **For:**
