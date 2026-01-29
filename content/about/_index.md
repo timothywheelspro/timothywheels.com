@@ -82,11 +82,11 @@ Confirmed speaking engagement on systems thinking for leadership infrastructure.
 
 ## Timeline
 
-**2006-2025:** Navigating homelessness across multiple cities while building resilience system expertise
+**2003-2023:** Navigating homelessness across multiple cities while building resilience system expertise
 
-**2010-2015:** Professional poetry career (Def Poetry Jam, BET's Lyric Cafe, V-103 Quiet Storm)
+**2003-2014:** Professional poetry career (Def Poetry Jam, BET's Lyric Cafe, V-103 Quiet Storm)
 
-**2020-Present:** U.S. Air Force service
+**1999-2000:** U.S. Air Force service
 
 **2024-Present:** DeVry University CIS Program (currently sophomore, 3.87 GPA)
 
