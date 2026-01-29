@@ -2,6 +2,9 @@
 title: "Timothy 'Fly' Wheels"
 subtitle: "Systems Thinker | Infrastructure Architect | Poet"
 tagline: "Applying network architecture principles to human decision-making and creative workflows"
+layout: "single"
+type: "page"
+url: "/about/"
 cover:
   image: "/images/profile/headshot-professional.jpg"
   alt: "Timothy Fly Wheels"
