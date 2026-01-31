@@ -12,6 +12,13 @@ description: "A spoken word poem exploring the tension between delivering detail
 
 ![System Audit Performance](/images/poetry/system-audit-featured.png)
 
+## Performance Video
+
+<video controls preload="metadata" poster="/images/poetry/system-audit-featured.png" style="width: 100%; max-width: 900px;">
+  <source src="/videos/poetry/system-audit-performance.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
 ## The Poem
 
 Logs weave the unseen thread  
