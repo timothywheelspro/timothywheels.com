@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 date: 2026-01-29
-draft: false
+draft: true
 url: "/contact/"
 ---
 This is not a generic contact form. It is a decision tree. Pick your context and I will route accordingly.
@@ -136,3 +136,7 @@ No auto-responders. No templated replies. Every response is routed through the s
 Clear context. Explicit protocol. Predictable routing.
 
 {{< feedback-cta >}}
+
+---
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdnfS-Ljw2WPmV58FHsZ51cC1WAK_YdkKjrMjDqog9dX8Hs9w/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>

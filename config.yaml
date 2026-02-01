@@ -72,6 +72,3 @@ menu:
     - name: "Case Studies"
       url: "/case-studies/"
       weight: 45
-    - name: "Contact"
-      url: "/contact/"
-      weight: 50
