@@ -1,146 +1,116 @@
 ---
-title: "Timothy 'Fly' Wheels"
-subtitle: "Systems Thinker | Infrastructure Architect | Poet"
+title: "The Circuit Map"
+subtitle: "A network diagram of a 20-year routing protocol"
 type: "page"
 layout: "single"
 ---
-
-![Timothy "Fly" Wheels](/images/profile/headshot-professional.jpg)
-
-## Who I Am
-
-I'm Timothy "Fly" Wheels -- a systems thinker who treats life as infrastructure you can route, optimize, and scale.
-
-I bridge technical expertise with human experience, applying network architecture principles to leadership development, organizational dynamics, and creative workflows. My work demonstrates that the same protocols that manage data packets across the internet can manage decision-making across a human life.
-
-I've spent **15-20 years navigating homelessness** across Atlanta, Columbus, Houston, and Austin. I've performed poetry on **Def Poetry Jam, BET's Lyric Cafe, and V-103's Quiet Storm**. I served in the **U.S. Air Force**. I currently work as a **Waterspider at Amazon ORF3** in Suffolk, Virginia while pursuing a **CIS degree at DeVry University** (3.87 GPA).
-
-Through it all, I've been building the **Control Your World (CYW) framework** -- a systematic approach to turning every experience into infrastructure that compounds over time.
+This is not a resume. It is a network diagram of how routing logic formed, where it runs today, and where it is headed.
 
 ---
 
-## What I Do
+## Origin Protocol: Where the Routing Logic Formed
 
-### Systems Thinking and Infrastructure Architecture
+### 2004-2014 | Military Service -> Creative Performance
+**System insight:** Hierarchical command structures are networks with explicit access control lists. Applied this to stage presence (Def Poetry Jam, BET's Lyric Cafe) - audience as endpoint, performance as packet delivery, feedback as acknowledgment protocol.
 
-I treat human systems the same way network engineers treat data infrastructure:
-
-- **Layer 0 (Physical):** Raw experiences and events
-- **Layer 1 (Data Link):** Documentation and capture systems
-- **Layer 2 (Network):** Routing protocols for value distribution
-- **Layer 3 (Transport):** Classification and prioritization
-- **Layer 4 (Session):** Context management across personas
-- **Layer 5 (Presentation):** Format optimization for different audiences
-- **Layer 6 (Application):** Deployment to specific platforms
-- **Layer 7 (User):** Impact measurement and feedback loops
-
-This isn't metaphor. This is methodology.
-
-### Content and Leadership Development
-
-**Awareness In Action Series:**  
-Essays applying technical infrastructure concepts to human challenges. Topics include PoC vs. Production systems, validation theater in leadership, and reciprocal value networks.
-
-**Poetry and Performance:**  
-Spoken word that compresses complex systems thinking into emotionally resonant performance pieces. Professional background includes national platforms and current work organizing poetry events at Amazon.
-
-**CYW Framework Development:**  
-Building Contruil LLC around systematic approaches to value farming, multi-endpoint routing, and infrastructure-based decision-making.
+**Key translation:** Clarity under pressure is not removing complexity - it is routing it through the right channels at the right time.
 
 ---
 
-## Current Projects
+### 2015-2020 | Warehouse Operations -> Infrastructure Thinking
+**System insight:** Amazon fulfillment centers are physical Layer 2 switches. Every package is a frame, every conveyor junction is a routing decision, every manager dashboard is a monitoring protocol.
 
-### Virgil OS
-
-A multi-model AI orchestration system routing cognitive work across five specialized models:
-- **Perplexity** (research layer)
-- **Claude** (narrative expansion)
-- **Gemini** (clarity audit)
-- **DeepSeek** (structural critique)
-- **ChatGPT** (final integration)
-
-Currently in PoC phase, validating logic and routing protocols.
-
-### Amazon Internal Mobility
-
-Preparing application for Process Assistant or RME Tech roles (target: April 2025). Positioning: systems thinking + precision documentation + morale building.
-
-### NSLS Executive Leadership
-
-Serving as Executive Membership Outreach Coordinator for the DeVry University chapter under Dr. Kyle Flowers, managing 500+ members and developing leadership programming.
-
-### Patent Filings
-
-Documenting Triangle Test Protocol and Four-Gate Authorization systems for patent filing (deadline: December 30, 2025).
-
-### Live2Lead Q1 2026
-
-Confirmed speaking engagement on systems thinking for leadership infrastructure.
+**Key translation:** Developed the "extreme visibility" audit methodology - later formalized as the Triangle Test Protocol. Got written up for being too thorough. Turned the liability into the foundation of CYW.
 
 ---
 
-## Timeline
+### 2021-2023 | Academic Re-Entry -> Formal Network Training
+**System insight:** DeVry networking curriculum (NETW191, NETW212) provided formal language for intuitive system mapping - human systems as network topologies.
 
-**2003-2023:** Navigating homelessness across multiple cities while building resilience system expertise
-
-**2003-2014:** Professional poetry career (Def Poetry Jam, BET's Lyric Cafe, V-103 Quiet Storm)
-
-**1999-2000:** U.S. Air Force service
-
-**2024-Present:** DeVry University CIS Program (currently sophomore, 3.87 GPA)
-
-**2025-Present:** Amazon ORF3 Waterspider, Associate Activities Committee
-
-**December 2025:** Contruil LLC official launch
-
-**Q1 2026:** Live2Lead speaking engagement, Awareness In Action series launch
+**Key translation:** Applied VLAN segmentation to AI collaboration. Each model became a dedicated routing layer with controlled inter-VLAN communication. The CYW pipeline was born.
 
 ---
 
-## Philosophy
+## Active Infrastructure: Current Nodes in the Network
 
-**"Control Your World"** means treating yourself as infrastructure:
+### 2024-Present | Multi-Role Operation
 
-- **Value Farming:** Extract, process, and deploy value from every experience
-- **Multi-Endpoint Routing:** Send the same raw material to different destinations for different purposes
-- **Strategic Opacity:** Give systems exactly what they're rated for -- no more, no less
-- **Reciprocal Networks:** Build long-term relationship infrastructure instead of transactional exchanges
-- **Designed Margin:** Architect resilience and recovery protocols before you need them
+**Amazon ORF3 Waterspider** (Suffolk, VA)
+- Managing physical infrastructure across 9 football fields
+- Applying network troubleshooting methodology to supply chain bottlenecks
+- Systematic audit protocols (safety, efficiency, inventory accuracy)
 
-This isn't productivity advice. This is infrastructure engineering applied to human systems.
+**DeVry CIS Student** (Pursuing Bachelor's)
+- NETW191, NETW212 (switching, routing, VLANs, ACLs)
+- ECON312 (CapEx/OpEx frameworks, cost-benefit at scale)
+- Translating every academic concept into operational application
 
----
+**NSLS Executive Membership Outreach Coordinator**
+- 500+ member network management
+- Event logistics, speaker coordination, engagement metrics
+- Building systematic communication pipelines for organizational clarity
 
-## Connect
-
-**Website:** [timothywheels.com](https://timothywheels.com)  
-**LinkedIn:** [linkedin.com/in/timothy-wheels](https://linkedin.com/in/timothy-wheels)  
-**Email:** [fly@timothywheels.com](mailto:fly@timothywheels.com)  
-**Company:** Contruil LLC
-
-**For:**
-- Speaking engagements
-- Poetry performance bookings
-- Consulting on systems thinking for organizations
-- Media inquiries
-- Collaboration opportunities
+**Contruil LLC Founder** (Control Your World Framework)
+- Developing multi-model AI orchestration methodology
+- Patent applications: Triangle Test Protocol, Four-Gate Authorization
+- Newsletter: "Awareness In Action" (systems thinking for sovereign individuals)
 
 ---
 
-## Currently Reading
+## Forward Deployment: Where the Packets Are Headed
 
-- *The Phoenix Project* - Gene Kim (IT systems as narrative)
-- *Thinking in Systems* - Donella Meadows (infrastructure fundamentals)
-- *The Art of Gathering* - Priya Parker (relationship architecture)
-
-## Currently Building
-
-- Awareness In Action Episode 4: "Debugging My AI Editor While Building AI Infrastructure"
-- RME positioning poem for Amazon internal mobility
-- Virgil OS command structure v1.0
-- Live2Lead presentation on leadership systems
+### Q1 2025 | Internal Amazon Mobility
+**Target roles:** Process Assistant, RME Technician  
+**Timeline:** Application by April 2025  
+**Strategy:** Leverage demonstrated systems thinking + formal networking credentials + safety/operational track record
 
 ---
+
+### Q2-Q3 2025 | Bay Area Relocation
+**Objective:** Position within tech infrastructure ecosystem  
+**Focus:** Network engineering, DevOps, AI operations roles  
+**Asset:** CYW framework as proof of multi-domain systems capability
+
+---
+
+### Q1 2026 | Live2Lead Speaking Engagement
+**Platform:** Leadership conference presentation  
+**Topic:** "Clarity Architecture: How Network Thinking Transforms Decision-Making"  
+**Deliverable:** Scale CYW methodology to executive/leadership audience
+
+---
+
+### 2026+ | CYW Framework Productization
+**Infrastructure:** Unity/3D spatial clarity tools  
+**IP Protection:** Patent portfolio (Triangle Test, Four-Gate, multi-model orchestration)  
+**Distribution:** Newsletter -> Workshops -> Licensing/Consulting
+
+---
+
+## The Pattern Across 20 Years
+
+| Year Range | Role | System Insight |
+|------------|------|----------------|
+| 2004-2014 | Military -> Performance | Command structures = ACLs, Performance = packet delivery |
+| 2015-2020 | Warehouse Operations | Fulfillment centers = Layer 2 switches, Audits = monitoring protocols |
+| 2021-2023 | Academic Network Training | Formal VLAN/routing maps to human systems architecture |
+| 2024-Present | Multi-role operator | Amazon + NSLS + Contruil = parallel network orchestration |
+| 2025-2026 | Mobility + Scale | Internal promotion -> Bay Area -> Live2Lead -> CYW productization |
+
+---
+
+## The Core Thesis
+
+Every system I have operated in - military, creative, warehouse, academic, organizational, entrepreneurial - follows the same routing logic:
+
+**Layer 0:** Establish clarity infrastructure  
+**Layer 1-7:** Map the OSI model to human decision-making  
+**Routing Protocol:** Explicit boundaries, clear failure modes, predictable cost of change
+
+The tools change. The topology principles do not.
 
 **This is how you Control Your World.**
+
+---
+
+Not a resume. A network diagram of a 20-year routing protocol.

@@ -9,8 +9,8 @@ params:
   tagline: "Control Your World - Applied Systems Thinking"
 
   social:
-    linkedin: "https://linkedin.com/in/timothy-wheels"
-    email: "fly@timothywheels.com"
+    linkedin: "https://www.linkedin.com/in/timothywheels"
+    email: "timothy@contruil.com"
 
   keywords:
     - "systems thinking"
@@ -19,26 +19,6 @@ params:
     - "leadership development"
     - "poetry performance"
 
-  menu:
-    main:
-      - name: "Awareness In Action"
-        url: "/awareness-in-action"
-        weight: 1
-      - name: "Poetry"
-        url: "/poetry"
-        weight: 2
-      - name: "CYW Framework"
-        url: "/cyw-framework"
-        weight: 3
-      - name: "Case Studies"
-        url: "/case-studies"
-        weight: 4
-      - name: "Frameworks"
-        url: "/frameworks"
-        weight: 5
-      - name: "About"
-        url: "/about"
-        weight: 6
 
   homepage:
     hero:
@@ -68,3 +48,24 @@ taxonomies:
   tag: "tags"
   series: "series"
   category: "categories"
+
+menu:
+  main:
+    - name: "Awareness In Action"
+      url: "/awareness-in-action"
+      weight: 1
+    - name: "Poetry"
+      url: "/poetry"
+      weight: 2
+    - name: "CYW Framework"
+      url: "/cyw-framework"
+      weight: 3
+    - name: "Case Studies"
+      url: "/case-studies"
+      weight: 4
+    - name: "Frameworks"
+      url: "/frameworks"
+      weight: 5
+    - name: "About"
+      url: "/about"
+      weight: 6
