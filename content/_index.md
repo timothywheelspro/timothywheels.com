@@ -5,6 +5,8 @@ layout: "home"
 
 ## Timothy Wheels
 
+<img src="/images/profile/headshot-professional.jpg" alt="Timothy Wheels headshot" width="220">
+
 **Systems Architect. Sovereign Operator.** Building infrastructure that stays online - physically, digitally, and cognitively.
 
 ---

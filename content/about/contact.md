@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 date: 2026-01-29
-draft: true
+draft: false
 url: "/contact/"
 ---
 This is not a generic contact form. It is a decision tree. Pick your context and I will route accordingly.
