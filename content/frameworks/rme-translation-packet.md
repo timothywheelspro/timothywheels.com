@@ -4,6 +4,10 @@ date: 2026-01-31
 draft: false
 ---
 
+{{< trust-badge >}}
+
+**Last updated:** 2026-01-31
+
 ## Talking Points
 
 - Reliability is the outcome of disciplined preventative maintenance.

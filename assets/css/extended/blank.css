@@ -30,6 +30,95 @@ Custom styles bundled with site assets.
     line-height: 1;
 }
 
+/* --- Trust and Audited Interface Styles --- */
+
+.trust-footer {
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+    margin-top: 2rem;
+    font-family: var(--mono-font);
+    font-size: 0.75rem;
+    color: var(--secondary);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.trust-badge-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    background: var(--code-bg);
+    border: 1px solid var(--tertiary);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.trust-badge-pill::before {
+    content: "CL";
+    margin-right: 8px;
+    font-size: 0.7rem;
+}
+
+.reassurance-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: var(--radius);
+}
+
+.reassurance-item h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9rem;
+    color: var(--primary);
+}
+
+.reassurance-item p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--secondary);
+}
+
+.feedback-cta-container {
+    border: 2px solid var(--tertiary);
+    padding: 2rem;
+    margin: 3rem 0;
+    text-align: center;
+    border-radius: var(--radius);
+}
+
+.feedback-prompt {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.feedback-subtext {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
+}
+
+.feedback-button {
+    background: var(--primary);
+    color: var(--theme);
+    padding: 10px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: opacity 0.2s;
+}
+
+.feedback-button:hover {
+    opacity: 0.8;
+}
+
 @media (max-width: 900px) {
     .routing-grid {
         grid-template-columns: 1fr;

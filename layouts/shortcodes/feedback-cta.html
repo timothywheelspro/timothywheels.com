@@ -1,0 +1,6 @@
+{{- $action := .Get "action" | default "mailto:timothy@contruil.com" -}}
+<div class="feedback-cta-container">
+    <div class="feedback-prompt">Something unclear? Tell us.</div>
+    <div class="feedback-subtext">Your feedback enters our next review cycle.</div>
+    <a class="feedback-button" href="{{ $action }}">Share feedback</a>
+</div>

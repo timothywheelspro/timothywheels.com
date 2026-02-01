@@ -128,3 +128,5 @@ No auto-responders. No templated replies. Every response is routed through the s
 **This is how you Control Your World.**
 
 Clear context. Explicit protocol. Predictable routing.
+
+{{< feedback-cta >}}

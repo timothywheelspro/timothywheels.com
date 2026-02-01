@@ -3,6 +3,10 @@ title: "Poetry"
 description: "Performance pieces and RME work"
 ---
 
+{{< trust-badge >}}
+
+**Last updated:** 2025-01-31
+
 Spoken word performances and technical narratives.
 
 ## Featured Pieces
