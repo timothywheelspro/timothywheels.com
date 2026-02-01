@@ -21,6 +21,84 @@
   status = 301
 
 [[redirects]]
+  from = "/wp-login.php"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wp-admin"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wp-admin/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wp-content/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wp-includes/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/xmlrpc.php"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/.env"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/portfolio-collections/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/admin"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/login"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/.git/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/config/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/backup/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/portfolio-collections/my-portfolio"
   to = "/"
   status = 301
