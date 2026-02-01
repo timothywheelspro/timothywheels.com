@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /wp-login.php
+Disallow: /.git/
+Allow: /
+
+Sitemap: https://timothywheels.com/sitemap.xml

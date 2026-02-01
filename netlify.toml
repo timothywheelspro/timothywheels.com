@@ -20,6 +20,16 @@
   to = "https://www.linkedin.com/in/timothywheels"
   status = 301
 
+[[redirects]]
+  from = "/portfolio-collections/my-portfolio"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/wp-login.php"
+  to = "/"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]
