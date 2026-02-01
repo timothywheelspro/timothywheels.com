@@ -51,6 +51,9 @@ taxonomies:
 
 menu:
   main:
+    - name: "Home"
+      url: "/"
+      weight: 0
     - name: "Awareness In Action"
       url: "/awareness-in-action"
       weight: 1

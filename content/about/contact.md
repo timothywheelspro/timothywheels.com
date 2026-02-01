@@ -8,6 +8,12 @@ This is not a generic contact form. It is a decision tree. Pick your context and
 
 ---
 
+<a href="https://timothywheels.com">
+    <img src="/images/profile/headshot-professional.jpg" alt="Timothy Wheels headshot" width="220">
+</a>
+
+---
+
 ## Quick Inquiry vs Deep Dive
 
 **Quick Inquiry (under 5 minutes)**
