@@ -79,15 +79,13 @@ No technical background is required. The framework scales from personal notebook
 ## Expected Downloads (Place Files Here)
 
 The following documents accompany the CYW Framework:
-- cyw-framework-overview.pdf  
-  A printable, high-level summary of the framework and pillars.  
-  /downloads/frameworks/cyw-framework-overview.pdf
-- value-farming-worksheet.pdf  
+- **[CYW Framework Overview (PDF)](/downloads/frameworks/cyw-framework-overview.pdf)**  
+  A printable, high-level summary of the framework and pillars.
+- **[Value Farming Worksheet (Interactive)](/cyw-framework/value-farming-worksheet/)**  
   A hands-on worksheet to identify, capture, and compound value from everyday effort.  
-  /downloads/frameworks/value-farming-worksheet.pdf
-- virgil-os-quick-start.pdf  
-  A practical guide to applying Virgil OS concepts immediately.  
-  /downloads/frameworks/virgil-os-quick-start.pdf
+  **Printable PDF:** /downloads/frameworks/value-farming-worksheet.pdf
+- **[Virgil OS Quick-Start (PDF)](/downloads/frameworks/virgil-os-quick-start.pdf)**  
+  A practical guide to applying Virgil OS concepts immediately.
 
 ---
 
