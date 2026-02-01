@@ -16,7 +16,7 @@ This page is a curated summary. The full internal audit includes deeper technica
 
 ---
 
-**Last updated:** January 2026. We review this page after each release.
+<span class="last-updated">Last updated: January 2026. We review this page after each release.</span>
 
 ---
 

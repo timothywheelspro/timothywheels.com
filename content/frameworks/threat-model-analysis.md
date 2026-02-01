@@ -8,7 +8,7 @@ tags: ["security", "systems-thinking", "risk-assessment", "rme", "safety"]
 
 {{< trust-badge >}}
 
-**Last updated:** 2025-01-31
+<span class="last-updated">Last updated: 2025-01-31</span>
 
 The first time my deployment pipeline failed silently, I didn't know for three days.
 

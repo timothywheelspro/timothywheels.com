@@ -16,7 +16,7 @@ Stoplight Process Health is my answer to that question. It is a framework for ma
 
 {{< trust-badge >}}
 
-**Last updated:** 2025-01-31
+<span class="last-updated">Last updated: 2025-01-31</span>
 
 ---
 

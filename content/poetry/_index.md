@@ -5,7 +5,7 @@ description: "Performance pieces and RME work"
 
 {{< trust-badge >}}
 
-**Last updated:** 2025-01-31
+<span class="last-updated">Last updated: 2025-01-31</span>
 
 Spoken word performances and technical narratives.
 

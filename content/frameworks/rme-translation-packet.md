@@ -6,7 +6,7 @@ draft: false
 
 {{< trust-badge >}}
 
-**Last updated:** 2026-01-31
+<span class="last-updated">Last updated: 2026-01-31</span>
 
 ## Talking Points
 

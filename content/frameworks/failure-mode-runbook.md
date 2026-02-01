@@ -8,7 +8,7 @@ tags: ["troubleshooting", "diagnostics", "rme", "systems-thinking", "root-cause"
 
 {{< trust-badge >}}
 
-**Last updated:** 2025-01-31
+<span class="last-updated">Last updated: 2025-01-31</span>
 
 The first instinct when something breaks is to fix it. The second instinct - the one that separates operators from engineers - is to understand why it broke.
 
