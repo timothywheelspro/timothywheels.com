@@ -1,7 +1,23 @@
 ---
-title: "Timothy 'Fly' Wheels"
-subtitle: "Site refresh in progress"
-layout: "single"
+title: "Timothy Wheels"
+layout: "home"
 ---
 
-This site is being restructured. New sections will publish once the next phase is complete.
+## Timothy Wheels
+
+**Systems Architect. Sovereign Operator.** Building infrastructure that stays online - physically, digitally, and cognitively.
+
+---
+
+### Operational Routing
+- **[About](/about/)** - The 20-year circuit from Chef to IT Operations.
+- **[Frameworks](/frameworks/)** - RME reliability, threat models, and failure modes.
+- **[Awareness in Action](/awareness-in-action/)** - Real-time process health and systemic audits.
+- **[CYW Framework](/cyw-framework/)** - Introduction to the Control Your World methodology.
+- **[Poetry](/poetry/)** - Spoken word performances on human and machine struggle.
+
+---
+
+### Deep Specs
+Looking for the core OS?  
+Visit **[cyw-os.com](https://cyw-os.com)** - Project Genesis currently in deployment.

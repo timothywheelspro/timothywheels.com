@@ -51,24 +51,27 @@ taxonomies:
 
 menu:
   main:
-    - name: "Awareness In Action"
-      url: "/awareness-in-action"
-      weight: 1
-    - name: "Poetry"
-      url: "/poetry"
-      weight: 2
-    - name: "CYW Framework"
-      url: "/cyw-framework"
-      weight: 3
-    - name: "Case Studies"
-      url: "/case-studies"
-      weight: 4
-    - name: "Frameworks"
-      url: "/frameworks"
-      weight: 5
-    - name: "About"
-      url: "/about"
-      weight: 6
     - name: "Home"
       url: "/"
-      weight: -1
+      weight: 1
+    - name: "About"
+      url: "/about/"
+      weight: 10
+    - name: "Frameworks"
+      url: "/frameworks/"
+      weight: 20
+    - name: "Awareness In Action"
+      url: "/awareness-in-action/"
+      weight: 25
+    - name: "Poetry"
+      url: "/poetry/"
+      weight: 30
+    - name: "CYW"
+      url: "/cyw-framework/"
+      weight: 40
+    - name: "Case Studies"
+      url: "/case-studies/"
+      weight: 45
+    - name: "Contact"
+      url: "/contact/"
+      weight: 50
