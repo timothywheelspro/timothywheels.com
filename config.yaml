@@ -1,6 +1,6 @@
 baseURL: "https://timothywheels.com/"
 languageCode: "en-us"
-title: "Timothy 'Fly' Wheels"
+title: "Timothy Wheels"
 theme: "PaperMod"
 
 params:
@@ -22,7 +22,7 @@ params:
 
   homepage:
     hero:
-      title: "Timothy 'Fly' Wheels"
+      title: "Timothy Wheels"
       subtitle: "Systems Thinker | Infrastructure Architect | Poet"
       cta_text: "Read Awareness In Action"
       cta_link: "/awareness-in-action"
@@ -62,13 +62,16 @@ menu:
       weight: 20
     - name: "Awareness In Action"
       url: "/awareness-in-action/"
-      weight: 25
+      weight: 30
+    - name: "Ideas to Impact"
+      url: "/ideas-to-impact/"
+      weight: 35
     - name: "Poetry"
       url: "/poetry/"
-      weight: 30
+      weight: 40
     - name: "CYW"
       url: "/cyw-framework/"
-      weight: 40
+      weight: 50
     - name: "Case Studies"
       url: "/case-studies/"
-      weight: 45
+      weight: 60
