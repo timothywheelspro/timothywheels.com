@@ -1,0 +1,15 @@
+{
+  "name": "Executive Packet",
+  "version": "v1.0",
+  "build_date": "2026-02-03T05:34:25.575833-05:00",
+  "sha256": "8f5094bb1067e4036fa841b2aa3d57645badbd64e1f73d0071eba45caf6e3bab",
+  "signed": true,
+  "signature_file": "release_hash.txt.asc",
+  "public_key": "https://timothywheels.com/verification/public_key.asc",
+  "verification_url": "https://timothywheels.com/verification",
+  "issuer": {
+    "name": "Timothy I. Wheels",
+    "organization": "Contruil",
+    "email": "timothy@timothywheels.com"
+  }
+}
