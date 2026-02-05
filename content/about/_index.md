@@ -4,6 +4,8 @@ subtitle: "A network diagram of a 20-year routing protocol"
 type: "page"
 layout: "single"
 ---
+Timothy "Fly" Wheels is a systems architect and sovereign operator tracing a 20-year routing protocol across military, creative, warehouse, academic, and organizational systems.
+
 This is not a resume. It is a network diagram of how routing logic formed, where it runs today, and where it is headed.
 
 ---

@@ -43,6 +43,20 @@ Custom styles bundled with site assets.
     text-transform: uppercase;
 }
 
+.trust-footer__divider {
+    margin: 0 0.5rem;
+}
+
+.trust-footer__badge a {
+    color: var(--primary);
+    text-decoration: none;
+    margin-left: 0.35rem;
+}
+
+.trust-footer__badge a:hover {
+    text-decoration: underline;
+}
+
 .trust-badge-pill {
     display: inline-flex;
     align-items: center;
