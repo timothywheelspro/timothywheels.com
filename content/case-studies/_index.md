@@ -7,6 +7,13 @@ Real-World Applications of the Control Your World (CYW) Framework
 
 ---
 
+## Featured Proof Assets
+
+- **[Case Study 001: NSLS Outreach System Reset](/case-studies/nsls-outreach-system-reset/)**  
+  Stabilized outreach operations by converting fragmented practices into a documented, repeatable system.
+
+---
+
 ## What These Case Studies Demonstrate (Direct Answer)
 
 The CYW case studies show how a single systems framework can be applied across personal development, community challenges, education, and ethical technology - turning abstract ideas into repeatable, real-world outcomes.
