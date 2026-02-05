@@ -25,4 +25,8 @@ Stabilized chapter outreach operations and established continuity systems.
 Built long-term continuity frameworks across fragmented service environments.  
 → /case-studies/homelessness-healing-systems/
 
+### Case 003 — CYW Integrated Technical Infrastructure
+Designed and deployed a governed technical platform for verifiable systems leadership.  
+→ /case-studies/cyw-technical-infrastructure/
+
 (More case studies in development.)
