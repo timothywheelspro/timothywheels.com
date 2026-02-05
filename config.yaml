@@ -57,6 +57,9 @@ menu:
     - name: "About"
       url: "/about/"
       weight: 10
+    - name: "Portfolio"
+      url: "/portfolio/"
+      weight: 15
     - name: "Frameworks"
       url: "/frameworks/"
       weight: 20

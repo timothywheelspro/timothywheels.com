@@ -18,6 +18,9 @@ Infrastructure that stays online - physical, digital, cognitive.
 **[About](/about/)**  
 A 20-year circuit from Chef to IT Operations - where pressure, precision, and uptime were learned the hard way.
 
+**[Verified Portfolio](/portfolio/)**  
+Documented case studies demonstrating applied systems leadership.
+
 **[Featured Leadership Brief](/ideas-to-impact/)**  
 From Ideas to Impact: How I Protect, Scale, and Serve with Technology.
 
