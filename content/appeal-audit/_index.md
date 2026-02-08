@@ -13,24 +13,27 @@ This page provides a public, neutral audit record for the IEEEXtreme 19.0 appeal
 
 | Record | Status | Date (UTC) | Notes |
 |---|---|---|---|
-| APPEAL_LOCK_2026-02-08 | Locked | 2026-02-08 | Record locked after v2.1 build |
-| Packet v2.1 | Current | 2026-02-08 | Manifest v1.5 |
+| APPEAL_LOCK_2026-02-08 | Locked | 2026-02-08 | Record locked after v2.2 build |
+| Packet v2.2 | Current | 2026-02-08 | Manifest v1.6 |
+| Packet v2.1 | Superseded | 2026-02-08 | Manifest v1.5 |
 | Packet v2.0 | Superseded | 2026-02-08 | Manifest v1.4 |
 | Baseline v1.0 | Frozen | 2026-02-07 | Evidence packet ZIP frozen |
 
 ## Current Release
 
-- Packet: `IEEEXtreme19_Appeal_Packet_v2.1.pdf`
-- Packet Source: `IEEEXtreme19_Appeal_Packet_v2.1.md`
-- Manifest: `00_EXECUTIVE/manifest.json` (v1.5)
+- Packet: `IEEEXtreme19_Appeal_Packet_v2.2.pdf`
+- Packet Source: `IEEEXtreme19_Appeal_Packet_v2.2.md`
+- Manifest: `00_EXECUTIVE/manifest.json` (v1.6)
 
 ## Download the Evidence Packet
 
-- Evidence Packet (PDF): [IEEEXtreme19_Appeal_Packet_v2.1.pdf](https://timothywheels.com/downloads/appeal/IEEEXtreme19_Appeal_Packet_v2.1.pdf)
-- CANONICAL URL: https://timothywheels.com/downloads/appeal/IEEEXtreme19_Appeal_Packet_v2.1.pdf
+- Evidence Packet (PDF): [IEEEXtreme19_Appeal_Packet_v2.2.pdf](https://timothywheels.com/downloads/appeal/IEEEXtreme19_Appeal_Packet_v2.2.pdf)
+- Superseded packet (v2.1): [IEEEXtreme19_Appeal_Packet_v2.1.pdf](https://timothywheels.com/downloads/appeal/IEEEXtreme19_Appeal_Packet_v2.1.pdf)
+- CANONICAL URL: https://timothywheels.com/downloads/appeal/IEEEXtreme19_Appeal_Packet_v2.2.pdf
 
 ### Integrity Check
 
+- Packet v2.2 SHA-256: `6615fd6768b08caba7ec8114f87ace7440afcc9e13b08ba4aee4aadc970d874f`
 - E-017A SHA-256: `9ca99a7564295ec5575285a34a96eac352243b762ff66ed4883fd91902caa792`
 - Full file hashes are recorded in `00_EXECUTIVE/manifest.json` inside the packet.
 - RULE_REF: IEEEXtreme 19.0 Competition Rules §4.2 (AI Usage & Assistance)
@@ -39,7 +42,8 @@ This page provides a public, neutral audit record for the IEEEXtreme 19.0 appeal
 
 | Release | Manifest | Status | Summary |
 |---|---|---|---|
-| v2.1 | v1.5 | Current | CSV quoting fix, hash regeneration, count reconciliation |
+| v2.2 | v1.6 | Current | Table rendering fix (split manifest) |
+| v2.1 | v1.5 | Superseded | CSV quoting fix, hash regeneration |
 | v2.0 | v1.4 | Superseded | Pre-fix packet |
 
 ## Version History
@@ -47,6 +51,7 @@ This page provides a public, neutral audit record for the IEEEXtreme 19.0 appeal
 - v1.0 (2026-02-07): Frozen baseline evidence ZIP
 - v2.0 (2026-02-08): Packet updated, Manifest v1.4
 - v2.1 (2026-02-08): CSV quoting fix, hashes regenerated, count reconciliation, Manifest v1.5
+- v2.2 (2026-02-08): Manifest table rendering fix (split table), Manifest v1.6
 
 ## E-017A Verification
 
