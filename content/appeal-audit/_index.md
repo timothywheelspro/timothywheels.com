@@ -26,12 +26,14 @@ This page provides a public, neutral audit record for the IEEEXtreme 19.0 appeal
 
 ## Download the Evidence Packet
 
-- Evidence Packet (PDF): [IEEEXtreme19_Appeal_Packet_v2.1.pdf](https://github.com/timothywheelspro/timothywheels.com/releases/download/appeal-packet-v2.1/IEEEXtreme19_Appeal_Packet_v2.1.pdf)
+- Evidence Packet (PDF): [IEEEXtreme19_Appeal_Packet_v2.1.pdf](https://timothywheels.com/downloads/appeal/IEEEXtreme19_Appeal_Packet_v2.1.pdf)
+- CANONICAL URL: https://timothywheels.com/downloads/appeal/IEEEXtreme19_Appeal_Packet_v2.1.pdf
 
 ### Integrity Check
 
 - E-017A SHA-256: `9ca99a7564295ec5575285a34a96eac352243b762ff66ed4883fd91902caa792`
 - Full file hashes are recorded in `00_EXECUTIVE/manifest.json` inside the packet.
+- RULE_REF: IEEEXtreme 19.0 Competition Rules §4.2 (AI Usage & Assistance)
 
 ## Packet Integrity
 
