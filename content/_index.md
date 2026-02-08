@@ -31,6 +31,12 @@ Spoken-word performances exploring the friction between humans, machines, and su
 
 ---
 
+## Current Work
+
+- [Appeal Audit](/appeal-audit/) — IEEEXtreme 19.0 public audit record (evidence architecture demonstration)
+
+---
+
 ## Deep Specs
 
 Looking for the core OS?  
