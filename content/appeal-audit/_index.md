@@ -55,8 +55,8 @@ Expected hash:
 
 ## Reviewer Resources
 
-- /appeal-audit/reviewer-guide/
-- /appeal-audit/contingency-responses/
+- [Reviewer Guide](/appeal-audit/reviewer-guide/)
+- [Contingency Responses](/appeal-audit/contingency-responses/)
 
 ## Contact
 
