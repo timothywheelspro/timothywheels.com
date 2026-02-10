@@ -1,7 +1,7 @@
 ---
 title: "IEEEXtreme 19.0 Appeal Audit"
 description: "Public audit record for the IEEEXtreme 19.0 appeal packet."
-date: 2026-02-08
+date: 2026-02-10
 draft: false
 ---
 
@@ -9,67 +9,87 @@ draft: false
 
 This page provides a public, neutral audit record for the IEEEXtreme 19.0 appeal packet. It is intended to enable independent verification of document integrity without requiring reliance on participant testimony.
 
-## Status Table
+## Status
 
 | Record | Status | Date (UTC) | Notes |
 |---|---|---|---|
-| APPEAL_LOCK_2026-02-08 | Locked | 2026-02-08 | Record locked after v2.2 build |
-| Packet v2.2 | Current | 2026-02-08 | Manifest v1.6 |
-| Packet v2.1 | Superseded | 2026-02-08 | Manifest v1.5 |
-| Packet v2.0 | Superseded | 2026-02-08 | Manifest v1.4 |
-| Baseline v1.0 | Frozen | 2026-02-07 | Evidence packet ZIP frozen |
+| APPEAL_LOCK_2026-02-10 | Locked | 2026-02-10 | Submission packet locked with proctor statement |
+| Packet v2.1 | **Current (submission)** | 2026-02-10 | 5 pages: Cover + Workflow Timeline + Proctor Statement (merged) |
 
-## Current Release
+## Current Release (Submission Packet)
 
-- Packet: `IEEEXtreme19_Appeal_Packet_v2.2.pdf`
-- Packet Source: `IEEEXtreme19_Appeal_Packet_v2.2.md`
-- Manifest: `00_EXECUTIVE/manifest.json` (v1.6)
+- **Packet:** `IEEEXtreme19_Appeal_Packet_v2.1.pdf`
+- **Pages:** 5
+- **Contents:** Cover letter (with title page), Workflow Timeline (with proctor observation row), Proctor Statement (Dr. Edwin Hill, received 2026-02-09 10:31 AM)
+- **Build:** Merged from `01_cover_letter.pdf` + `03_workflow_timeline.pdf` + `04_proctor_statement.pdf`
 
-## Download the Evidence Packet
+## Why only the submission packet is published
 
-- Evidence Packet (PDF): [IEEEXtreme19_Appeal_Packet_v2.2.pdf](https://timothywheels.com/downloads/appeal/IEEEXtreme19_Appeal_Packet_v2.2.pdf)
-- Superseded packet (v2.1): [IEEEXtreme19_Appeal_Packet_v2.1.pdf](https://timothywheels.com/downloads/appeal/IEEEXtreme19_Appeal_Packet_v2.1.pdf)
-- CANONICAL URL: https://timothywheels.com/downloads/appeal/IEEEXtreme19_Appeal_Packet_v2.2.pdf
+Previous generations (v2.0, v2.2) are **not** offered for download here. Reasons:
 
-### Integrity Check
+- **Hash mismatch:** Older builds have different SHA-256 hashes. Publishing them would create confusion about which file was officially submitted.
+- **Scope mismatch:** Long-form packets contain more material (full forensic timeline, manifest tables, evidence index, etc.) than the 5-page submission. Only the merged submission packet matches what is sent to the committee.
+- **Single source of truth:** The canonical PDF and its hash below are the only public artifacts; they align with the submitted packet.
 
-- Packet v2.2 SHA-256: `6615fd6768b08caba7ec8114f87ace7440afcc9e13b08ba4aee4aadc970d874f`
-- E-017A SHA-256: `9ca99a7564295ec5575285a34a96eac352243b762ff66ed4883fd91902caa792`
-- Full file hashes are recorded in `00_EXECUTIVE/manifest.json` inside the packet.
-- RULE_REF: IEEEXtreme 19.0 Competition Rules §4.2 (AI Usage & Assistance)
+## Download
 
-## Packet Integrity
+- **Evidence Packet (PDF) — submission version:** [IEEEXtreme19_Appeal_Packet_v2.1.pdf](https://timothywheels.com/downloads/appeal/IEEEXtreme19_Appeal_Packet_v2.1.pdf)
+- **CANONICAL URL:** https://timothywheels.com/downloads/appeal/IEEEXtreme19_Appeal_Packet_v2.1.pdf
 
-| Release | Manifest | Status | Summary |
-|---|---|---|---|
-| v2.2 | v1.6 | Current | Table rendering fix (split manifest) |
-| v2.1 | v1.5 | Superseded | CSV quoting fix, hash regeneration |
-| v2.0 | v1.4 | Superseded | Pre-fix packet |
+### Integrity check (submission packet)
 
-## Version History
+Verify the PDF you download matches the submitted packet:
 
-- v1.0 (2026-02-07): Frozen baseline evidence ZIP
-- v2.0 (2026-02-08): Packet updated, Manifest v1.4
-- v2.1 (2026-02-08): CSV quoting fix, hashes regenerated, count reconciliation, Manifest v1.5
-- v2.2 (2026-02-08): Manifest table rendering fix (split table), Manifest v1.6
-
-## E-017A Verification
-
+```bash
+shasum -a 256 IEEEXtreme19_Appeal_Packet_v2.1.pdf
 ```
+
+**Expected SHA-256:** `313bfa639e349f4cfcbfa4f96eaa6c55d9adf8a734c178165210b9fd19728f94`
+
+- **RULE_REF:** IEEEXtreme 19.0 Competition Rules §4.2 (AI Usage & Assistance)
+
+## AI Usage Compliance (per §4.2)
+
+Per IEEEXtreme 19.0 Rules §4.2 "Internet Resource Use, Including AI and Plagiarism":
+
+| Usage type | Permitted | This packet |
+|------------|-----------|-------------|
+| Conceptual clarification (theory, methodology) | Yes | E-017: Graph theory, vertical line test |
+| Syntax lookup / documentation | Yes | Not applicable to flagged content |
+| Code generation (direct copy-paste) | No | No AI-generated code in packet |
+| Problem decomposition discussion | Yes | E-017A: 28 conceptual messages |
+
+**Statement:**
+
+1. **Nature of AI interaction:** Conceptual guidance only. Evidence Item E-017A documents 28 messages on graph-theory methodology—no code generation requests or responses.
+2. **Timestamp verification:** All AI interactions fall within the documented competition window (16:09:16–16:20:56 UTC, 25 September 2025). Timestamps are OpenAI-generated (`create_time`) and not user-editable.
+3. **Conversation ID for independent verification:** `68d5692d-c44c-832d-abff-f827a7755eea` (OpenAI can confirm on committee request).
+4. **Negative evidence:** The packet contains no AI-generated source code. AI use is disclosed for conceptual clarification only, which is permitted under §4.2.
+
+## E-017A source-file verification (optional)
+
+If you have the evidence repository and want to verify the E-017A source file:
+
+```bash
 sha256sum "01_EVENT_WINDOW/E-017A_identify_graph_functions_verbatim.md"
 ```
 
-Expected hash:
+**Expected:** `9ca99a7564295ec5575285a34a96eac352243b762ff66ed4883fd91902caa792`
 
-`9ca99a7564295ec5575285a34a96eac352243b762ff66ed4883fd91902caa792`
+## Version history (record only; no downloads for superseded)
 
-## Notes on Scope
+- v1.0 (2026-02-07): Frozen baseline evidence ZIP
+- v2.0 (2026-02-08): Superseded
+- v2.1 (2026-02-10): **Submission packet.** 5-page merged PDF; proctor statement received 2026-02-09 10:31 AM
+- v2.2 (2026-02-08): Long-form packet; superseded for public audit
+
+## Notes on scope
 
 - Evidence is limited to system-generated records and disclosed gaps.
 - No fabricated artifacts are included.
 - Counts reconcile to JSON source, including image-only messages.
 
-## Reviewer Resources
+## Reviewer resources
 
 - [Reviewer Guide](/appeal-audit/reviewer-guide/)
 - [Contingency Responses](/appeal-audit/contingency-responses/)
@@ -78,4 +98,3 @@ Expected hash:
 
 For verification questions or additional context:  
 Timothy I. Wheels — `timothywheelspro@gmail.com`
-
