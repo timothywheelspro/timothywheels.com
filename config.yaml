@@ -63,6 +63,9 @@ menu:
     - name: "Frameworks"
       url: "/frameworks/"
       weight: 20
+    - name: "Leadership"
+      url: "/leadership/"
+      weight: 25
     - name: "Awareness In Action"
       url: "/awareness-in-action/"
       weight: 30
