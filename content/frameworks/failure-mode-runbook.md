@@ -1,40 +1,19 @@
 ---
 title: "Failure Mode Runbook"
-description: "Diagnostic Frameworks for Troubleshooting Backward from Impact"
-date: 2025-01-31
-draft: false
-tags: ["troubleshooting", "diagnostics", "rme", "systems-thinking", "root-cause"]
+subtitle: "Deterministic Recovery Protocol"
+type: "page"
+layout: "single"
 ---
 
-{{< trust-badge >}}
+## Protocol Objective
 
-<span class="last-updated">Last updated: 2025-01-31</span>
+This runbook provides a recursive diagnostic loop for stabilizing systems during operational collapse. It prioritizes the preservation of state and the enforcement of boundaries over immediate resolution.
 
-The first instinct when something breaks is to fix it. The second instinct - the one that separates operators from engineers - is to understand why it broke.
-
-I learned this lesson in a kitchen at 7 PM on a Saturday. The salamander stopped heating. The line cook's instinct: crank it higher. My instinct, learned from watching equipment fail too many times: check the pilot light first. Thirty seconds of diagnosis saved us from replacing a working thermostat or, worse, flooding the kitchen with unburned gas.
-
-**The symptom is rarely the cause. The fix that addresses the symptom without finding the cause just moves the failure somewhere else.**
-
-This runbook documents the diagnostic frameworks I use - whether I'm troubleshooting a deployment pipeline, a conveyor jam, or a process that "just feels off." The domain changes. The methodology doesn't.
+**Execution Requirement:** Do not attempt remediation until Step 0 (Boundary Verification) is complete.
 
 ---
 
-## The Core Principle
-
-**Troubleshoot backward from impact, not forward from assumption.**
-
-When something fails:
-- Don't start with "I bet it's X"
-- Start with "What exactly is the failure?"
-- Then: "What are all the things that could cause this failure?"
-- Then: "How do I test each possibility without changing anything?"
-
-Changing things before you understand the problem is how you turn one failure into three.
-
----
-
-## The Diagnostic Loop
+## Diagnostic Loop (Phase 1)
 
 Every troubleshooting session follows the same structure:
 

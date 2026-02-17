@@ -1,55 +1,36 @@
 ---
 title: "Threat Model Analysis"
-description: "Security Architecture for Systems That Can't Afford to Fail"
-date: 2025-01-31
-draft: false
-tags: ["security", "systems-thinking", "risk-assessment", "rme", "safety"]
+subtitle: "Vulnerability Assessment & Mitigation"
+type: "page"
+layout: "single"
 ---
 
-{{< trust-badge >}}
+## Protocol Objective
 
-<span class="last-updated">Last updated: 2025-01-31</span>
-
-The first time my deployment pipeline failed silently, I didn't know for three days.
-
-The site loaded. Pages rendered. Everything looked fine. But somewhere between my local build and the CDN, a file had been modified - cached incorrectly, served stale, hash mismatch invisible. I only discovered it when a reader emailed asking why a page showed outdated content.
-
-That's when I understood: **"it works" is not the same as "it's correct."**
-
-I rebuilt the entire pipeline around one principle: never trust that output matches input. Verify it. Every time. Automatically. And if verification fails, halt everything until a human investigates.
-
-This document is the threat model behind that system. It's also a translation guide - because the same defensive thinking that protects a deployment pipeline protects a conveyor system, a maintenance schedule, or a safety protocol.
+This framework identifies and categorizes vectors of entropy within the system. By mapping threats to specific architectural layers, the protocol allows for the implementation of targeted rate-limiting and defensive routing.
 
 ---
 
-## The Core Principle
+## Threat Matrix
 
-**Security is not the absence of attackers. Security is the presence of verification.**
-
-Most systems fail not because of sophisticated attacks, but because of assumptions:
-- "The file uploaded correctly" (it didn't)
-- "The credentials are still valid" (they expired)
-- "The process ran as expected" (it errored silently)
-- "Someone would have noticed" (no one did)
-
-Threat modeling forces you to name those assumptions, test them, and build systems that don't rely on hope.
+**Core principle:** Security is not the absence of attackers. Security is the presence of verification.
 
 ---
 
 ## System Overview
 
-The deployment pipeline I'm protecting:
+Representative deployment pipeline in scope:
 
 | Component | Function | Trust Level |
 |-----------|----------|-------------|
-| **Source Control** | Git repository (GitHub) | High (I control commits) |
+| **Source Control** | Git repository (GitHub) | High (source controlled) |
 | **Build System** | Makefile with cryptographic verification | High (local execution) |
 | **Deployment Target** | Vercel CDN with static hosting | Medium (third-party infrastructure) |
 | **Integrity Layer** | SHA-256 hash chains with audit logging | High (mathematically verifiable) |
 
-**What I'm protecting:** Intellectual property, prior art documentation, professional reputation.
+**Protected assets:** Intellectual property, prior art documentation, professional reputation.
 
-**What I'm protecting against:** Silent corruption, unauthorized modification, integrity drift, my own mistakes.
+**Threats in scope:** Silent corruption, unauthorized modification, integrity drift, operator error.
 
 ---
 
@@ -76,7 +57,7 @@ Every system has zones where trust changes. Identifying those boundaries tells y
 
 **Why it matters:** Most developers don't audit their dependencies. They trust that npm/pip packages are safe because they were safe yesterday.
 
-**My mitigations:**
+**Mitigations:**
 - SHA-256 hash verification at build time
 - Minimal external dependencies (no npm/pip for core pipeline)
 - Makefile-based build system (human-readable, auditable)
@@ -94,7 +75,7 @@ Every system has zones where trust changes. Identifying those boundaries tells y
 
 **Why it matters:** Credential theft is the most common attack vector. Not because it's sophisticated, but because it works.
 
-**My mitigations:**
+**Mitigations:**
 - GitHub authentication with 2FA enforcement
 - Vercel API tokens with scoped permissions
 - Audit logging of all deployments (`SOVEREIGN_LOG.md`)
@@ -112,7 +93,7 @@ Every system has zones where trust changes. Identifying those boundaries tells y
 
 **Why it matters:** CDNs are trusted infrastructure, but "trusted" doesn't mean "infallible." Caching bugs, configuration errors, and network attacks can all result in wrong content served.
 
-**My mitigations:**
+**Mitigations:**
 - HTTPS enforcement (TLS 1.3)
 - Post-deployment hash verification (`make audit`)
 - CDN security headers (CSP, HSTS)
@@ -130,7 +111,7 @@ Every system has zones where trust changes. Identifying those boundaries tells y
 
 **Why it matters:** Availability is part of integrity. A system that can't be reached can't serve its purpose.
 
-**My mitigations:**
+**Mitigations:**
 - Vercel CDN DDoS protection (provider-level)
 - Static content (no compute-intensive operations)
 - Rate limiting at CDN edge
@@ -148,7 +129,7 @@ Every system has zones where trust changes. Identifying those boundaries tells y
 
 **Why it matters:** The CYW framework and defensive publications are intellectual property. Provenance matters for legal protection.
 
-**My mitigations:**
+**Mitigations:**
 - Public timestamping via Git commit history
 - Cryptographic proof of authorship (commit signatures)
 - MIT License with attribution requirements

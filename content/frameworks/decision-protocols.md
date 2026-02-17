@@ -7,7 +7,7 @@ tags: ["operations", "decision-making", "rme", "systems-thinking"]
 description: "A practical protocol for routing decisions, enforcing quality gates, and protecting system stability."
 ---
 
-## Why This Exists
+## Protocol Purpose
 
 Operations break down when every decision is treated as urgent and handled by whoever is available. Reliable systems route the right decisions to the right specialists and enforce verification steps before deployment.
 

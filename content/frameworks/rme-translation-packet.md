@@ -27,7 +27,7 @@ draft: false
 
 ### Strategic Application
 
-"I treat a Sortation System as a physical LAN. The packages are the packets, the conveyor is the medium, and the PLC is the router. When throughput drops, I do not just look for a mechanical jam; I look for where the signal-to-noise ratio in the sensor logic is failing."
+"Treat a sortation system as a physical LAN. The packages are the packets, the conveyor is the medium, and the PLC is the router. When throughput drops, do not just look for a mechanical jam; look for where the signal-to-noise ratio in the sensor logic is failing."
 
 See the digital tools I use to manage this physical logic: [/stack](/stack/)
 
