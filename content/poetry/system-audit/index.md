@@ -62,7 +62,9 @@ But the system is desensitized?
 
 ### **Context**
 
-This poem was written and performed following an incident at Amazon ORF3 where I received two write-ups in one day after completing a detailed bathroom facility audit. The audit was requested by the Associate Activities Committee, but my comprehensive, analytical approach was perceived as exceeding expectations in a way that created friction rather than recognition.
+This piece emerged from a scenario in which detailed, systematic audit work was met with formal discipline rather than recognition. The tension between precision and baseline compliance — between delivering enterprise-level thoroughness in a system calibrated for minimum viable conformity — became the subject.
+
+The poem is the compressed version. Episode 2 of Awareness In Action is the analytical layer. Same signal, two endpoints, different routing.
 
 The poem explores the tension between:
 - **Precision vs. Compliance** - Delivering enterprise-level documentation to a system expecting baseline work
@@ -118,9 +120,7 @@ This is multi-endpoint value routing in practice.
 
 ## Performance History
 
-**Amazon ORF3 Associate Activities Committee**  
-*January 26, 2026*  
-First poetry event organized by the committee. Two performers total. I opened the event with this piece. Audience: approximately 30-50 Amazon employees during break time.
+- Amazon ORF3 Associate Activities Committee Poetry Event — January 26, 2026
 
 **Upcoming:**  
 - Amazon ORF3 February Poetry Event (date TBD)
@@ -131,11 +131,7 @@ First poetry event organized by the committee. Two performers total. I opened th
 
 ## About the Poet
 
-**Timothy "Fly" Wheels** is a systems thinker, infrastructure architect, and performance poet. His work bridges technical precision with human experience, treating poetry as compressed data that carries emotional weight across layers of meaning.
-
-With a background spanning Def Poetry Jam, BET's Lyric Cafe, and V-103's Quiet Storm, Fly brings professional performance experience to organizational spaces, using poetry as a tool for morale building and cultural transformation.
-
-Currently pursuing a CIS degree at DeVry University (3.87 GPA) while working at Amazon ORF3 and developing the Control Your World (CYW) framework through Contruil LLC.
+Timothy "Fly" Wheels is a systems thinker and performance poet. Poetry is compressed signal — the same routing logic that drives technical frameworks, delivered at a different layer.
 
 ---
 

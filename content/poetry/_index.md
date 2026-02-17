@@ -1,13 +1,11 @@
 ---
 title: "Poetry"
-description: "Performance pieces and RME work"
+description: "Spoken word as compressed signal — performance as packet delivery across layers."
 ---
 
-{{< trust-badge >}}
+Spoken word operates as compressed signal. Each piece routes the same pattern recognition that drives the frameworks and commentary — delivered at a different layer, for a different endpoint.
 
-<span class="last-updated">Last updated: 2025-01-31</span>
-
-Spoken word performances and technical narratives.
+Performance is packet delivery. The payload is the same topology.
 
 ## Featured Pieces
 
