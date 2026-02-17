@@ -4,115 +4,113 @@ subtitle: "A network diagram of a 20-year routing protocol"
 type: "page"
 layout: "single"
 ---
-Timothy "Fly" Wheels is a systems architect and sovereign operator tracing a 20-year routing protocol across military, creative, warehouse, academic, and organizational systems.
 
-This is not a resume. It is a network diagram of how routing logic formed, where it runs today, and where it is headed.
+Timothy "Fly" Wheels operates at the intersection of infrastructure, systems design, and human routing logic.
+
+This is not a resume.
+It is a topology map.
+
+It traces how routing discipline formed across military command structures, live performance, warehouse infrastructure, academic networking, and organizational architecture — and how those patterns now converge into applied AI orchestration and clarity engineering.
 
 ---
 
 ## Origin Protocol: Where the Routing Logic Formed
 
-### 2004-2014 | Military Service -> Creative Performance
-**System insight:** Hierarchical command structures are networks with explicit access control lists. Applied this to stage presence (Def Poetry Jam, BET's Lyric Cafe) - audience as endpoint, performance as packet delivery, feedback as acknowledgment protocol.
+### Military Command -> Performance Systems
 
-**Key translation:** Clarity under pressure is not removing complexity - it is routing it through the right channels at the right time.
+Hierarchical command structures function as explicit access control models.
 
----
+Chain of command = authorization boundary.
+Mission clarity = packet integrity.
 
-### 2015-2020 | Warehouse Operations -> Infrastructure Thinking
-**System insight:** Amazon fulfillment centers are physical Layer 2 switches. Every package is a frame, every conveyor junction is a routing decision, every manager dashboard is a monitoring protocol.
+Stage performance translated the same logic: audience as endpoint, delivery as payload, feedback as acknowledgment protocol.
 
-**Key translation:** Developed the "extreme visibility" audit methodology - later formalized as the Triangle Test Protocol. Got written up for being too thorough. Turned the liability into the foundation of CYW.
-
----
-
-### 2021-2023 | Academic Re-Entry -> Formal Network Training
-**System insight:** DeVry networking curriculum (NETW191, NETW212) provided formal language for intuitive system mapping - human systems as network topologies.
-
-**Key translation:** Applied VLAN segmentation to AI collaboration. Each model became a dedicated routing layer with controlled inter-VLAN communication. The CYW pipeline was born.
+Enduring insight: Clarity under pressure is achieved through disciplined routing, not reduced complexity.
 
 ---
 
-## Active Infrastructure: Current Nodes in the Network
+### Fulfillment Infrastructure -> Operational Topology
 
-### 2024-Present | Multi-Role Operation
+Large-scale fulfillment centers operate as physical Layer 2 switching environments.
 
-**Amazon ORF3 Waterspider** (Suffolk, VA)
-- Managing physical infrastructure across 9 football fields
-- Applying network troubleshooting methodology to supply chain bottlenecks
-- Systematic audit protocols (safety, efficiency, inventory accuracy)
+Every package is a frame.
+Every conveyor junction is a routing decision.
+Every dashboard is a monitoring protocol.
 
-**DeVry CIS Student** (Pursuing Bachelor's)
-- NETW191, NETW212 (switching, routing, VLANs, ACLs)
-- ECON312 (CapEx/OpEx frameworks, cost-benefit at scale)
-- Translating every academic concept into operational application
+Audit discipline became visibility engineering.
+Visibility engineering became the Triangle Test.
 
-**NSLS Executive Membership Outreach Coordinator**
-- 500+ member network management
-- Event logistics, speaker coordination, engagement metrics
-- Building systematic communication pipelines for organizational clarity
-
-**Contruil LLC Founder** (Control Your World Framework)
-- Developing multi-model AI orchestration methodology
-- Patent applications: Triangle Test Protocol, Four-Gate Authorization
-- Newsletter: "Awareness In Action" (systems thinking for sovereign individuals)
+Liability converted to infrastructure.
 
 ---
 
-## Forward Deployment: Where the Packets Are Headed
+### Academic Network Training -> Formalization
 
-### Q1 2025 | Internal Amazon Mobility
-**Target roles:** Process Assistant, RME Technician  
-**Timeline:** Application by April 2025  
-**Strategy:** Leverage demonstrated systems thinking + formal networking credentials + safety/operational track record
+Formal coursework in switching, routing, VLAN segmentation, and access control lists provided language for previously intuitive system mapping.
 
----
+Human systems = network topologies.
+Boundaries = VLAN segmentation.
+Communication discipline = inter-VLAN policy.
 
-### Q2-Q3 2025 | Bay Area Relocation
-**Objective:** Position within tech infrastructure ecosystem  
-**Focus:** Network engineering, DevOps, AI operations roles  
-**Asset:** CYW framework as proof of multi-domain systems capability
+The Control Your World (CYW) orchestration layer emerged from this formalization.
 
 ---
 
-### Q1 2026 | Live2Lead Speaking Engagement
-**Platform:** Leadership conference presentation  
-**Topic:** "Clarity Architecture: How Network Thinking Transforms Decision-Making"  
-**Deliverable:** Scale CYW methodology to executive/leadership audience
+## Active Infrastructure: Current Network Nodes
+
+**Operational Systems**
+- Large-scale logistics operations (Amazon ORF3)
+- Safety, efficiency, and audit precision across distributed environments
+- Real-time bottleneck analysis using troubleshooting protocols
+
+**Academic Systems**
+- Applied networking (switching, routing, ACLs)
+- Economic modeling (CapEx/OpEx, cost-of-change analysis)
+- Translational execution: theory -> operational deployment
+
+**Organizational Systems**
+- 500+ member engagement architecture (NSLS Executive Outreach)
+- Communication pipelines
+- Event logistics as distributed system coordination
+
+**Entrepreneurial Systems**
+- Contruil LLC
+- CYW multi-model AI orchestration framework
+- Triangle Test Protocol
+- Four-Gate Authorization
+- "Awareness In Action" systems newsletter
+
+Parallel network orchestration across domains.
 
 ---
 
-### 2026+ | CYW Framework Productization
-**Infrastructure:** Unity/3D spatial clarity tools  
-**IP Protection:** Patent portfolio (Triangle Test, Four-Gate, multi-model orchestration)  
-**Distribution:** Newsletter -> Workshops -> Licensing/Consulting
+## Capability Vector
+
+The trajectory is structural, not chronological:
+
+- Internal operational leadership within large-scale infrastructure environments
+- Positioning within technology ecosystems focused on network engineering and AI operations
+- Executive-level translation of network thinking into decision architecture
+- Productization of CYW as spatial and software-based clarity infrastructure
+
+Mobility follows topology competence.
 
 ---
 
-## The Pattern Across 20 Years
+## Core Thesis
 
-| Year Range | Role | System Insight |
-|------------|------|----------------|
-| 2004-2014 | Military -> Performance | Command structures = ACLs, Performance = packet delivery |
-| 2015-2020 | Warehouse Operations | Fulfillment centers = Layer 2 switches, Audits = monitoring protocols |
-| 2021-2023 | Academic Network Training | Formal VLAN/routing maps to human systems architecture |
-| 2024-Present | Multi-role operator | Amazon + NSLS + Contruil = parallel network orchestration |
-| 2025-2026 | Mobility + Scale | Internal promotion -> Bay Area -> Live2Lead -> CYW productization |
+Across military, creative, operational, academic, and entrepreneurial systems, the same routing logic persists:
 
----
+**Layer 0:** Clarity infrastructure
+**Layer 1–7:** OSI principles mapped to human decision architecture
+**Routing Protocol:** Explicit boundaries, visible failure modes, predictable cost-of-change
 
-## The Core Thesis
+The tools evolve.
+The topology principles remain constant.
 
-Every system I have operated in - military, creative, warehouse, academic, organizational, entrepreneurial - follows the same routing logic:
-
-**Layer 0:** Establish clarity infrastructure  
-**Layer 1-7:** Map the OSI model to human decision-making  
-**Routing Protocol:** Explicit boundaries, clear failure modes, predictable cost of change
-
-The tools change. The topology principles do not.
-
-**This is how you Control Your World.**
+Control is not dominance.
+It is disciplined routing.
 
 ---
 
-Not a resume. A network diagram of a 20-year routing protocol.
+*Not a resume. A network diagram of a 20-year routing protocol.*
