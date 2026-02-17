@@ -10,11 +10,29 @@ Timothy "Fly" Wheels operates at the intersection of infrastructure, systems des
 This is not a resume.
 It is a topology map.
 
-It traces how routing discipline formed across military command structures, live performance, warehouse infrastructure, academic networking, and organizational architecture — and how those patterns now converge into applied AI orchestration and clarity engineering.
+It traces how routing discipline formed across high-throughput service systems, military command structures, live performance, warehouse infrastructure, academic networking, and organizational architecture — and how those patterns now converge into applied AI orchestration and clarity engineering.
 
 ---
 
 ## Origin Protocol: Where the Routing Logic Formed
+
+### High-Throughput Service Systems -> Spec Discipline
+
+Commercial kitchen environments operate as real-time execution systems with zero tolerance for contamination, strict compliance frameworks, and deterministic specification adherence.
+
+Recipes = executable specifications.
+Health code = compliance infrastructure.
+Line execution = parallel processing under sustained time pressure.
+Ticket flow = queue management.
+Expediter = routing authority.
+
+Cleanliness protocols were not hygiene habits.
+They were preventative maintenance discipline.
+
+Enduring insight: Procedural fidelity under pressure is not a soft skill.
+It is the foundation of uptime culture.
+
+---
 
 ### Military Command -> Performance Systems
 
