@@ -186,4 +186,16 @@ Learn about Control Your World — the multi-AI orchestration framework where yo
 
 View CYW Framework -> /cyw-framework/
 
+---
+
+## Ready to Architect Your Layer 0?
+
+Download the free budget tracker that implements this framework.
+
+**[→ Download Layer 0 Budget Tracker](/tracker/)**
+
+*Automatically creates your own copy in Google Sheets. Start with the Read Me tab.*
+
+---
+
 {{< feedback-cta >}}

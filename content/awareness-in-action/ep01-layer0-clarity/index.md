@@ -219,6 +219,16 @@ Same raw material. Different processing layers. Multiple deployment targets. Zer
 
 ---
 
+## Ready to Architect Your Layer 0?
+
+Download the free budget tracker that implements this framework.
+
+**[→ Download Layer 0 Budget Tracker](/tracker/)**
+
+*Automatically creates your own copy in Google Sheets. Start with the Read Me tab.*
+
+---
+
 ## References
 
 Corporate Finance Institute. (n.d.). *Understanding CapEx vs. OpEx in Corporate Finance*. Retrieved from https://corporatefinanceinstitute.com/resources/accounting/capex-vs-opex/

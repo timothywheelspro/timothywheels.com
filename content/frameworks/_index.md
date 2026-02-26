@@ -3,11 +3,26 @@ title: "Frameworks"
 subtitle: "Catalog of Operational Protocols"
 type: "page"
 layout: "single"
+hideMeta: true
 ---
 
 ## Catalog Overview
 
 This directory serves as a register of protocols used to maintain system integrity. These are not suggestions; they are the defined constraints used to manage failure, assess risk, and route information.
+
+---
+
+## Layer 0: Survival Economics
+
+**The foundation protocol.** Before optimization, you must survive long enough to iterate.
+
+Layer 0 teaches how to calculate your actual survival floor, prescribe VLAN resource allocation, and engineer forcing functions that survive motivation failing.
+
+**Resources**:
+- **[Read: Layer 0 Clarity (Episode 01)](/awareness-in-action/ep01-layer0-clarity/)** — The framework breakdown
+- **[Download: Layer 0 Budget Tracker (Free)](/tracker/)** — The implementation tool
+
+**Key concepts**: Survival floor calculation, VLAN segmentation, prescribed economics, forcing functions
 
 ---
 

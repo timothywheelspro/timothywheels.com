@@ -219,6 +219,16 @@ The strongest infrastructure is not built from single transactions. It is built 
 
 ---
 
+## Ready to Architect Your Layer 0?
+
+Download the free budget tracker that implements this framework.
+
+**[→ Download Layer 0 Budget Tracker](/tracker/)**
+
+*Automatically creates your own copy in Google Sheets. Start with the Read Me tab.*
+
+---
+
 ## Virgil OS Note
 
 The same participation can route to multiple endpoints: legal compliance, relationship depth, case study material, evidence of consistent contribution. Same hours. Multiple processing layers. Strategic deployment. Exponential returns.

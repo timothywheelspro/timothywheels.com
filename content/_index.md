@@ -3,7 +3,17 @@ title: "Timothy Wheels"
 layout: "home"
 ---
 
-## Timothy Wheels
+# Control Your World
+
+**Engineering systems that survive disruption**
+
+Free spreadsheet template for architecting your survival economics.
+
+<div style="text-align: center; margin: 2rem 0;">
+  <a href="/tracker/" style="display: inline-block; padding: 1rem 2rem; background: #00e5ff; color: #000; text-decoration: none; font-weight: bold; border-radius: 4px;">→ Download Layer 0 Budget Tracker</a>
+</div>
+
+*Calculate your survival floor. Prescribe VLAN allocations. Build forcing functions.*
 
 <img src="/images/profile/headshot-professional.jpg" alt="Timothy Wheels headshot" width="320">
 
