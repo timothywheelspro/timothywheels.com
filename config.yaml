@@ -24,8 +24,8 @@ params:
     hero:
       title: "Timothy Wheels"
       subtitle: "Systems Thinker | Infrastructure Architect | Poet"
-      cta_text: "Read Awareness In Action"
-      cta_link: "/awareness-in-action"
+      cta_text: "Download Free Layer 0 Tracker"
+      cta_link: "/tracker/"
 
     featured_content:
       - type: "latest_episode"
@@ -63,6 +63,9 @@ menu:
     - name: "Frameworks"
       url: "/frameworks/"
       weight: 20
+    - name: "Free Tracker"
+      url: "/tracker/"
+      weight: 22
     - name: "Leadership"
       url: "/leadership/"
       weight: 25

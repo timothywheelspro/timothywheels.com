@@ -20,6 +20,9 @@ A 20-year routing protocol: spec discipline in high-throughput service systems, 
 **[Frameworks](/frameworks/)**
 RME reliability models, threat analysis, and failure-mode design — built for operational systems, not slide decks.
 
+**[Layer 0 Budget Tracker](/tracker/)**
+Free spreadsheet template for survival floor, VLAN allocation, and prescribed economics. No signup, no paywall.
+
 **[Awareness In Action](/awareness-in-action/)**
 Systems thinking applied to decisions, drift detection, and clarity architecture — published as operational documentation.
 
