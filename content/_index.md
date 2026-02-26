@@ -34,6 +34,14 @@ Spoken-word performances at the intersection of human systems, machine logic, an
 
 ---
 
+## Newsletter
+
+Weekly Layer 0 insights — framework updates, prescribed economics, and clarity architecture. No spam. Unsubscribe anytime.
+
+<iframe src="https://timothywheels.substack.com/embed" width="100%" height="200" style="border:1px solid #e0e0e0; background:#fff; border-radius:4px; max-width:400px;" frameborder="0" scrolling="no"></iframe>
+
+---
+
 ## Current Work
 
 - [Appeal Audit](/appeal-audit/) — IEEEXtreme 19.0 public audit record (evidence architecture demonstration)
