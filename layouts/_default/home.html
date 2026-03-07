@@ -1,0 +1,160 @@
+{{ define "main" }}
+<div class="home-wrapper">
+
+  {{- partial "home_hero.html" . -}}
+  {{- partial "home_credibility.html" . -}}
+  {{- partial "home_systems.html" . -}}
+  {{- partial "home_builds.html" . -}}
+
+  <!-- ── Architecture Overview Section ── -->
+  <section class="home-section home-arch-overview">
+    <div class="home-container">
+      <h2 class="home-section__title">Architecture Overview</h2>
+      <p class="home-section__sub">Three-layer control architecture — governance, operations, validation.</p>
+      <div class="home-architecture__diagram">
+        {{- partial "diagram-cyw-overview.html" . -}}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Architecture Section ── -->
+  <section class="home-section home-architecture">
+    <div class="home-container">
+      <h2 class="home-section__title">System Architecture</h2>
+      <p class="home-section__sub">CYW / Virgil Two-Axis Architecture — Operational Flow × Governance Control</p>
+      <div class="home-architecture__diagram">
+        {{- partial "diagram-cyw.html" . -}}
+      </div>
+      <p class="home-architecture__caption">
+        Figure: CYW/Virgil Two-Axis Architecture. The CYW framework routes operational
+        decisions through a structured pipeline (observation → routing → validation →
+        execution). A vertical governance layer (Virgil OS) functions as the system control
+        plane, enforcing protocol compliance, maintaining decision traceability, and
+        preserving operational memory. Feedback mechanisms continuously refine routing logic
+        and validation models.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Frameworks Section ── -->
+  <section class="home-section home-frameworks">
+    <div class="home-container">
+      <h2 class="home-section__title">Frameworks</h2>
+      <div class="home-frameworks__grid">
+
+        <div class="home-framework-card">
+          <h3>Control Your World (CYW)</h3>
+          <p>A methodology for routing decisions, validating outputs, and maintaining
+          operational clarity in complex systems.</p>
+          <ul>
+            <li>Multi-model AI orchestration</li>
+            <li>Validator routing systems</li>
+            <li>Decision audit trails</li>
+            <li>Sovereignty infrastructure</li>
+          </ul>
+          <a href="{{ "/cyw-framework/" | absLangURL }}" class="home-link">Explore → CYW Framework</a>
+        </div>
+
+        <div class="home-framework-card">
+          <h3>Reliability Engineering Models</h3>
+          <p>Operational frameworks that translate industrial reliability principles into
+          digital architecture patterns.</p>
+          <ul>
+            <li>RME systems</li>
+            <li>Network engineering principles</li>
+            <li>Failure-mode analysis</li>
+            <li>Resilience modeling</li>
+          </ul>
+          <a href="{{ "/frameworks/" | absLangURL }}" class="home-link">Explore → Frameworks</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Tools Section ── -->
+  <section class="home-section home-tools">
+    <div class="home-container">
+      <h2 class="home-section__title">Tools</h2>
+      <div class="home-tool-card">
+        <h3>Layer 0 Budget Tracker</h3>
+        <p class="home-tool-card__sub">Survival Economics Modeling Tool — Free</p>
+        <p>A spreadsheet framework for modeling survival economics and financial resilience.
+        No signup. No paywall.</p>
+        <ul>
+          <li>Calculate your survival floor</li>
+          <li>Allocate financial VLANs</li>
+          <li>Design economic forcing functions</li>
+        </ul>
+        <a href="{{ "/tracker/" | absLangURL }}" class="home-hero__btn" style="display:inline-block;margin-top:1.25rem;">
+          → Download Layer 0 Budget Tracker
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Operational Documentation Section ── -->
+  <section class="home-section home-writing">
+    <div class="home-container">
+      <h2 class="home-section__title">Operational Documentation</h2>
+      <p class="home-section__sub">Systems thinking applied to real-world decisions,
+      operations, and reliability architecture.</p>
+      <div class="home-writing__grid">
+
+        <a href="{{ "/awareness-in-action/" | absLangURL }}" class="home-writing-card">
+          <h3>Awareness In Action</h3>
+          <p>Decision routing protocols, operational quality gates, infrastructure failure
+          chains, signal-to-noise management.</p>
+        </a>
+
+        <a href="{{ "/frameworks/decision-protocols/" | absLangURL }}" class="home-writing-card">
+          <h3>Decision Protocols</h3>
+          <p>Multi-layer routing stack: triage → domain specialists → escalation →
+          documented resolution.</p>
+        </a>
+
+        <a href="{{ "/case-studies/" | absLangURL }}" class="home-writing-card">
+          <h3>Case Studies</h3>
+          <p>Applied architecture analysis across logistics, academic systems, and
+          AI infrastructure.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Systems Philosophy ── -->
+  <section class="home-section home-philosophy">
+    <div class="home-container">
+      <h2 class="home-section__title">Systems Philosophy</h2>
+      <blockquote class="home-philosophy__quote">
+        Systems fail when signals are ignored, verification is skipped, or decision
+        authority is unclear.
+      </blockquote>
+      <p>My work focuses on building architectures that enforce traceability, validation,
+      and operational clarity — whether in logistics infrastructure, software systems, or
+      AI orchestration. The goal remains constant: systems that remain stable under
+      pressure.</p>
+    </div>
+  </section>
+
+  <!-- ── Newsletter ── -->
+  <section class="home-section home-newsletter">
+    <div class="home-container">
+      <h2 class="home-section__title">Layer 0</h2>
+      <p>Weekly insights on resilience engineering, decision architecture, survival
+      economics, and AI system reliability.</p>
+      <iframe
+        src="https://timothywheels.substack.com/embed"
+        width="100%"
+        height="200"
+        style="border:1px solid #e0e0e0;background:#fff;border-radius:4px;max-width:480px;display:block;margin-top:1rem;"
+        frameborder="0"
+        scrolling="no"
+        title="Layer 0 Newsletter">
+      </iframe>
+    </div>
+  </section>
+
+</div>
+{{ end }}

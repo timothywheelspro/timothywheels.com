@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340" width="520" height="340" role="img" aria-labelledby="cyw-title">
+  <title id="cyw-title">CYW / Virgil Engine  Human-Directed AI Orchestration Architecture</title>
+  <defs>
+    <style>
+      .box { fill: #f8f9fa; stroke: #495057; stroke-width: 1.5; }
+      .gate { fill: #e9ecef; stroke: #495057; stroke-width: 1.5; }
+      .human { fill: #d4edda; stroke: #28a745; stroke-width: 1.5; }
+      .flow { stroke: #6c757d; stroke-width: 1.5; fill: none; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #212529; }
+      .label-sm { font-size: 9px; fill: #6c757d; }
+    </style>
+  </defs>
+  <!-- INPUT -->
+  <rect x="210" y="10" width="100" height="28" rx="4" class="box"/>
+  <text x="260" y="28" text-anchor="middle" class="label">INPUT</text>
+  <line x1="260" y1="38" x2="260" y2="58" class="flow"/>
+  <!-- Orchestrator -->
+  <rect x="180" y="58" width="160" height="36" rx="4" class="gate"/>
+  <text x="260" y="78" text-anchor="middle" class="label">Orchestrator · Policy Routing</text>
+  <line x1="260" y1="94" x2="260" y2="114" class="flow"/>
+  <!-- Routing Validator -->
+  <rect x="200" y="114" width="120" height="32" rx="4" class="gate"/>
+  <text x="260" y="134" text-anchor="middle" class="label">Routing Validator</text>
+  <line x1="260" y1="146" x2="260" y2="166" class="flow"/>
+  <!-- Validators A B C -->
+  <line x1="260" y1="166" x2="140" y2="200" class="flow"/>
+  <line x1="260" y1="166" x2="260" y2="200" class="flow"/>
+  <line x1="260" y1="166" x2="380" y2="200" class="flow"/>
+  <rect x="80" y="200" width="120" height="36" rx="4" class="box"/>
+  <text x="140" y="218" text-anchor="middle" class="label">Validator A</text>
+  <text x="140" y="230" text-anchor="middle" class="label-sm">Factual</text>
+  <rect x="200" y="200" width="120" height="36" rx="4" class="box"/>
+  <text x="260" y="218" text-anchor="middle" class="label">Validator B</text>
+  <text x="260" y="230" text-anchor="middle" class="label-sm">Structural</text>
+  <rect x="320" y="200" width="120" height="36" rx="4" class="box"/>
+  <text x="380" y="218" text-anchor="middle" class="label">Validator C</text>
+  <text x="380" y="230" text-anchor="middle" class="label-sm">Audit</text>
+  <line x1="140" y1="236" x2="260" y2="270" class="flow"/>
+  <line x1="260" y1="236" x2="260" y2="270" class="flow"/>
+  <line x1="380" y1="236" x2="260" y2="270" class="flow"/>
+  <!-- Consensus -->
+  <rect x="200" y="270" width="120" height="28" rx="4" class="gate"/>
+  <text x="260" y="288" text-anchor="middle" class="label">Consensus</text>
+  <line x1="260" y1="298" x2="260" y2="318" class="flow"/>
+  <!-- Human Gate -->
+  <rect x="180" y="318" width="160" height="36" rx="4" class="human"/>
+  <text x="260" y="338" text-anchor="middle" class="label">Human Gate · Approval</text>
+  <line x1="260" y1="354" x2="260" y2="374" class="flow"/>
+  <!-- OUTPUT -->
+  <rect x="210" y="374" width="100" height="28" rx="4" class="box"/>
+  <text x="260" y="392" text-anchor="middle" class="label">OUTPUT</text>
+</svg>

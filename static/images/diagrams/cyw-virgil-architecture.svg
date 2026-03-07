@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 530" style="width:100%;height:auto;font-family:Arial,Helvetica,sans-serif;">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#7a9fbd"/>
+    </marker>
+    <linearGradient id="hdrGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4d7a9e"/>
+      <stop offset="100%" stop-color="#6891ae"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ddeef8"/>
+      <stop offset="100%" stop-color="#eef5fb"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="530" fill="#f9fbfc" rx="6"/>
+
+  <!-- ── TITLE ── -->
+  <text x="500" y="32" text-anchor="middle" font-size="18" font-weight="bold"
+        fill="#1a2e3a" font-family="Georgia,serif">CYW / Virgil Two-Axis Architecture</text>
+  <line x1="40" y1="42" x2="960" y2="42" stroke="#d0dde6" stroke-width="1"/>
+
+  <!-- ── GOVERNANCE / CONTROL PLANE ── -->
+  <text x="500" y="60" text-anchor="middle" font-size="12" font-style="italic"
+        fill="#557">Governance / Control Plane</text>
+
+  <!-- Virgil OS outer box -->
+  <rect x="40" y="68" width="920" height="132" rx="5" fill="url(#boxGrad)"
+        stroke="#7a9fbd" stroke-width="1.5"/>
+  <!-- Virgil OS header bar -->
+  <rect x="40" y="68" width="920" height="38" rx="5" fill="url(#hdrGrad)"/>
+  <rect x="40" y="88"  width="920" height="18" fill="url(#hdrGrad)"/>
+  <text x="500" y="92" text-anchor="middle" font-size="14" font-weight="bold"
+        fill="white" letter-spacing="0.5">Virgil OS</text>
+
+  <!-- Virgil OS content — two columns -->
+  <text x="130" y="122" font-size="11.5" fill="#2c4a6e">• Observe → Escalate → Document → Resume</text>
+  <text x="130" y="142" font-size="11.5" fill="#2c4a6e">• Protocol Enforcement</text>
+  <text x="570" y="122" font-size="11.5" fill="#2c4a6e">• Audit &amp; Traceability</text>
+  <text x="570" y="142" font-size="11.5" fill="#2c4a6e">• Operational Memory</text>
+
+  <!-- ── UPWARD ARROW: pipeline → Virgil OS ── -->
+  <line x1="453" y1="248" x2="453" y2="203"
+        stroke="#7a9fbd" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- ── OPERATIONAL FLOW LABEL ── -->
+  <text x="500" y="237" text-anchor="middle" font-size="12" font-style="italic"
+        fill="#557">Operational Flow / Decision Pipeline</text>
+
+  <!-- ────────────────────────────────────────────
+       PIPELINE BOXES  (y=252, h=100)
+       x positions: 15 | 193 | 371 | 563 | 751
+       ──────────────────────────────────────────── -->
+
+  <!-- Environment -->
+  <rect x="15"  y="252" width="150" height="100" rx="4" fill="white"
+        stroke="#aac3d5" stroke-width="1.5"/>
+  <text x="90"  y="274" text-anchor="middle" font-size="11.5" font-weight="bold"
+        fill="#1a2e3a">Environment</text>
+  <text x="90"  y="294" text-anchor="middle" font-size="10.5" fill="#444">• Human Signals</text>
+  <text x="90"  y="310" text-anchor="middle" font-size="10.5" fill="#444">• AI Outputs</text>
+  <text x="90"  y="326" text-anchor="middle" font-size="10.5" fill="#444">• Telemetry</text>
+
+  <!-- → -->
+  <line x1="167" y1="302" x2="191" y2="302"
+        stroke="#7a9fbd" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Observation -->
+  <rect x="193" y="252" width="150" height="100" rx="4" fill="white"
+        stroke="#aac3d5" stroke-width="1.5"/>
+  <text x="268" y="274" text-anchor="middle" font-size="11.5" font-weight="bold"
+        fill="#1a2e3a">Observation</text>
+  <text x="268" y="298" text-anchor="middle" font-size="10.5" fill="#444">• Signal &amp; Context</text>
+  <text x="268" y="314" text-anchor="middle" font-size="10.5" fill="#444">Analysis</text>
+
+  <!-- → -->
+  <line x1="345" y1="302" x2="369" y2="302"
+        stroke="#7a9fbd" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- CYW Routing Engine -->
+  <rect x="371" y="252" width="164" height="100" rx="4" fill="white"
+        stroke="#aac3d5" stroke-width="1.5"/>
+  <text x="453" y="274" text-anchor="middle" font-size="11.5" font-weight="bold"
+        fill="#1a2e3a">CYW Routing</text>
+  <text x="453" y="290" text-anchor="middle" font-size="11.5" font-weight="bold"
+        fill="#1a2e3a">Engine</text>
+  <text x="453" y="311" text-anchor="middle" font-size="10.5" font-style="italic"
+        fill="#556">Decision Triage</text>
+  <text x="453" y="327" text-anchor="middle" font-size="10.5" font-style="italic"
+        fill="#556">&amp; Assignment</text>
+
+  <!-- → -->
+  <line x1="537" y1="302" x2="561" y2="302"
+        stroke="#7a9fbd" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Validation Pipeline -->
+  <rect x="563" y="252" width="156" height="100" rx="4" fill="white"
+        stroke="#aac3d5" stroke-width="1.5"/>
+  <text x="641" y="274" text-anchor="middle" font-size="11.5" font-weight="bold"
+        fill="#1a2e3a">Validation</text>
+  <text x="641" y="290" text-anchor="middle" font-size="11.5" font-weight="bold"
+        fill="#1a2e3a">Pipeline</text>
+  <text x="641" y="311" text-anchor="middle" font-size="10.5" fill="#444">Meta, Routing,</text>
+  <text x="641" y="327" text-anchor="middle" font-size="10.5" fill="#444">Validator Set</text>
+
+  <!-- → -->
+  <line x1="721" y1="302" x2="749" y2="302"
+        stroke="#7a9fbd" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Execution -->
+  <rect x="751" y="252" width="148" height="100" rx="4" fill="white"
+        stroke="#aac3d5" stroke-width="1.5"/>
+  <text x="825" y="274" text-anchor="middle" font-size="11.5" font-weight="bold"
+        fill="#1a2e3a">Execution</text>
+  <text x="825" y="298" text-anchor="middle" font-size="10.5" font-style="italic"
+        fill="#556">Operations &amp;</text>
+  <text x="825" y="314" text-anchor="middle" font-size="10.5" font-style="italic"
+        fill="#556">Deployment</text>
+
+  <!-- ── Dashed divider below pipeline ── -->
+  <line x1="40" y1="368" x2="960" y2="368"
+        stroke="#d0dde6" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- ── FEEDBACK LOOP ── -->
+
+  <!-- Execution → down → left → into Feedback box top -->
+  <path d="M 825 354 L 825 400 L 453 400 L 453 420"
+        stroke="#7a9fbd" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+
+  <!-- Feedback box -->
+  <rect x="343" y="420" width="220" height="76" rx="4" fill="white"
+        stroke="#aac3d5" stroke-width="1.5"/>
+  <text x="453" y="446" text-anchor="middle" font-size="12" font-weight="bold"
+        fill="#1a2e3a">Feedback Loop</text>
+  <text x="453" y="467" text-anchor="middle" font-size="10.5" font-style="italic"
+        fill="#556">• Learning &amp; Model Updates</text>
+
+  <!-- Feedback box left → left → up → Observation bottom -->
+  <path d="M 343 458 L 268 458 L 268 354"
+        stroke="#7a9fbd" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+
+  <!-- ── Virgil OS bottom control arrows (dashed, downward from governance to pipeline) ── -->
+  <line x1="268" y1="200" x2="268" y2="250"
+        stroke="#7a9fbd" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)" opacity="0.6"/>
+  <line x1="641" y1="200" x2="641" y2="250"
+        stroke="#7a9fbd" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)" opacity="0.6"/>
+
+</svg>

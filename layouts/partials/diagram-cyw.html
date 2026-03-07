@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 530"
+     class="cyw-diagram" role="img" aria-label="CYW/Virgil Two-Axis Architecture Diagram"
+     style="width:100%;height:auto;font-family:Arial,Helvetica,sans-serif;">
+  <defs>
+    <marker id="cyw-arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon class="cyw-arrowhead" points="0 0, 8 3, 0 6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect class="cyw-bg" width="1000" height="530" rx="6"/>
+
+  <!-- Title -->
+  <text class="cyw-title-text" x="500" y="32" text-anchor="middle"
+        font-size="18" font-weight="bold" font-family="Georgia,serif">CYW / Virgil Two-Axis Architecture</text>
+  <line class="cyw-divider" x1="40" y1="42" x2="960" y2="42"/>
+
+  <!-- Governance / Control Plane label -->
+  <text class="cyw-section-label" x="500" y="60" text-anchor="middle"
+        font-size="12" font-style="italic">Governance / Control Plane</text>
+
+  <!-- Virgil OS outer box -->
+  <rect class="cyw-virgil-body" x="40" y="68" width="920" height="132" rx="5"/>
+  <!-- Virgil OS header bar -->
+  <rect class="cyw-virgil-header" x="40" y="68" width="920" height="40" rx="5"/>
+  <rect class="cyw-virgil-header" x="40" y="88"  width="920" height="20"/>
+  <text class="cyw-virgil-title" x="500" y="92" text-anchor="middle"
+        font-size="14" font-weight="bold" letter-spacing="0.5">Virgil OS</text>
+
+  <!-- Virgil OS content — two columns -->
+  <text class="cyw-box-content" x="130" y="122" font-size="11.5">• Observe → Escalate → Document → Resume</text>
+  <text class="cyw-box-content" x="130" y="142" font-size="11.5">• Protocol Enforcement</text>
+  <text class="cyw-box-content" x="570" y="122" font-size="11.5">• Audit &amp; Traceability</text>
+  <text class="cyw-box-content" x="570" y="142" font-size="11.5">• Operational Memory</text>
+
+  <!-- Upward arrow: pipeline → Virgil OS -->
+  <line class="cyw-arrow" x1="453" y1="248" x2="453" y2="203" marker-end="url(#cyw-arr)"/>
+
+  <!-- Operational Flow / Decision Pipeline label -->
+  <text class="cyw-section-label" x="500" y="237" text-anchor="middle"
+        font-size="12" font-style="italic">Operational Flow / Decision Pipeline</text>
+
+  <!-- ── Pipeline boxes ── -->
+
+  <!-- Environment -->
+  <rect class="cyw-box" x="15"  y="252" width="150" height="100" rx="4"/>
+  <text class="cyw-box-title"   x="90"  y="274" text-anchor="middle" font-size="11.5" font-weight="bold">Environment</text>
+  <text class="cyw-box-content" x="90"  y="294" text-anchor="middle" font-size="10.5">• Human Signals</text>
+  <text class="cyw-box-content" x="90"  y="310" text-anchor="middle" font-size="10.5">• AI Outputs</text>
+  <text class="cyw-box-content" x="90"  y="326" text-anchor="middle" font-size="10.5">• Telemetry</text>
+
+  <line class="cyw-arrow" x1="167" y1="302" x2="191" y2="302" marker-end="url(#cyw-arr)"/>
+
+  <!-- Observation -->
+  <rect class="cyw-box" x="193" y="252" width="150" height="100" rx="4"/>
+  <text class="cyw-box-title"   x="268" y="274" text-anchor="middle" font-size="11.5" font-weight="bold">Observation</text>
+  <text class="cyw-box-content" x="268" y="298" text-anchor="middle" font-size="10.5">• Signal &amp; Context</text>
+  <text class="cyw-box-content" x="268" y="314" text-anchor="middle" font-size="10.5">Analysis</text>
+
+  <line class="cyw-arrow" x1="345" y1="302" x2="369" y2="302" marker-end="url(#cyw-arr)"/>
+
+  <!-- CYW Routing Engine -->
+  <rect class="cyw-box" x="371" y="252" width="164" height="100" rx="4"/>
+  <text class="cyw-box-title"   x="453" y="274" text-anchor="middle" font-size="11.5" font-weight="bold">CYW Routing</text>
+  <text class="cyw-box-title"   x="453" y="290" text-anchor="middle" font-size="11.5" font-weight="bold">Engine</text>
+  <text class="cyw-box-italic"  x="453" y="311" text-anchor="middle" font-size="10.5" font-style="italic">Decision Triage</text>
+  <text class="cyw-box-italic"  x="453" y="327" text-anchor="middle" font-size="10.5" font-style="italic">&amp; Assignment</text>
+
+  <line class="cyw-arrow" x1="537" y1="302" x2="561" y2="302" marker-end="url(#cyw-arr)"/>
+
+  <!-- Validation Pipeline -->
+  <rect class="cyw-box" x="563" y="252" width="156" height="100" rx="4"/>
+  <text class="cyw-box-title"   x="641" y="274" text-anchor="middle" font-size="11.5" font-weight="bold">Validation</text>
+  <text class="cyw-box-title"   x="641" y="290" text-anchor="middle" font-size="11.5" font-weight="bold">Pipeline</text>
+  <text class="cyw-box-content" x="641" y="311" text-anchor="middle" font-size="10.5">Meta, Routing,</text>
+  <text class="cyw-box-content" x="641" y="327" text-anchor="middle" font-size="10.5">Validator Set</text>
+
+  <line class="cyw-arrow" x1="721" y1="302" x2="749" y2="302" marker-end="url(#cyw-arr)"/>
+
+  <!-- Execution -->
+  <rect class="cyw-box" x="751" y="252" width="148" height="100" rx="4"/>
+  <text class="cyw-box-title"  x="825" y="274" text-anchor="middle" font-size="11.5" font-weight="bold">Execution</text>
+  <text class="cyw-box-italic" x="825" y="298" text-anchor="middle" font-size="10.5" font-style="italic">Operations &amp;</text>
+  <text class="cyw-box-italic" x="825" y="314" text-anchor="middle" font-size="10.5" font-style="italic">Deployment</text>
+
+  <!-- Dashed divider below pipeline -->
+  <line class="cyw-divider-dash" x1="40" y1="368" x2="960" y2="368"/>
+
+  <!-- Execution → Feedback Loop -->
+  <path class="cyw-arrow" d="M 825 354 L 825 405 L 453 405 L 453 420" fill="none" marker-end="url(#cyw-arr)"/>
+
+  <!-- Feedback Loop box -->
+  <rect class="cyw-box" x="343" y="420" width="220" height="76" rx="4"/>
+  <text class="cyw-box-title"  x="453" y="447" text-anchor="middle" font-size="12"   font-weight="bold">Feedback Loop</text>
+  <text class="cyw-box-italic" x="453" y="467" text-anchor="middle" font-size="10.5" font-style="italic">• Learning &amp; Model Updates</text>
+
+  <!-- Feedback Loop → Observation -->
+  <path class="cyw-arrow" d="M 343 458 L 268 458 L 268 354" fill="none" marker-end="url(#cyw-arr)"/>
+
+  <!-- Control arrows: Virgil → pipeline (dashed) -->
+  <line class="cyw-ctrl-arrow" x1="268" y1="200" x2="268" y2="250" marker-end="url(#cyw-arr)"/>
+  <line class="cyw-ctrl-arrow" x1="641" y1="200" x2="641" y2="250" marker-end="url(#cyw-arr)"/>
+
+</svg>

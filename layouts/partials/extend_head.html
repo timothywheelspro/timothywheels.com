@@ -1,3 +1,7 @@
+{{- if .IsHome }}
+<link rel="stylesheet" href="{{ "css/home.css" | absURL }}">
+{{- end }}
+
 <!-- KPI instrumentation placeholder: connect analytics here -->
 <script>
     window.__kpi = window.__kpi || {};

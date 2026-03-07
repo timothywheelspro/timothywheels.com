@@ -5,7 +5,7 @@ theme: "PaperMod"
 
 params:
   author: "Timothy Wheels"
-  description: "Systems thinker, infrastructure architect, and poet applying network principles to human decision-making"
+  description: "Systems architect designing routing protocols, validation frameworks, and operational architectures that keep organizations running under pressure."
   tagline: "Control Your World - Applied Systems Thinking"
 
   social:
@@ -51,36 +51,24 @@ taxonomies:
 
 menu:
   main:
-    - name: "Home"
-      url: "/"
-      weight: 1
-    - name: "About"
-      url: "/about/"
+    - name: "Frameworks"
+      url: "/frameworks/"
       weight: 10
     - name: "Portfolio"
       url: "/portfolio/"
-      weight: 15
-    - name: "Frameworks"
-      url: "/frameworks/"
       weight: 20
-    - name: "Free Tracker"
-      url: "/tracker/"
-      weight: 22
-    - name: "Leadership"
-      url: "/leadership/"
-      weight: 25
-    - name: "Awareness In Action"
-      url: "/awareness-in-action/"
-      weight: 30
-    - name: "Ideas to Impact"
-      url: "/ideas-to-impact/"
-      weight: 35
-    - name: "Poetry"
-      url: "/poetry/"
-      weight: 40
     - name: "CYW"
       url: "/cyw-framework/"
+      weight: 30
+    - name: "Writing"
+      url: "/awareness-in-action/"
+      weight: 40
+    - name: "Tracker"
+      url: "/tracker/"
       weight: 50
-    - name: "Case Studies"
-      url: "/case-studies/"
+    - name: "Poetry"
+      url: "/poetry/"
       weight: 60
+    - name: "About"
+      url: "/about/"
+      weight: 70

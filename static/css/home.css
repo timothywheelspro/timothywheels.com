@@ -1,0 +1,250 @@
+/* Homepage — Systems Architect Landing (Stanford HAI / MIT CSAIL style) */
+
+.home-architect {
+  --home-max: 720px;
+  --home-gap: 3rem;
+  --home-muted: #555;
+  --home-accent: #0066cc;
+  --home-border: #e5e5e5;
+}
+
+.home-architect .home-hero {
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--home-border);
+}
+
+.home-architect .home-hero h1 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+
+.home-architect .home-hero .subtitle {
+  font-size: 1rem;
+  color: var(--home-muted);
+  margin: 0 0 1.5rem;
+  font-weight: 500;
+}
+
+.home-architect .home-hero .tagline {
+  font-size: 1.05rem;
+  max-width: 560px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.home-architect .home-hero .cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.home-architect .home-hero .cta-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+}
+
+.home-architect .home-hero .cta-btn.primary {
+  background: var(--home-accent);
+  color: #fff;
+  border: none;
+}
+
+.home-architect .home-hero .cta-btn.secondary {
+  background: transparent;
+  color: var(--home-accent);
+  border: 2px solid var(--home-accent);
+}
+
+.home-architect .home-hero .cta-btn:hover {
+  opacity: 0.88;
+}
+
+.home-architect .home-section {
+  max-width: var(--home-max);
+  margin: 0 auto;
+  padding: var(--home-gap) 1.5rem;
+}
+
+.home-architect .home-section h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  letter-spacing: -0.01em;
+}
+
+.home-architect .home-section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.home-architect .home-section p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #444;
+  margin: 0 0 0.75rem;
+}
+
+.home-architect .home-section ul {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.home-architect .home-section li {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.home-architect .home-credibility {
+  background: #f8f9fa;
+  border-top: 1px solid var(--home-border);
+}
+
+.home-architect .home-stack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.home-architect .home-stack-col h4 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--home-muted);
+  margin: 0 0 0.5rem;
+}
+
+.home-architect .home-stack-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-architect .home-stack-col li {
+  font-size: 0.9rem;
+  padding: 0.15rem 0;
+}
+
+.home-architect .home-systems {
+  border-top: 1px solid var(--home-border);
+}
+
+.home-architect .home-system-card {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--home-border);
+}
+
+.home-architect .home-system-card:last-child {
+  border-bottom: none;
+}
+
+.home-architect .home-system-card h3 {
+  margin-top: 0;
+}
+
+.home-architect .home-system-card .stack-tag {
+  font-size: 0.8rem;
+  color: var(--home-muted);
+  margin-top: 0.5rem;
+}
+
+.home-architect .home-architecture {
+  background: #f8f9fa;
+  border-top: 1px solid var(--home-border);
+}
+
+.home-architect .home-architecture .diagram-wrap {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid var(--home-border);
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.home-architect .home-architecture .diagram-wrap svg {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.home-architect .home-frameworks {
+  border-top: 1px solid var(--home-border);
+}
+
+.home-architect .home-tools {
+  background: #f8f9fa;
+  border-top: 1px solid var(--home-border);
+}
+
+.home-architect .home-tools .tool-card {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--home-border);
+}
+
+.home-architect .home-tools .tool-card:last-child {
+  border-bottom: none;
+}
+
+.home-architect .home-writing {
+  border-top: 1px solid var(--home-border);
+}
+
+.home-architect .home-writing .writing-link {
+  display: block;
+  padding: 0.75rem 0;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid var(--home-border);
+  font-size: 0.95rem;
+}
+
+.home-architect .home-writing .writing-link:hover {
+  color: var(--home-accent);
+}
+
+.home-architect .home-philosophy {
+  background: #f0f2f5;
+  border-top: 1px solid var(--home-border);
+  font-style: italic;
+}
+
+.home-architect .home-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--home-muted);
+  border-bottom: 1px solid var(--home-border);
+}
+
+.home-architect .home-metrics span {
+  font-weight: 600;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .home-architect .home-hero {
+    padding: 3rem 1rem 2rem;
+  }
+  .home-architect .home-section {
+    padding: 2rem 1rem;
+  }
+}

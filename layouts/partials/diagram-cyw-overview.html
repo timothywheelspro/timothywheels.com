@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 295"
+     class="cyw-ov-diagram" role="img" aria-label="CYW Three-Layer Architecture Overview"
+     style="width:100%;height:auto;font-family:Arial,Helvetica,sans-serif;">
+  <defs>
+    <marker id="cyw-ov-arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon class="cyw-ov-arrowhead" points="0 0, 8 3, 0 6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect class="cyw-ov-bg" width="820" height="295" rx="6"/>
+
+  <!-- ── Layer 1: Control Plane / Virgil OS (y=18–90) ── -->
+  <rect class="cyw-ov-l1-body" x="30" y="18" width="760" height="72" rx="4"/>
+  <rect class="cyw-ov-l1-hdr"  x="30" y="18" width="760" height="26" rx="4"/>
+  <rect class="cyw-ov-l1-hdr"  x="30" y="33" width="760" height="11"/>
+  <text class="cyw-ov-l1-title" x="410" y="35" text-anchor="middle"
+        font-size="11" font-weight="bold" letter-spacing="0.5">CONTROL PLANE — Virgil OS</text>
+
+  <line class="cyw-ov-col" x1="287" y1="44" x2="287" y2="86"/>
+  <line class="cyw-ov-col" x1="533" y1="44" x2="533" y2="86"/>
+
+  <text class="cyw-ov-col-lbl" x="158" y="61" text-anchor="middle" font-size="10">Protocol Enforcement</text>
+  <text class="cyw-ov-col-sub" x="158" y="75" text-anchor="middle" font-size="9">Observe · Escalate · Document</text>
+
+  <text class="cyw-ov-col-lbl" x="410" y="61" text-anchor="middle" font-size="10">Decision Traceability</text>
+  <text class="cyw-ov-col-sub" x="410" y="75" text-anchor="middle" font-size="9">Audit trail · Chain of custody</text>
+
+  <text class="cyw-ov-col-lbl" x="662" y="61" text-anchor="middle" font-size="10">Operational Memory</text>
+  <text class="cyw-ov-col-sub" x="662" y="75" text-anchor="middle" font-size="9">State persistence · Context recall</text>
+
+  <!-- Arrows gap 1 (y=90–115) -->
+  <line class="cyw-ov-arr-dn" x1="392" y1="92"  x2="392" y2="112" marker-end="url(#cyw-ov-arr)"/>
+  <line class="cyw-ov-arr-up" x1="428" y1="112" x2="428" y2="92"  marker-end="url(#cyw-ov-arr)"/>
+  <text class="cyw-ov-arr-lbl" x="384" y="106" text-anchor="end"   font-size="8.5">govern</text>
+  <text class="cyw-ov-arr-lbl" x="436" y="106" text-anchor="start" font-size="8.5">audit</text>
+
+  <!-- ── Layer 2: Data Plane / CYW Framework (y=115–187) ── -->
+  <rect class="cyw-ov-l2-body" x="30" y="115" width="760" height="72" rx="4"/>
+  <rect class="cyw-ov-l2-hdr"  x="30" y="115" width="760" height="26" rx="4"/>
+  <rect class="cyw-ov-l2-hdr"  x="30" y="130" width="760" height="11"/>
+  <text class="cyw-ov-l2-title" x="410" y="132" text-anchor="middle"
+        font-size="11" font-weight="bold" letter-spacing="0.5">DATA PLANE — CYW Framework</text>
+
+  <!-- Pipeline: 4 nodes at x=130,303,477,650 -->
+  <text class="cyw-ov-pipe" x="130" y="153" text-anchor="middle" font-size="10">Observation</text>
+  <text class="cyw-ov-col-sub" x="130" y="167" text-anchor="middle" font-size="9">Signal analysis</text>
+  <line class="cyw-ov-parr" x1="178" y1="158" x2="253" y2="158" marker-end="url(#cyw-ov-arr)"/>
+
+  <text class="cyw-ov-pipe" x="303" y="153" text-anchor="middle" font-size="10">CYW Routing</text>
+  <text class="cyw-ov-col-sub" x="303" y="167" text-anchor="middle" font-size="9">Decision triage</text>
+  <line class="cyw-ov-parr" x1="351" y1="158" x2="424" y2="158" marker-end="url(#cyw-ov-arr)"/>
+
+  <text class="cyw-ov-pipe" x="477" y="153" text-anchor="middle" font-size="10">Validation</text>
+  <text class="cyw-ov-col-sub" x="477" y="167" text-anchor="middle" font-size="9">Multi-gate pipeline</text>
+  <line class="cyw-ov-parr" x1="525" y1="158" x2="598" y2="158" marker-end="url(#cyw-ov-arr)"/>
+
+  <text class="cyw-ov-pipe" x="650" y="153" text-anchor="middle" font-size="10">Execution</text>
+  <text class="cyw-ov-col-sub" x="650" y="167" text-anchor="middle" font-size="9">Deployment ops</text>
+
+  <!-- Arrows gap 2 (y=187–210) -->
+  <line class="cyw-ov-arr-dn" x1="392" y1="189" x2="392" y2="208" marker-end="url(#cyw-ov-arr)"/>
+  <line class="cyw-ov-arr-up" x1="428" y1="208" x2="428" y2="189" marker-end="url(#cyw-ov-arr)"/>
+  <text class="cyw-ov-arr-lbl" x="384" y="203" text-anchor="end"   font-size="8.5">validate</text>
+  <text class="cyw-ov-arr-lbl" x="436" y="203" text-anchor="start" font-size="8.5">results</text>
+
+  <!-- ── Layer 3: Validation Layer / Triangle Test (y=210–282) ── -->
+  <rect class="cyw-ov-l3-body" x="30" y="210" width="760" height="72" rx="4"/>
+  <rect class="cyw-ov-l3-hdr"  x="30" y="210" width="760" height="26" rx="4"/>
+  <rect class="cyw-ov-l3-hdr"  x="30" y="225" width="760" height="11"/>
+  <text class="cyw-ov-l3-title" x="410" y="228" text-anchor="middle"
+        font-size="11" font-weight="bold" letter-spacing="0.5">VALIDATION LAYER — Triangle Test Protocol</text>
+
+  <line class="cyw-ov-col" x1="287" y1="236" x2="287" y2="278"/>
+  <line class="cyw-ov-col" x1="533" y1="236" x2="533" y2="278"/>
+
+  <text class="cyw-ov-col-lbl" x="158" y="254" text-anchor="middle" font-size="10">Validator A</text>
+  <text class="cyw-ov-col-sub" x="158" y="268" text-anchor="middle" font-size="9">Primary assessment</text>
+
+  <text class="cyw-ov-col-lbl" x="410" y="254" text-anchor="middle" font-size="10">Validator B — Consensus</text>
+  <text class="cyw-ov-col-sub" x="410" y="268" text-anchor="middle" font-size="9">Quality gates · Halt logic</text>
+
+  <text class="cyw-ov-col-lbl" x="662" y="254" text-anchor="middle" font-size="10">Validator C</text>
+  <text class="cyw-ov-col-sub" x="662" y="268" text-anchor="middle" font-size="9">Escalation routing</text>
+
+</svg>

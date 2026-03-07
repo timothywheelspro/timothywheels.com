@@ -151,3 +151,654 @@ Custom styles bundled with site assets.
         grid-template-columns: 1fr;
     }
 }
+
+/* ============================================================
+   HOMEPAGE REDESIGN — Systems Architect Layout
+   ============================================================ */
+
+/* ── Shared container & section chrome ── */
+.home-wrapper {
+    width: 100%;
+}
+
+.home-section {
+    padding: 3.5rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.home-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.home-section__title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.home-section__sub {
+    font-size: 0.95rem;
+    color: var(--secondary);
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+/* ── Hero ── */
+.home-hero {
+    padding: 4rem 0 3rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.home-hero__inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.home-hero__title {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    color: var(--primary);
+}
+
+.home-hero__subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--secondary);
+    letter-spacing: 0.04em;
+    margin-bottom: 1.75rem;
+}
+
+.home-hero__tagline {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--primary);
+    max-width: 680px;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+.home-hero__desc {
+    font-size: 0.95rem;
+    color: var(--secondary);
+    max-width: 640px;
+    line-height: 1.65;
+    margin-bottom: 2rem;
+}
+
+.home-hero__focus {
+    margin-bottom: 2rem;
+}
+
+.home-hero__focus strong {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.home-hero__focus ul {
+    margin: 0;
+    padding-left: 1rem;
+    color: var(--primary);
+    font-size: 0.95rem;
+    line-height: 2;
+}
+
+/* Metrics strip */
+.home-hero__metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    max-width: 760px;
+}
+
+.home-hero__metrics span {
+    padding: 0.85rem 1rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--primary);
+    background: var(--code-bg);
+    border-right: 1px solid var(--border);
+    text-align: center;
+    line-height: 1.4;
+}
+
+.home-hero__metrics span:last-child {
+    border-right: none;
+}
+
+/* CTA buttons */
+.home-hero__ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.home-hero__btn {
+    display: inline-block;
+    padding: 0.65rem 1.4rem;
+    background: var(--primary);
+    color: var(--theme);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: opacity 0.18s;
+}
+
+.home-hero__btn:hover {
+    opacity: 0.82;
+    color: var(--theme);
+    text-decoration: none;
+}
+
+/* ── Credibility / Background ── */
+.home-credibility__text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--secondary);
+    max-width: 700px;
+}
+
+.home-credibility__stack {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.home-stack__col h3 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.home-stack__col ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    font-size: 0.9rem;
+    line-height: 2;
+    color: var(--primary);
+}
+
+/* ── Featured Systems ── */
+.home-systems__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.home-system-card {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--code-bg);
+}
+
+.home-system-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.home-system-card__sub {
+    font-size: 0.82rem;
+    color: var(--secondary);
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0.85rem;
+}
+
+.home-system-card p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--secondary);
+}
+
+.home-system-card ul {
+    padding-left: 1rem;
+    font-size: 0.85rem;
+    line-height: 1.9;
+    color: var(--secondary);
+}
+
+.home-system-card__stack {
+    font-size: 0.78rem;
+    font-family: var(--mono-font);
+    color: var(--secondary);
+    margin-top: 1rem;
+    margin-bottom: 0;
+    border-top: 1px solid var(--border);
+    padding-top: 0.75rem;
+}
+
+/* ── Architecture Diagram ── */
+.home-architecture__diagram {
+    margin: 1.75rem 0 1rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.home-arch-diagram {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home-architecture__caption {
+    font-size: 0.82rem;
+    color: var(--secondary);
+    font-style: italic;
+    text-align: center;
+    max-width: 720px;
+    margin: 0.5rem auto 0;
+    line-height: 1.6;
+}
+
+/* ── Frameworks ── */
+.home-frameworks__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.home-framework-card {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.home-framework-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.home-framework-card p {
+    font-size: 0.88rem;
+    color: var(--secondary);
+    line-height: 1.6;
+}
+
+.home-framework-card ul {
+    padding-left: 1rem;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    line-height: 1.9;
+    margin-bottom: 1rem;
+}
+
+.home-link {
+    font-size: 0.87rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+/* ── Tools ── */
+.home-tool-card {
+    max-width: 560px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--code-bg);
+    margin-top: 1.5rem;
+}
+
+.home-tool-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.home-tool-card__sub {
+    font-size: 0.82rem;
+    font-style: italic;
+    color: var(--secondary);
+    margin-top: 0;
+    margin-bottom: 0.85rem;
+}
+
+.home-tool-card ul {
+    padding-left: 1rem;
+    font-size: 0.88rem;
+    color: var(--secondary);
+    line-height: 1.9;
+}
+
+/* ── Operational Documentation ── */
+.home-writing__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.home-writing-card {
+    display: block;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: inherit;
+    text-decoration: none;
+    transition: background 0.15s;
+}
+
+.home-writing-card:hover {
+    background: var(--code-bg);
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-writing-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.home-writing-card p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    line-height: 1.6;
+}
+
+/* ── Systems Philosophy ── */
+.home-philosophy__quote {
+    border-left: 3px solid var(--primary);
+    padding: 0.75rem 0 0.75rem 1.5rem;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--primary);
+    margin: 1.5rem 0;
+    max-width: 680px;
+}
+
+.home-philosophy p {
+    font-size: 0.95rem;
+    color: var(--secondary);
+    max-width: 680px;
+    line-height: 1.7;
+}
+
+/* ── Newsletter ── */
+.home-newsletter p {
+    font-size: 0.93rem;
+    color: var(--secondary);
+    max-width: 480px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+    .home-hero__metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-systems__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-credibility__stack {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .home-frameworks__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-writing__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .home-hero__metrics {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home-hero__ctas {
+        flex-direction: column;
+    }
+
+    .home-hero__btn {
+        text-align: center;
+    }
+}
+
+/* ============================================================
+   CYW ARCHITECTURE DIAGRAM — Inline SVG theming
+   Light mode defaults + .dark overrides (PaperMod pattern)
+   ============================================================ */
+
+/* ── Diagram container ── */
+.home-architecture__diagram {
+    background: transparent;
+}
+
+/* ── Light mode ── */
+.cyw-diagram .cyw-bg           { fill: #f7f9fb; }
+.cyw-diagram .cyw-virgil-body  { fill: #ddeef8; stroke: #7a9fbd; stroke-width: 1.5; }
+.cyw-diagram .cyw-virgil-header{ fill: #4d7a9e; stroke: none; }
+.cyw-diagram .cyw-virgil-title { fill: #ffffff; }
+.cyw-diagram .cyw-box          { fill: #ffffff;  stroke: #aac3d5; stroke-width: 1.5; }
+.cyw-diagram .cyw-title-text   { fill: #1a2e3a; }
+.cyw-diagram .cyw-section-label{ fill: #556677; }
+.cyw-diagram .cyw-box-title    { fill: #1a2e3a; }
+.cyw-diagram .cyw-box-content  { fill: #444444; }
+.cyw-diagram .cyw-box-italic   { fill: #556677; }
+.cyw-diagram .cyw-arrowhead    { fill: #7a9fbd; }
+.cyw-diagram .cyw-arrow        { stroke: #7a9fbd; stroke-width: 2;   fill: none; }
+.cyw-diagram .cyw-divider      { stroke: #d0dde6; stroke-width: 1;   fill: none; }
+.cyw-diagram .cyw-divider-dash { stroke: #d0dde6; stroke-width: 1;   fill: none; stroke-dasharray: 6,4; }
+.cyw-diagram .cyw-ctrl-arrow   { stroke: #7a9fbd; stroke-width: 1.5; fill: none;
+                                  stroke-dasharray: 4,3; opacity: 0.6; }
+
+/* ── Dark mode (.dark is toggled on <html> by PaperMod) ── */
+.dark .cyw-diagram .cyw-bg            { fill: #1d1e22; }
+.dark .cyw-diagram .cyw-virgil-body   { fill: #162436; stroke: #3d607e; }
+.dark .cyw-diagram .cyw-virgil-header { fill: #1e3d5a; }
+.dark .cyw-diagram .cyw-virgil-title  { fill: #c8e6f5; }
+.dark .cyw-diagram .cyw-box           { fill: #2a2b30; stroke: #3d5066; }
+.dark .cyw-diagram .cyw-title-text    { fill: #d8d9da; }
+.dark .cyw-diagram .cyw-section-label { fill: #8a9aaa; }
+.dark .cyw-diagram .cyw-box-title     { fill: #d8d9da; }
+.dark .cyw-diagram .cyw-box-content   { fill: #9a9b9d; }
+.dark .cyw-diagram .cyw-box-italic    { fill: #7a8a9a; }
+.dark .cyw-diagram .cyw-arrowhead     { fill: #4d7a9e; }
+.dark .cyw-diagram .cyw-arrow         { stroke: #4d7a9e; }
+.dark .cyw-diagram .cyw-divider       { stroke: #3a3b40; }
+.dark .cyw-diagram .cyw-divider-dash  { stroke: #3a3b40; }
+.dark .cyw-diagram .cyw-ctrl-arrow    { stroke: #4d7a9e; }
+
+/* ============================================================
+   BUILDS SECTION
+   ============================================================ */
+.home-builds__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.home-build-card {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--code-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.home-build-card__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 0.35rem;
+}
+
+.home-build-card__header h3 {
+    margin: 0;
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.35;
+}
+
+.home-build-card__status {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--secondary);
+    background: var(--theme);
+    line-height: 1.6;
+}
+
+.home-build-card__sub {
+    font-size: 0.82rem;
+    font-style: italic;
+    color: var(--secondary);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.home-build-card__desc {
+    font-size: 0.87rem;
+    line-height: 1.6;
+    color: var(--secondary);
+    margin-top: 0;
+    flex-grow: 1;
+}
+
+.home-build-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home-build-tag {
+    font-size: 0.72rem;
+    font-family: var(--mono-font);
+    padding: 2px 8px;
+    background: var(--theme);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--secondary);
+}
+
+.home-build-card__link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.home-build-card__link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .home-builds__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================================
+   CYW OVERVIEW DIAGRAM — 3-Layer Abstract
+   Light mode defaults + .dark overrides
+   ============================================================ */
+
+/* ── Light mode ── */
+.cyw-ov-diagram .cyw-ov-bg       { fill: #f7f9fb; }
+
+.cyw-ov-diagram .cyw-ov-l1-body  { fill: #ddeef8; stroke: #7a9fbd; stroke-width: 1.5; }
+.cyw-ov-diagram .cyw-ov-l1-hdr   { fill: #4d7a9e; stroke: none; }
+.cyw-ov-diagram .cyw-ov-l1-title { fill: #ffffff; }
+
+.cyw-ov-diagram .cyw-ov-l2-body  { fill: #eef5fb; stroke: #aac3d5; stroke-width: 1.5; }
+.cyw-ov-diagram .cyw-ov-l2-hdr   { fill: #6a96b8; stroke: none; }
+.cyw-ov-diagram .cyw-ov-l2-title { fill: #ffffff; }
+
+.cyw-ov-diagram .cyw-ov-l3-body  { fill: #f0f7ff; stroke: #b0c8d8; stroke-width: 1.5; }
+.cyw-ov-diagram .cyw-ov-l3-hdr   { fill: #5d8aaa; stroke: none; }
+.cyw-ov-diagram .cyw-ov-l3-title { fill: #ffffff; }
+
+.cyw-ov-diagram .cyw-ov-col      { stroke: #c0d5e4; stroke-width: 1; stroke-dasharray: 3,3; }
+.cyw-ov-diagram .cyw-ov-col-lbl  { fill: #1a2e3a; }
+.cyw-ov-diagram .cyw-ov-col-sub  { fill: #556677; }
+.cyw-ov-diagram .cyw-ov-arr-dn   { stroke: #7a9fbd; stroke-width: 1.8; fill: none; }
+.cyw-ov-diagram .cyw-ov-arr-up   { stroke: #7a9fbd; stroke-width: 1.8; fill: none; stroke-dasharray: 4,3; }
+.cyw-ov-diagram .cyw-ov-arr-lbl  { fill: #778899; }
+.cyw-ov-diagram .cyw-ov-arrowhead{ fill: #7a9fbd; }
+.cyw-ov-diagram .cyw-ov-pipe     { fill: #1a2e3a; }
+.cyw-ov-diagram .cyw-ov-parr     { stroke: #aac3d5; stroke-width: 1.5; fill: none; }
+
+/* ── Dark mode ── */
+.dark .cyw-ov-diagram .cyw-ov-bg       { fill: #1d1e22; }
+
+.dark .cyw-ov-diagram .cyw-ov-l1-body  { fill: #162436; stroke: #3d607e; }
+.dark .cyw-ov-diagram .cyw-ov-l1-hdr   { fill: #1e3d5a; }
+.dark .cyw-ov-diagram .cyw-ov-l1-title { fill: #c8e6f5; }
+
+.dark .cyw-ov-diagram .cyw-ov-l2-body  { fill: #1a2230; stroke: #354e64; }
+.dark .cyw-ov-diagram .cyw-ov-l2-hdr   { fill: #1a3550; }
+.dark .cyw-ov-diagram .cyw-ov-l2-title { fill: #a8d0e8; }
+
+.dark .cyw-ov-diagram .cyw-ov-l3-body  { fill: #181f2a; stroke: #2e4559; }
+.dark .cyw-ov-diagram .cyw-ov-l3-hdr   { fill: #163044; }
+.dark .cyw-ov-diagram .cyw-ov-l3-title { fill: #90bbd5; }
+
+.dark .cyw-ov-diagram .cyw-ov-col      { stroke: #2e4050; }
+.dark .cyw-ov-diagram .cyw-ov-col-lbl  { fill: #c8d0d8; }
+.dark .cyw-ov-diagram .cyw-ov-col-sub  { fill: #7a8a9a; }
+.dark .cyw-ov-diagram .cyw-ov-arr-dn   { stroke: #4d7a9e; }
+.dark .cyw-ov-diagram .cyw-ov-arr-up   { stroke: #4d7a9e; }
+.dark .cyw-ov-diagram .cyw-ov-arr-lbl  { fill: #607080; }
+.dark .cyw-ov-diagram .cyw-ov-arrowhead{ fill: #4d7a9e; }
+.dark .cyw-ov-diagram .cyw-ov-pipe     { fill: #c0c8d0; }
+.dark .cyw-ov-diagram .cyw-ov-parr     { stroke: #3d5a70; }

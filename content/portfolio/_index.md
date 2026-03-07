@@ -1,8 +1,8 @@
 ---
 title: "Verified Portfolio"
-date: 2026-02-05
-draft: false
-summary: "Documented case studies demonstrating applied systems leadership across institutional, community, and technical domains."
+type: "page"
+layout: "single"
+hideMeta: true
 ---
 
 # Verified Portfolio
@@ -12,6 +12,33 @@ verifiable outcomes and supporting evidence.
 
 Each case reflects applied leadership, accountability, and documentation
 discipline.
+
+---
+
+## Publications
+
+### Get Rich Or Get Free
+*Forthcoming — [getrichorgetfree.com](https://getrichorgetfree.com)*
+
+A systems-thinking framework for personal sovereignty and economic independence. Applies the same operational discipline behind the CYW architecture to financial decision-making, resource allocation, and long-term resilience modeling.
+
+---
+
+## Certifications & Credentials
+
+### Leadership
+
+| Credential | Issuing Organization | Issued |
+|---|---|---|
+| SP26 ADV 201 — Advanced Leadership Certificate | National Society of Leadership and Success (NSLS) | Feb 2026 |
+| Certificate of Induction | National Society of Leadership and Success (NSLS) | Nov 2025 |
+| Foundations of Leadership Certificate | National Society of Leadership and Success (NSLS) | Oct 2025 |
+
+### Technical
+
+| Credential | Issuing Organization | Issued |
+|---|---|---|
+| Introduction to Cloud 101 | AWS Educate | — |
 
 ---
 
