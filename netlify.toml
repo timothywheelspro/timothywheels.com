@@ -19,6 +19,7 @@
   from = "/book"
   to = "https://getrichorgetfree.com/founding"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/linkedin"
