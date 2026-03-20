@@ -16,6 +16,11 @@
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [[redirects]]
+  from = "/book"
+  to = "https://getrichorgetfree.com/founding"
+  status = 301
+
+[[redirects]]
   from = "/linkedin"
   to = "https://www.linkedin.com/in/timothywheels"
   status = 301
