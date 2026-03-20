@@ -60,8 +60,9 @@ menu:
     - name: "CYW"
       url: "/cyw-framework/"
       weight: 30
-    - name: "Writing"
-      url: "/awareness-in-action/"
+    - identifier: newsletter
+      name: "Newsletter"
+      url: "/newsletter/"
       weight: 40
     - name: "Tracker"
       url: "/tracker/"
