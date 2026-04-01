@@ -1,0 +1,38 @@
+name: Site Monitor
+
+on:
+  schedule:
+    - cron: "47 2 * * *"   # 2:47 AM UTC nightly
+  workflow_dispatch:        # manual trigger from GitHub UI
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run site monitor
+        id: monitor
+        env:
+          OPEN_PR: "1"
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python tools/site-monitor.py
+        continue-on-error: true
+
+      - name: Report status
+        run: |
+          if [ "${{ steps.monitor.outcome }}" = "success" ]; then
+            echo "✅ All checks passed."
+          else
+            echo "⚠️ Issues found — PR opened if not already open."
+          fi
