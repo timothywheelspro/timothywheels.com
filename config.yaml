@@ -51,6 +51,9 @@ taxonomies:
 
 menu:
   main:
+    - name: "Blog"
+      url: "/blog/"
+      weight: 5
     - name: "Frameworks"
       url: "/frameworks/"
       weight: 10
