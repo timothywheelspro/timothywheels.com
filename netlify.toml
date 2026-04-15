@@ -21,6 +21,32 @@
   status = 301
   force = true
 
+
+# --- Canonical migration: CYW technical posts moved to contruil.com ---
+[[redirects]]
+  from = "/blog/orchestration-layer-behind-get-rich-or-get-free"
+  to = "https://contruil.com/blog/orchestration-layer-behind-get-rich-or-get-free"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/orchestration-layer-behind-get-rich-or-get-free/"
+  to = "https://contruil.com/blog/orchestration-layer-behind-get-rich-or-get-free"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/14-day-playbook-launch-sovereign-ai-orchestration"
+  to = "https://contruil.com/blog/14-day-playbook-launch-sovereign-ai-orchestration"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/14-day-playbook-launch-sovereign-ai-orchestration/"
+  to = "https://contruil.com/blog/14-day-playbook-launch-sovereign-ai-orchestration"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/linkedin"
   to = "https://www.linkedin.com/in/timothywheels"
