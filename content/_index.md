@@ -1,12 +1,12 @@
 ---
 title: "Timothy Wheels"
-description: "Systems architect designing routing protocols, validation frameworks, and operational architectures that keep complex systems running under pressure."
+description: "Founder, Contruil LLC. Multi-model AI orchestration, defensive IP architecture, and the Control Your World (CYW) framework — patent-pending Q1 2026."
 keywords:
-  - "systems architecture"
+  - "Contruil LLC"
   - "CYW framework"
+  - "multi-model AI orchestration"
+  - "defensive IP"
   - "AI governance"
-  - "routing protocols"
-  - "validation systems"
-  - "reliability engineering"
+  - "patent-pending"
 layout: "home"
 ---
