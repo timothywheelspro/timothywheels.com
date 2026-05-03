@@ -1,4 +1,4 @@
-# Site Monitor Report — 2026-04-27
+# Site Monitor Report — 2026-05-03
 
 **Status:** ⚠️ 2 issue(s) found
 
@@ -10,4 +10,4 @@
 
 ### CRITICAL — `/linkedin`
 - **URL:** https://timothywheels.com/linkedin
-- **Detail:** Expected destination containing 'linkedin.com', got: https://timothywheels.com/linkedin
+- **Detail:** Expected 'linkedin.com' in destination, got: https://timothywheels.com/linkedin
