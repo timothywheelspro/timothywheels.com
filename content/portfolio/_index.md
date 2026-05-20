@@ -5,7 +5,7 @@ layout: "single"
 hideMeta: true
 ---
 
-# Verified Portfolio
+
 
 This portfolio documents completed and ongoing systems projects with
 verifiable outcomes and supporting evidence.
