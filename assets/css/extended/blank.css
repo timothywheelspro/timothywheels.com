@@ -802,3 +802,54 @@ Custom styles bundled with site assets.
 .dark .cyw-ov-diagram .cyw-ov-arrowhead{ fill: #4d7a9e; }
 .dark .cyw-ov-diagram .cyw-ov-pipe     { fill: #c0c8d0; }
 .dark .cyw-ov-diagram .cyw-ov-parr     { stroke: #3d5a70; }
+
+/* Hero split layout */
+.home-hero__split {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 40px;
+  align-items: center;
+}
+
+.home-hero__photo img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  filter: grayscale(20%);
+}
+
+/* Book split layout */
+.home-book__split {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.home-book__cover img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Writing links */
+.home-writing__links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.home-writing__latest {
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .home-hero__split { grid-template-columns: 1fr; }
+  .home-hero__photo { display: none; }
+  .home-book__split { grid-template-columns: 1fr; }
+}
