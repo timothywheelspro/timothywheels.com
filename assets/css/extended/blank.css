@@ -853,3 +853,41 @@ Custom styles bundled with site assets.
   .home-hero__photo { display: none; }
   .home-book__split { grid-template-columns: 1fr; }
 }
+
+/* ── Reader review pull quote ── */
+.reader-review {
+    margin: 1.5rem 0 0;
+    padding-left: 1rem;
+    border-left: 3px solid var(--border);
+    max-width: 520px;
+}
+
+.reader-review__stars {
+    color: #c9a24a;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+.reader-review__quote {
+    margin: 0.3rem 0;
+    padding: 0;
+    border: none;
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--primary);
+    line-height: 1.5;
+}
+
+.reader-review__source {
+    font-size: 0.85rem;
+    color: var(--secondary);
+}
+
+.reader-review__source a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.home-book .reader-review {
+    margin: 0 0 1.5rem;
+}
