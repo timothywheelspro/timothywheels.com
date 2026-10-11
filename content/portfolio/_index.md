@@ -18,7 +18,7 @@ discipline.
 ## Publications
 
 ### Get Rich Or Get Free
-*Available Now — April 4, 2026 — [getrichorgetfree.com](https://getrichorgetfree.com)**
+*Available Now — April 4, 2026 — [getrichorgetfree.com](https://getrichorgetfree.com)*
 
 A systems-thinking framework for personal sovereignty and economic independence. Applies the same operational discipline behind the CYW architecture to financial decision-making, resource allocation, and long-term resilience modeling.
 
