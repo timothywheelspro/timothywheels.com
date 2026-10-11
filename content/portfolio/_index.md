@@ -26,6 +26,26 @@ A systems-thinking framework for personal sovereignty and economic independence.
 
 ---
 
+## Applications
+
+### Cert Drill
+*Live — October 2026 — [cert-drill.pages.dev](https://cert-drill.pages.dev)*
+
+An offline-first study app for IT certification exams, built while preparing for CompTIA Security+. One codebase installs as an app on iPhone, Android, Windows and Mac and works without a connection after the first visit.
+
+- 390 original flashcards across six weekly decks covering the full Security+ exam, each mapped to its SY0-701 and SY0-801 objective numbers
+- Flashcard, quiz and misses-review modes, with tags for content that appears on only one exam version
+- Privacy by design: no accounts and no server-side data. Progress stays on the device and moves between devices with a portable progress code
+- Built as a reusable template: new certifications are added as data files without changing the app
+
+**Stack:** JavaScript, service worker caching, web app manifest, Cloudflare Pages, GitHub
+
+**[Open Cert Drill →](https://cert-drill.pages.dev)**
+
+*Independent study aid. Not affiliated with or endorsed by CompTIA.*
+
+---
+
 ## Certifications & Credentials
 
 ### Leadership

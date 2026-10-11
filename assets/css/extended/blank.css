@@ -657,6 +657,10 @@ Custom styles bundled with site assets.
     margin-top: 1.5rem;
 }
 
+.home-build-card--featured {
+    grid-column: 1 / -1;
+}
+
 .home-build-card {
     padding: 1.5rem;
     border: 1px solid var(--border);
