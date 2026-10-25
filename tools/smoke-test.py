@@ -57,7 +57,8 @@ class Smoke:
             with urlopen(Request(url, headers=UA), timeout=self.timeout) as r:
                 body = r.read()
                 ctype = r.headers.get("Content-Type", "")
-                text = body.decode("utf-8", "replace") if "text" in ctype or "html" in ctype else ""
+                textual = any(k in ctype for k in ("text", "html", "javascript", "json", "xml", "css"))
+                text = body.decode("utf-8", "replace") if textual else ""
                 res = (r.status, text)
         except HTTPError as e:
             res = (e.code, "")
