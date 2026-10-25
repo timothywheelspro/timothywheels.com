@@ -22,6 +22,8 @@ Live in Hampton Roads long enough and you learn how water moves. It doesn't ask 
 
 Cost works the same way.
 
+{{< motion name="cost-downhill" label="In motion / The slope" alt="Cost tokens roll off a data center on the high ground and pile up over houses on the low ground, until a culvert routes them into a tank." caption="Whatever the top won't carry runs down to whoever can't step out of the way, until something gives it somewhere else to go." >}}
+
 The clearest example is the one in my mailbox. Small towns and local communities end up paying the bill for the construction and upkeep of massive data centers. It hits a lot of us when the Dominion Energy bill shows up.
 
 Northern Virginia is the largest data center market in the world. On paper, the data centers pay their own way. The state's own audit found that Dominion's current rates charge them for what it costs to serve them, and regulators created a separate rate class in 2025 that locks the biggest users into long contracts with minimum payments.

@@ -1,0 +1,17 @@
+{{- /* Live motion scene in a full-bleed band. Usage: {{< motion name="cost-downhill" label="..." caption="..." >}}
+       Scene code: static/motion/scenes/<name>.js. Poster (no-JS / reduced data): static/motion/posters/<name>.png */ -}}
+{{- $name := .Get "name" -}}
+<figure class="essay-fig essay-fig--motion essay-bleed reveal motion">
+  <div class="essay-fig__inner">
+    {{- with .Get "label" }}<div class="essay-fig__label">{{ . }}</div>{{ end }}
+    <div class="motion__stage">
+      <canvas data-scene="{{ $name }}"></canvas>
+      <noscript><img src="{{ printf "motion/posters/%s.png" $name | absURL }}" alt="{{ .Get "alt" }}" loading="lazy"></noscript>
+    </div>
+    {{- with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+  </div>
+</figure>
+{{- if not (.Page.Scratch.Get "motionPlayer") }}{{ .Page.Scratch.Set "motionPlayer" true }}
+<script defer src="{{ "motion/player.js" | absURL }}"></script>
+{{- end }}
+<script defer src="{{ printf "motion/scenes/%s.js" $name | absURL }}"></script>
