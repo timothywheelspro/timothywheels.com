@@ -3,6 +3,8 @@ title: "The Content Prioritization Trap: Why Your Best Ideas Never Get Made"
 description: "You have dozens of content ideas and produce almost none of them — and when you do, you pick the wrong ones. Timothy Wheels shares the one-question filter that eliminates low-impact ideas before you waste a single production resource."
 date: 2026-04-14
 draft: false
+layout: essay
+ghost: FILTER
 cover:
   image: "/images/blog/content-prioritization-trap-why-best-ideas-never-get-made.jpg"
   alt: "A funnel narrowing dozens of ideas down to the one that ships"
@@ -28,6 +30,8 @@ Here's what's actually happening: every idea you add to that list without a filt
 None of those are real criteria. None of them connect to outcomes.
 
 The backlog doesn't need more ideas. It needs a filter sharp enough to cut 80% of them before they ever touch production.
+
+{{< motion name="idea-filter" label="The one-question filter" caption="Make fewer things. Make the right things." alt="Idea cards meet a filter; one passes and becomes a published page." >}}
 
 ## The One Question That Changes Everything
 
@@ -64,6 +68,8 @@ Most teams treat content volume as a proxy for content strategy. It isn't. Frequ
 When you tighten your filter, two things happen. First, your output drops. That will feel wrong. Resist the urge to fill the gap with filler. Second, the quality and clarity of what you do produce goes up noticeably — because every piece has a reason to exist, and that reason shows up in the writing, the framing, the energy behind it.
 
 Audiences feel that difference even when they can't name it.
+
+{{< pull >}}Frequency without direction is noise.{{< /pull >}}
 
 ## Sovereignty Over Strategy
 
