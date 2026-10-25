@@ -3,6 +3,8 @@ title: "The Hidden Cost of Repetitive Work: Why You're Building Someone Else's E
 description: "Timothy Wheels breaks down the real cost of repetitive work and gives operators a concrete framework for identifying their biggest time drain — without surrendering control to black-box automation tools."
 date: 2026-04-14
 draft: false
+layout: essay
+ghost: RECLAIM
 cover:
   image: "/images/blog/hidden-cost-of-repetitive-work-building-someone-elses-empire.jpg"
   alt: "Repeated hours of the same task flowing into someone else's empire"
@@ -41,6 +43,8 @@ Others try to delegate, hand something to a team member or a VA, and watch it co
 
 The root problem isn't the tool they're using or the team member they hired. It's that they're trying to solve a systems problem with a staffing solution or a software purchase. Neither works without clarity first.
 
+{{< motion name="one-drain" label="The One-Drain Audit" caption="Map it before you move it." alt="Repeated hours feed dependency until an audit reroutes them into an owned system." >}}
+
 ## The One-Drain Audit
 
 Before you automate anything, before you delegate anything, before you buy anything — you need to find your single biggest time drain. Not your top five. Not a comprehensive process map. One thing.
@@ -74,6 +78,8 @@ Instead, run this three-part sequence:
 **Separate logic from execution.** Once it's mapped, go through and mark every step that requires your judgment versus every step that's purely mechanical. The mechanical steps are automation candidates. The judgment steps are documentation candidates — meaning you need to write down the rule you're applying so that eventually, someone or something else can apply it.
 
 **Build the minimum viable system.** Start with the simplest possible version of an owned system — one that runs on documented logic, not vibes. This doesn't have to be sophisticated. A well-structured template beats a poorly understood workflow every time. The goal isn't elegance. It's transferability. Can this process run without you in the room? If yes, you've reclaimed something real.
+
+{{< pull >}}You can't automate what you've never mapped.{{< /pull >}}
 
 ## Ownership Is the Variable Nobody Talks About
 
