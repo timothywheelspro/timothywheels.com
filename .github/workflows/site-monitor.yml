@@ -8,13 +8,21 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write
+
+concurrency:
+  group: site-monitor
+  cancel-in-progress: false
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,5 +42,5 @@ jobs:
           if [ "${{ steps.monitor.outcome }}" = "success" ]; then
             echo "✅ All checks passed."
           else
-            echo "⚠️ Issues found — PR opened if not already open."
+            echo "⚠️ Issues found — See monitor logs for the PR update or command failure."
           fi
