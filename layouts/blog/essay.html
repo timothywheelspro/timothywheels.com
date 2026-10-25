@@ -10,6 +10,7 @@
   {{- $slug := $t | plainify | anchorize -}}
   {{- $c = replace $c (index . 0) (printf `<h2 class="essay-sec essay-sec--%s" id="%s"><span>%s</span></h2>` $slug $slug $t) -}}
 {{- end -}}
+{{- $c = replaceRE `<h2 id="([^"]+)">` `<h2 class="essay-sec essay-sec--$1" id="$1">` $c -}}
 {{- $c = replace $c "<p>This is how you Control Your World.</p>" `<p class="essay-sign">This is how you Control Your World.</p>` -}}
 
 <div class="essay-progress" aria-hidden="true"><span></span></div>
@@ -23,7 +24,7 @@
         <span class="essay-kicker__brand">Control Your World</span>
         <span class="essay-kicker__series">Awareness In Action // Essay</span>
       </div>
-      <h1 class="essay-title">{{ .Title }}</h1>
+      <h1 class="essay-title{{ if gt (len .Title) 32 }} essay-title--long{{ end }}">{{ .Title }}</h1>
       {{- with .Description }}<p class="essay-dek">{{ . }}</p>{{ end }}
       <div class="essay-meta">
         <span>{{ .Date | time.Format "January 2, 2006" }}</span>

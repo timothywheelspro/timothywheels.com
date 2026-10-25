@@ -3,6 +3,8 @@ title: "You're Still the Bottleneck: Why Manual Content Review Doesn't Scale"
 description: "If every piece of content still has to pass through your eyes before it goes live, you didn't build a content engine — you built a dependency. Here's how to fix the design flaw, not the discipline problem."
 date: 2026-04-21
 draft: false
+layout: essay
+ghost: "QUEUE"
 cover:
   image: "/images/blog/youre-still-the-bottleneck-manual-content-review.jpg"
   alt: "Many content lanes funneling through a single review node labeled you"
@@ -43,11 +45,13 @@ Second, there's your own cognitive load. Every review you do is a context switch
 
 Third — and this one is the most expensive — there's team atrophy. Writers who never get to own output stop developing judgment. They optimize for your approval, not for the audience. Over time, your team gets better at guessing what you want and worse at producing what works. You've trained dependence into the people you hired to create independence.
 
+{{< motion name="bottleneck" label="In motion / The queue" alt="Content from eight lanes jams in a queue at a single review node labeled you. A governance layer opens two more paths, ship without review and peer review, and the queue drains to live." caption="Tiers by content type: what ships without review, what gets peer review, what escalates. Your judgment, encoded, instead of your inbox." >}}
+
 ## The Fix Is Not Delegation. It's System Design.
 
 Most advice on this topic tells you to delegate more. Trust your team. Let go. That's fine as far as it goes — but it skips the structural question entirely.
 
-Delegation without infrastructure is just hope. And hope is not a system.
+{{< pull >}}Delegation without infrastructure is just hope. And hope is not a system.{{< /pull >}}
 
 What you actually need is a set of governing standards precise enough that someone else — or something else — can apply them consistently without your interpretation at every step. I call this a Content Governance Layer. It's not a style guide. It's not a brand deck. It's a decision framework that answers the specific questions your reviewers currently bring to you.
 
@@ -71,6 +75,6 @@ That's your first step out of the loop.
 
 This isn't about trusting your team more. It's about giving them something trustworthy to work with. The goal isn't speed. The goal is a content operation that maintains its standards whether or not you're in the building — a self-governing system, not a faster dependency.
 
-That's the difference between a production line and an engine.
+{{< pull >}}That's the difference between a production line and an engine.{{< /pull >}}
 
 If you're ready to build the engine, start at [contruil.com](https://contruil.com).

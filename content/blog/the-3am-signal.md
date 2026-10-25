@@ -1,5 +1,7 @@
 ---
 title: "The 3am Signal"
+layout: essay
+ghost: "3AM"
 description: "Awareness is not the absence of chaos. It is the capacity to route through it."
 date: 2026-05-20
 draft: false
@@ -18,7 +20,7 @@ Most people are asleep. I am not.
 
 That's not insomnia — that's information processing. That's trajectory work. It's making the kind of decisions that don't get made when the world is watching and the noise floor is high. When the work gets interrupted, that's exactly when the distractions show up. Not before. Right then. Like they were waiting.
 
-The interruption is the test. Not the obstacle. The test.
+{{< pull >}}The interruption is the test. Not the obstacle. The test.{{< /pull >}}
 
 **What 3am teaches you**
 
@@ -32,7 +34,7 @@ You need to do the same thing.
 
 At 3am the noise floor drops. No notifications. No performance. No audience. Just you, the work, and the gap between where you are and where you are trying to go.
 
-That gap is data. Most people sedate it. You can measure it.
+{{< pull >}}That gap is data. Most people sedate it. You can measure it.{{< /pull >}}
 
 Awareness isn't a morning routine. It's a signal. And signals don't run on a schedule.
 
@@ -53,6 +55,8 @@ The question is: *What does the next move need to be?*
 OSPF doesn't stop to process why the last route failed. It updates the table and forwards. That's not cold. That's disciplined.
 
 That's the protocol.
+
+{{< motion name="three-am-signal" label="In motion / The protocol" alt="Static and notifications fade as the noise floor drops, network nodes broadcast their state, a route from you to your next move lights up, one node goes down and the route reroutes around it." caption="OSPF doesn't stop to process why the last route failed. It updates the table and forwards." >}}
 
 **What Control Your World actually means**
 
