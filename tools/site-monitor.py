@@ -13,6 +13,7 @@ Set OPEN_PR=1 env var to open a GitHub PR on failure (done by the workflow).
 
 from __future__ import annotations
 
+import json
 import os
 import re
 import subprocess
@@ -130,33 +131,47 @@ def check_content_links(report: Report) -> None:
 
 
 def open_pr(report: Report) -> None:
-    today = report.date
-    branch = f"fix/site-monitor-{today}"
+    branch = "fix/site-monitor"
 
-    subprocess.run(["git", "config", "user.email", "monitor@timothywheels.com"], cwd=REPO)
-    subprocess.run(["git", "config", "user.name", "site-monitor"], cwd=REPO)
-    subprocess.run(["git", "checkout", "-B", branch], cwd=REPO)
+    def run(*args: str) -> str:
+        return subprocess.run(args, cwd=REPO, check=True,
+                              capture_output=True, text=True).stdout.strip()
+
+    # Preserve the open PR's history; a new cycle starts from current main.
+    prs = json.loads(run("gh", "pr", "list", "--state", "open", "--base", "main",
+                         "--head", branch, "--json", "number"))
+    run("git", "config", "user.email", "monitor@timothywheels.com")
+    run("git", "config", "user.name", "site-monitor")
+    run("git", "fetch", "origin", "main")
+    if prs:
+        run("git", "fetch", "origin", branch)
+        run("git", "checkout", "-B", branch, "FETCH_HEAD")
+        run("git", "merge", "--no-edit", "origin/main")
+    else:
+        # Retire a closed/merged cycle before reusing the fixed branch name.
+        if run("git", "ls-remote", "--heads", "origin", f"refs/heads/{branch}"):
+            run("git", "push", "origin", "--delete", branch)
+        run("git", "checkout", "-B", branch, "origin/main")
 
     report_path = REPO / "site-monitor-report.md"
-    report_path.write_text(report.as_markdown())
+    report_path.write_text(report.as_markdown(), encoding="utf-8")
+    run("git", "add", "site-monitor-report.md")
+    if run("git", "diff", "--cached", "--name-only"):
+        run("git", "commit", "-m",
+            f"fix: site monitor {report.date} — {len(report.issues)} issue(s)")
+    run("git", "push", "-u", "origin", branch)
 
-    subprocess.run(["git", "add", "site-monitor-report.md"], cwd=REPO)
-    subprocess.run(["git", "commit", "-m",
-                    f"fix: site monitor {today} — {len(report.issues)} issue(s)"], cwd=REPO)
-    subprocess.run(["git", "push", "-u", "origin", branch], cwd=REPO)
-
-    pr = subprocess.run(
-        ["gh", "pr", "create",
-         "--title", f"fix: site monitor — {len(report.issues)} issue(s) ({today})",
-         "--body", report.as_markdown(),
-         "--base", "main",
-         "--head", branch],
-        cwd=REPO, capture_output=True, text=True
-    )
-    if pr.returncode == 0:
-        print(f"PR opened: {pr.stdout.strip()}")
+    title = f"fix: site monitor — {len(report.issues)} issue(s) ({report.date})"
+    if prs:
+        result = run("gh", "pr", "edit", str(prs[0]["number"]),
+                     "--title", title, "--body-file", str(report_path))
+        print(f"PR updated: {result}")
     else:
-        print(f"gh pr create failed: {pr.stderr.strip()}", file=sys.stderr)
+        result = run("gh", "pr", "create", "--title", title,
+                     "--body-file", str(report_path), "--base", "main", "--head", branch)
+        print(f"PR opened: {result}")
+    # GITHUB_TOKEN pushes/PRs do not trigger pull_request workflows.
+    run("gh", "workflow", "run", "pr-check.yml", "--ref", branch)
 
 
 def main() -> int:
