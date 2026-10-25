@@ -1,0 +1,49 @@
+{{- define "main" }}
+{{- /* Premium essay layout. Opt in per post with `layout: essay` in front matter. */ -}}
+{{- $c := .Content -}}
+{{- /* The hero carries the dek and the Substack note, so drop them from the top of the body. */ -}}
+{{- $c = replaceRE `^\s*<p><em>Originally published[\s\S]*?</p>\s*` "" $c -}}
+{{- $c = replaceRE `^\s*<p><strong>[^<]+</strong></p>\s*` "" $c -}}
+{{- /* Bold-only paragraphs are section breaks: promote them to numbered headings. */ -}}
+{{- range findRESubmatch `<p><strong>([^<]+)</strong></p>` $c -}}
+  {{- $t := index . 1 -}}
+  {{- $slug := $t | plainify | anchorize -}}
+  {{- $c = replace $c (index . 0) (printf `<h2 class="essay-sec essay-sec--%s" id="%s"><span>%s</span></h2>` $slug $slug $t) -}}
+{{- end -}}
+{{- $c = replace $c "<p>This is how you Control Your World.</p>" `<p class="essay-sign">This is how you Control Your World.</p>` -}}
+
+<div class="essay-progress" aria-hidden="true"><span></span></div>
+
+<article class="essay">
+  <header class="essay-hero essay-bleed">
+    <div class="essay-hero__grid" aria-hidden="true"></div>
+    {{- with .Params.ghost }}<div class="essay-hero__ghost" aria-hidden="true">{{ . }}</div>{{ end }}
+    <div class="essay-hero__inner">
+      <div class="essay-kicker">
+        <span class="essay-kicker__brand">Control Your World</span>
+        <span class="essay-kicker__series">Awareness In Action // Essay</span>
+      </div>
+      <h1 class="essay-title">{{ .Title }}</h1>
+      {{- with .Description }}<p class="essay-dek">{{ . }}</p>{{ end }}
+      <div class="essay-meta">
+        <span>{{ .Date | time.Format "January 2, 2006" }}</span>
+        <span>{{ .ReadingTime }} min read</span>
+        <span>{{ site.Params.author }}</span>
+        {{- with .Params.canonicalURL }}<a href="{{ . }}" rel="noopener">First published on Substack</a>{{ end }}
+      </div>
+    </div>
+  </header>
+
+  <div class="essay-body">
+    {{ $c | safeHTML }}
+  </div>
+
+  <footer class="essay-end">
+    <a class="essay-end__cta" href="https://timothywheels.substack.com" rel="noopener">
+      <span class="essay-end__label">Awareness In Action</span>
+      <span class="essay-end__text">New essays on routing your attention, energy and decisions. Subscribe on Substack.</span>
+    </a>
+    {{- if (.Param "ShowPostNavLinks") }}{{ partial "post_nav_links.html" . }}{{ end }}
+  </footer>
+</article>
+{{- end }}

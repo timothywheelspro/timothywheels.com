@@ -1,0 +1,10 @@
+{{- /* Full-bleed dark figure band. Usage: {{< essay-figure name="cost-slope" label="Fig. 1" caption="..." >}} renders layouts/partials/essay-figures/<name>.html */ -}}
+{{- $name := .Get "name" -}}
+<figure class="essay-fig essay-bleed reveal" aria-labelledby="fig-{{ $name }}">
+  <div class="essay-fig__inner">
+    {{- with .Get "label" }}<div class="essay-fig__label">{{ . }}</div>{{ end }}
+    {{- with .Get "title" }}<div class="essay-fig__title">{{ . }}</div>{{ end }}
+    <div class="essay-fig__art">{{ partial (printf "essay-figures/%s.html" $name) . }}</div>
+    {{- with .Get "caption" }}<figcaption id="fig-{{ $name }}">{{ . | markdownify }}</figcaption>{{ end }}
+  </div>
+</figure>

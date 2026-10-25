@@ -4,6 +4,8 @@ description: "Every cost a system won't carry finds the lowest ground. The fix i
 date: 2026-10-16
 draft: false
 canonicalURL: "https://timothywheels.substack.com/p/cost-runs-downhill"
+layout: essay
+ghost: "GRADE"
 cover:
   image: "/images/blog/cost-runs-downhill.jpg"
   alt: "Cost drops running down a slope and pooling on the low ground"
@@ -34,11 +36,13 @@ Researchers at Harvard Law documented the last two.
 
 The direct bill gets paid. The cost of growth runs downhill.
 
+{{< essay-figure name="cost-auction" label="Fig. 01 / The leaks" title="Where the cost of growth goes" caption="December 2025 capacity auction in the regional power market Virginia belongs to. Source: the market's independent monitor, via Utility Dive (January 2026). Contract and transmission leaks: Harvard Law School Environmental and Energy Law Program (March 2025)." >}}
+
 And when a town tries to say no, the pressure doesn't stop. In Michigan, a developer sued Saline Township after it refused to rezone farmland for a data center. In Pennsylvania, a developer sued Upper Merion Township after its proposals were rejected. A town has a planning board and a city attorney. A developer has as many lawyers as it needs.
 
 It isn't just the power bill. A company builds big and the bill shows up somewhere else. A rule gets written without the people it lands on, and the cost gets passed down: to the tenant, the ratepayer, the small contractor, the buyer with the least room to absorb it. Nobody decides this in a meeting. It's just gravity. Whatever the top won't carry runs down to whoever can't step out of the way.
 
-That's not a conspiracy. That's drainage.
+{{< pull >}}That's not a conspiracy. That's drainage.{{< /pull >}}
 
 And the usual response to it is the part that bothered me most. When the water pools at the bottom, somebody shows up with a better bucket. A program. A discount. A pamphlet about resilience. Kind gestures, most of them. But the grade never changes, so next season the water comes right back to the same low ground.
 
@@ -52,9 +56,11 @@ A hand-me-down is something the top has already used up. It arrives late, a litt
 
 The trap is that it works just well enough to keep the slope in place. The cost still runs down. It just gets a softer landing.
 
-Cost runs downhill. A softer landing doesn't change where it lands.
+{{< pull >}}Cost runs downhill. A softer landing doesn't change where it lands.{{< /pull >}}
 
 So I asked a different question about my own company. Not "how do we help the people at the bottom?" but "what are we sending downhill, and who's standing there when it arrives?"
+
+{{< essay-figure name="cost-slope" label="Fig. 02 / The answer" title="Three moves on the slope" caption="One move for your own runoff, one for the slope itself, one for where the water ends up." >}}
 
 **Hold your own water**
 
@@ -88,7 +94,7 @@ When you get in the room, push for the things that stop cost from running down: 
 
 And don't walk in alone, and don't walk in speaking for anyone. The people who live on the low ground have been documenting the water for years. My job is to amplify their data, not replace their voice.
 
-The people standing in the water already know where it pools. Bring them to the room where the grade gets set.
+{{< pull >}}The people standing in the water already know where it pools. Bring them to the room where the grade gets set.{{< /pull >}}
 
 **Build the culvert**
 
@@ -99,6 +105,8 @@ Most compliance costs are really information costs. A small landlord, a contract
 The same goes for exposure. Flood risk, heat, air and water quality are mostly public data, scattered across a dozen agencies in formats nobody reads. Put it in one place, in plain language, for one neighborhood, and it stops being data and starts being protection.
 
 And price it so the slope doesn't come back in through the door. So I wrote the rules down and [published them](https://contruil.com/community-access). Community groups and nonprofits with budgets under $100,000 get a free starting tier. Small businesses under $1 million, nonprofits up to $1 million and small towns pay half price. Everyone else pays full price, and 10 percent of every paid engagement funds the free work. Free spots open only when that fund can cover them, so the promise grows with the company instead of ahead of it.
+
+{{< essay-figure name="cost-culvert" label="Fig. 03 / The culvert" title="Pricing built so the slope doesn't come back in" caption="Contruil's published community access rules. Full terms: [contruil.com/community-access](https://contruil.com/community-access)." >}}
 
 That's the difference between a hand-me-down and a culvert. One is whatever's left over. The other is built in from the start.
 
