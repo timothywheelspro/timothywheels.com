@@ -3,6 +3,10 @@ title: "You're Still the Bottleneck: Why Manual Content Review Doesn't Scale"
 description: "If every piece of content still has to pass through your eyes before it goes live, you didn't build a content engine — you built a dependency. Here's how to fix the design flaw, not the discipline problem."
 date: 2026-04-21
 draft: false
+cover:
+  image: "/images/blog/youre-still-the-bottleneck-manual-content-review.jpg"
+  alt: "Many content lanes funneling through a single review node labeled you"
+  relative: false
 ---
 
 You built the team, you hired the writers, you set up the workflows — and somehow every single post still has to pass through YOUR eyes before it goes live. You didn't build a content engine. You built a dependency.

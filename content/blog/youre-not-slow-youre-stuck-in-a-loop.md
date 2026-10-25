@@ -3,6 +3,10 @@ title: "You're Not Slow — You're Stuck in a Loop"
 description: "You didn't lose three hours to laziness — you lost them to a loop you never questioned. Timothy Wheels breaks down why willpower fails repetitive workflows and what to do instead."
 date: 2026-04-14
 draft: false
+cover:
+  image: "/images/blog/youre-not-slow-youre-stuck-in-a-loop.jpg"
+  alt: "A repeating loop with one exit path highlighted"
+  relative: false
 ---
 
 # You're Not Slow — You're Stuck in a Loop

@@ -3,6 +3,10 @@ title: "The Orchestration Layer Behind Get Rich or Get Free"
 description: "Timothy Wheels breaks down the AI orchestration architecture that allowed Contruil to ship a 14-day playbook on Day 10 — and why sovereign, modular systems beat centralized AI platforms every time."
 date: 2026-04-14
 draft: false
+cover:
+  image: "/images/blog/orchestration-layer-behind-get-rich-or-get-free.jpg"
+  alt: "A router sending work through four model layers: research, structure, content, and QA"
+  relative: false
 ---
 
 # The Orchestration Layer Behind Get Rich or Get Free

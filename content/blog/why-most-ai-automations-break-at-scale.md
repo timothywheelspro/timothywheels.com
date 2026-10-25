@@ -3,6 +3,10 @@ title: "Why Most AI Automations Break at Scale"
 description: "Most AI workflows aren't broken — they were never orchestrated. Timothy Wheels explains the difference between chaining AI tools and true orchestration architecture, and why stateless automations collapse under real-world load."
 date: 2026-04-14
 draft: false
+cover:
+  image: "/images/blog/why-most-ai-automations-break-at-scale.jpg"
+  alt: "A chained workflow broken where state is lost, versus an orchestrated one that carries state"
+  relative: false
 ---
 
 # Why Most AI Automations Break at Scale

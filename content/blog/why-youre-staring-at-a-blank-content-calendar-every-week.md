@@ -3,6 +3,10 @@ title: "Why You're Staring at a Blank Content Calendar Every Week"
 description: "Stop freezing in front of a blank content calendar. Timothy Wheels shares a repeatable 3-question filter to help intentional creators prioritize content with clarity and confidence."
 date: 2026-04-14
 draft: false
+cover:
+  image: "/images/blog/why-youre-staring-at-a-blank-content-calendar-every-week.jpg"
+  alt: "A mostly empty content calendar with three filtered days highlighted"
+  relative: false
 ---
 
 # Why You're Staring at a Blank Content Calendar Every Week
