@@ -3,6 +3,10 @@ title: "The Hidden Cost of Repetitive Work: Why You're Building Someone Else's E
 description: "Timothy Wheels breaks down the real cost of repetitive work and gives operators a concrete framework for identifying their biggest time drain — without surrendering control to black-box automation tools."
 date: 2026-04-14
 draft: false
+cover:
+  image: "/images/blog/hidden-cost-of-repetitive-work-building-someone-elses-empire.jpg"
+  alt: "Repeated hours of the same task flowing into someone else's empire"
+  relative: false
 ---
 
 # The Hidden Cost of Repetitive Work: Why You're Building Someone Else's Empire on Your Own Time

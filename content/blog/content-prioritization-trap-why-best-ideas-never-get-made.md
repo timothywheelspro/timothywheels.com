@@ -3,6 +3,10 @@ title: "The Content Prioritization Trap: Why Your Best Ideas Never Get Made"
 description: "You have dozens of content ideas and produce almost none of them — and when you do, you pick the wrong ones. Timothy Wheels shares the one-question filter that eliminates low-impact ideas before you waste a single production resource."
 date: 2026-04-14
 draft: false
+cover:
+  image: "/images/blog/content-prioritization-trap-why-best-ideas-never-get-made.jpg"
+  alt: "A funnel narrowing dozens of ideas down to the one that ships"
+  relative: false
 ---
 
 # The Content Prioritization Trap: Why Your Best Ideas Never Get Made

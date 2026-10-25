@@ -4,6 +4,10 @@ description: "Every cost a system won't carry finds the lowest ground. The fix i
 date: 2026-10-16
 draft: false
 canonicalURL: "https://timothywheels.substack.com/p/cost-runs-downhill"
+cover:
+  image: "/images/blog/cost-runs-downhill.jpg"
+  alt: "Cost drops running down a slope and pooling on the low ground"
+  relative: false
 ---
 
 *Originally published on Substack: [Awareness In Action](https://timothywheels.substack.com/p/cost-runs-downhill).*

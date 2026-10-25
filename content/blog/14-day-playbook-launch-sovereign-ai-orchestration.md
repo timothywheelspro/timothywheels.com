@@ -3,6 +3,10 @@ title: "How We Orchestrated a 14-Day Playbook Launch Using Sovereign AI Principl
 description: "Timothy Wheels breaks down the exact architecture behind Contruil's 14-day autonomous playbook launch — and how sovereign AI principles kept every phase under full operator control."
 date: 2026-04-14
 draft: false
+cover:
+  image: "/images/blog/14-day-playbook-launch-sovereign-ai-orchestration.jpg"
+  alt: "Fourteen-day launch plan with day 10 highlighted, mid-conversion"
+  relative: false
 ---
 
 # How We Orchestrated a 14-Day Playbook Launch Using Sovereign AI Principles

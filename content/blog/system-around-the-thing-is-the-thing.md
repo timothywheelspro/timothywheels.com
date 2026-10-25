@@ -3,6 +3,10 @@ title: "The System Around the Thing Is the Thing"
 description: "The manuscript was done for months. The book wasn't shipping. Timothy Wheels breaks down the five-layer architecture that separates creators who publish consistently from those who stay stuck in Layer 1."
 date: 2026-04-15
 draft: false
+cover:
+  image: "/images/blog/system-around-the-thing-is-the-thing.jpg"
+  alt: "Five nested layers around the artifact: distribution, pipeline, audience, and re-entry"
+  relative: false
 ---
 
 Two weeks ago I clicked publish on *Get Rich Or Get Free*.
