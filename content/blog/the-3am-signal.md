@@ -4,6 +4,10 @@ description: "Awareness is not the absence of chaos. It is the capacity to route
 date: 2026-05-20
 draft: false
 canonicalURL: "https://timothywheels.substack.com/p/the-3am-signal"
+cover:
+  image: "/images/blog/the-3am-signal.jpg"
+  alt: "A network of nodes with one route lit and a pulse broadcasting state"
+  relative: false
 ---
 
 *Originally published on Substack: [Awareness In Action](https://timothywheels.substack.com/p/the-3am-signal).*
