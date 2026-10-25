@@ -1,0 +1,8 @@
+{
+  "name": "cyw-motion",
+  "private": true,
+  "type": "module",
+  "description": "Renders CYW motion scenes to MP4, WebM, GIF and poster frames.",
+  "scripts": { "render": "node render.mjs" },
+  "dependencies": { "playwright": "^1.48.0" }
+}

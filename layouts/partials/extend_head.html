@@ -1,3 +1,9 @@
+{{- if eq .Layout "essay" }}
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preload" href="{{ "fonts/bebas-neue-latin-400-normal.woff2" | absURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ "css/essay.css" | absURL }}">
+<script defer src="{{ "js/essay.js" | absURL }}"></script>
+{{- end }}
 {{- if .IsHome }}
 <link rel="stylesheet" href="{{ "css/home.css" | absURL }}">
 {{- end }}
