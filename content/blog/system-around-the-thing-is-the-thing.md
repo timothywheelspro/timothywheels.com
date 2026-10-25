@@ -3,6 +3,8 @@ title: "The System Around the Thing Is the Thing"
 description: "The manuscript was done for months. The book wasn't shipping. Timothy Wheels breaks down the five-layer architecture that separates creators who publish consistently from those who stay stuck in Layer 1."
 date: 2026-04-15
 draft: false
+layout: essay
+ghost: SYSTEM
 cover:
   image: "/images/blog/system-around-the-thing-is-the-thing.jpg"
   alt: "Five nested layers around the artifact: distribution, pipeline, audience, and re-entry"
@@ -20,6 +22,8 @@ That's when it clicked for me — the same thing I'd been writing about for two 
 Most people treat publishing like a content problem. *Write the thing. Upload the thing. Wait.*
 
 It's not a content problem. It's an architecture problem.
+
+{{< motion name="shipping-layers" label="The five-layer architecture" caption="Willpower runs out. Pipelines compound." alt="An artifact waits until distribution, pipeline, audience, and re-entry layers open a route to ship." >}}
 
 ## Layer 1 — The Artifact
 
@@ -44,6 +48,8 @@ For me, that's a five-model AI orchestration: Perplexity for research, DeepSeek 
 Most people are trying to ship from Layer 1 directly. No pipeline. No handoffs. Just willpower and hope.
 
 Willpower runs out. Pipelines compound.
+
+{{< pull >}}Willpower runs out. Pipelines compound.{{< /pull >}}
 
 ## Layer 4 — The Audience Surface
 
