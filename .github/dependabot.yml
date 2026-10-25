@@ -1,0 +1,15 @@
+# Updates arrive as pull requests, never straight to main.
+# Each one has to pass the PR smoke test before it can merge.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 3
+
+  - package-ecosystem: "gitsubmodule"   # the PaperMod theme
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 1
