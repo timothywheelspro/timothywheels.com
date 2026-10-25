@@ -21,6 +21,7 @@ Exit code 0 = pass, 1 = fail. Stdlib only.
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import sys
 import time
@@ -119,8 +120,11 @@ def main() -> int:
         print(f"[attempt {attempt}/{args.retries}] {s.checked} URLs checked against {s.base}: {'PASS' if ok else 'FAIL'}")
         if ok:
             return 0
+        last = attempt == args.retries
         for f in s.failures:
             print(f"  - {f}")
+            if last and os.environ.get("GITHUB_ACTIONS"):
+                print(f"::error title=Smoke test::{f}")  # shows on the run summary
         if attempt < args.retries:
             time.sleep(args.wait)
     return 1
