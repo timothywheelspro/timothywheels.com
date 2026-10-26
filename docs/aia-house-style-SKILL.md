@@ -23,7 +23,7 @@ The examples live inline in this file on purpose. An earlier version kept them i
 1. Hook subtitle: one line naming the system and the counter to it.
 2. Open in first person, mid-realization — a real personal observation. Not a thesis, not a greeting, not a fill-in-the-blank.
 3. Name the system and how it operates on the reader. Weave routing/control language in naturally.
-4. The turn: pivot plainly into the central insight. Use "That's when I thought about it:" or "That's when I realized" when it fits, or state the insight directly. Do not force a stock phrase into every essay.
+4. The turn: pivot plainly into the central insight. Use "That's when I thought about it:" when it fits, or state the insight directly. Do not force a stock phrase into every essay.
 5. Layered breakdown: 2-4 named sections, each a bold header. For each: name it, show how the system uses it, give the counter-move, end on a short standalone line. Every layer must load-bear — say what moves through it and what breaks without it. Never relabel nouns and call it a stack.
 6. The exercise: one concrete, small, deliberately boring rep per concept.
 7. The reframe: restate the thesis as something the reader owns.
@@ -35,7 +35,7 @@ The examples live inline in this file on purpose. An earlier version kept them i
 - **The realization arrives after a full section of evidence, not after one paragraph.** In all three examples the system is named, illustrated, and felt before the pivot fires. Firing it early wastes it.
 
 ## Signature moves (vary the words, keep the move)
-- Use a plain pivot into the realization, such as "That's when I thought about it:" or "That's when I realized," or let the evidence lead directly into the insight. Vary the words with the piece.
+- Use a plain pivot into the realization, such as "That's when I thought about it:" or let the evidence lead directly into the insight. Vary the words with the piece.
 - "That's not [easy negative read]. That's [truer reframe]." — VARY it every time ("That's not despair. That's just the road."). Never harden into one pair.
 - Short standalone lines for rhythm.
 - A refrain that recurs once or twice WITHIN a piece — but invent a fresh one per essay. Do not import another essay's refrain (e.g. do not graft "Be about your word, be about your business" onto an unrelated topic).
@@ -43,6 +43,7 @@ The examples live inline in this file on purpose. An earlier version kept them i
 - The reframe frame "Control was never the [X]. The [X] belongs to [things outside you]. Control is the [Y you actually hold]." is a SANCTIONED signature closer — it is MEANT to recur across essays (see the Road essay below). Use it as the reframe's backbone, then fill X and Y from the essay's own metaphor. This is intentional series identity, not a repetition tell.
 
 ## Hard constraints
+- PIVOTS: In new writing, use "That's when I thought about it:" when a pivot is needed, or state the insight directly. Do not reuse the stock realization pivots in the historical examples or close variants. This applies to essays, posts, READMEs, and PR descriptions. Published examples remain archival references, not permission to copy their older pivots.
 - ACCURACY: Never invent events, anecdotes, statistics, or claims the author did not actually do, say, or experience. The personal stories in these essays are real and verifiable. If a draft needs a personal example you cannot confirm, insert a bracketed placeholder like [REAL EXAMPLE NEEDED] for the author to fill. Never fabricate dramatic actions (e.g. "I unplugged someone," "I cut them off to reset them") that did not happen. This applies to the current session's own record too — do not restate a fact in a draft in a form the session's notes contradict.
 - NO CONDESCENSION: Second person ("you") is core to the voice — but the register must DIAGNOSE or give PERMISSION, never scold. In-voice: "you're not the user, you're the power supply" (diagnosis); "you don't have to throw your phone in a lake" (permission). Out of voice: "you're missing the point," "you have to," "if you keep doing X" (accusation). Diagnose the system's effect on the reader; never blame the reader for being caught in it.
 - LEGIBILITY: Assume the reader has NOT read the book. Do not use CYW-internal jargon (e.g. "Layer 0") without explaining it in plain language inline, or cut it. The essay must work cold for a brand-new reader.
