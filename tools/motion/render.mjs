@@ -18,10 +18,11 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 const repo = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const args = process.argv.slice(2);
-const name = args.find((a) => !a.startsWith("--"));
-if (!name) { console.error("usage: render.mjs <scene> [--fps 30] [--out dir]"); process.exit(1); }
+const name = args[0];
+if (!name || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(name)) { console.error("usage: render.mjs <scene> [--fps 30] [--out dir]"); process.exit(1); }
 const opt = (k, d) => { const i = args.indexOf(`--${k}`); return i >= 0 ? args[i + 1] : d; };
 const fps = Number(opt("fps", 30));
+if (!Number.isInteger(fps) || fps < 1 || fps > 60) throw new Error("fps must be an integer from 1 to 60");
 const out = resolve(opt("out", join(repo, "dist/motion")));
 mkdirSync(out, { recursive: true });
 
@@ -40,9 +41,12 @@ const harness = join(work, "harness.html");
 writeFileSync(harness, html);
 
 const browser = await chromium.launch();
-const page = await browser.newPage();
+const page = await browser.newPage({ viewport: { width: 1600, height: 900 }, deviceScaleFactor: 1 });
 await page.goto(pathToFileURL(harness).href);
-await page.evaluate(() => document.fonts.ready);
+await page.evaluate(async () => {
+  await Promise.all([document.fonts.load('120px "Bebas Neue"'), document.fonts.load('400 26px "Space Mono"'), document.fonts.load('700 26px "Space Mono"')]);
+  await document.fonts.ready;
+});
 const scene = await page.evaluate((n) => {
   const s = window.CYWScenes[n];
   return s && { duration: s.duration, posterTime: s.posterTime || 0, title: s.title || [n.toUpperCase()] };

@@ -1,0 +1,44 @@
+{
+  "essay": "content-prioritization-trap-why-best-ideas-never-get-made",
+  "canonical_url": "https://timothywheels.com/blog/content-prioritization-trap-why-best-ideas-never-get-made/",
+  "scene": "idea-filter",
+  "source_pr": "https://github.com/timothywheelspro/timothywheels.com/pull/25",
+  "source_scene_sha256": "d1664778a24d7160b1c855c8765e96f4f65c4cf7092fcb95d2846143876b8b85",
+  "release_state": "verified live",
+  "production_commit": "1f12ffa413312b55495a035e82546564bb2067ea",
+  "production_verification": "https://github.com/timothywheelspro/timothywheels.com/actions/runs/40261499842",
+  "assets": {
+    "poster": "static/motion/posters/idea-filter.png",
+    "landscape_mp4": "docs/pr-assets/idea-filter/idea-filter-16x9.mp4",
+    "portrait_mp4": "docs/pr-assets/idea-filter/idea-filter-4x5.mp4",
+    "screenshots": [
+      "docs/pr-assets/idea-filter/1440-hero.jpg",
+      "docs/pr-assets/idea-filter/1440-motion.jpg",
+      "docs/pr-assets/idea-filter/390-hero.jpg"
+    ]
+  },
+  "asset_bytes": {
+    "static/motion/posters/idea-filter.png": 80024,
+    "docs/pr-assets/idea-filter/idea-filter-16x9.mp4": 620496,
+    "docs/pr-assets/idea-filter/idea-filter-4x5.mp4": 477366,
+    "docs/pr-assets/idea-filter/1440-hero.jpg": 117757,
+    "docs/pr-assets/idea-filter/1440-motion.jpg": 62401,
+    "docs/pr-assets/idea-filter/390-hero.jpg": 70993
+  },
+  "distribution": {
+    "linkedin": {
+      "status": "not recorded",
+      "public_url": null
+    },
+    "instagram": {
+      "status": "not recorded",
+      "public_url": null
+    },
+    "substack": {
+      "status": "not recorded",
+      "public_url": null
+    }
+  },
+  "export_provenance": "Original MP4s/poster: local browser harness at 30fps (macOS sandbox prevented normal Playwright launch). New exports: use Motion export workflow and record its run URL and artifact checksums.",
+  "latest_export_run": null
+}
