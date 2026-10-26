@@ -4,7 +4,7 @@
   "scene": "idea-filter",
   "source_pr": "https://github.com/timothywheelspro/timothywheels.com/pull/25",
   "source_scene_sha256": "d1664778a24d7160b1c855c8765e96f4f65c4cf7092fcb95d2846143876b8b85",
-  "release_state": "verified live",
+  "release_state": "distributed",
   "production_commit": "1f12ffa413312b55495a035e82546564bb2067ea",
   "production_verification": "https://github.com/timothywheelspro/timothywheels.com/actions/runs/40261499842",
   "assets": {
@@ -27,8 +27,12 @@
   },
   "distribution": {
     "linkedin": {
-      "status": "not recorded",
-      "public_url": null
+      "status": "published",
+      "public_url": "https://www.linkedin.com/posts/timothywheelspro_before-i-give-an-idea-production-time-i-activity-7520339365953343488-xpPk",
+      "published_at": null,
+      "recorded_on": "2026-10-26",
+      "evidence": "Owner confirmed publication and supplied the public post URL. Exact publication time and first-comment link were not independently verified.",
+      "first_comment_status": "not confirmed"
     },
     "instagram": {
       "status": "not recorded",

@@ -2,7 +2,7 @@
 
 One JSON record per essay connects its canonical URL, scene, source PR, poster, two social videos, screenshot evidence, production verification, and publication status. Paths are relative to the repository root. All three rollout essays are present in production commit `1f12ffa413312b55495a035e82546564bb2067ea`; its matching verification passed.
 
-These records do not assert that a social post exists. `not recorded` means no publication evidence was supplied. At posting time, update the platform status and public URL together. A drafted caption or exported video does not qualify as distributed. Never publish to a platform merely to complete this record without the owner's explicit posting instruction.
+Platform publication is recorded when the owner supplies a public post URL; the evidence field distinguishes owner confirmation from independent verification. `not recorded` means no publication evidence was supplied. At posting time, update the platform status and public URL together. A drafted caption or exported video does not qualify as distributed. Never publish to a platform merely to complete this record without the owner's explicit posting instruction.
 
 ## Update a record
 
