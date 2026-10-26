@@ -40,5 +40,18 @@
     }
   },
   "export_provenance": "Original MP4s/poster: local browser harness at 30fps (macOS sandbox prevented normal Playwright launch). New exports: use Motion export workflow and record its run URL and artifact checksums.",
-  "latest_export_run": null
+  "latest_export_run": null,
+  "production_visual_check": {
+    "viewport_widths": [
+      1440,
+      390
+    ],
+    "horizontal_overflow": false,
+    "console_errors": 0,
+    "screenshots": [
+      "docs/pr-assets/one-drain/1440-live.jpg",
+      "docs/pr-assets/one-drain/390-live.jpg"
+    ],
+    "note": "Post-merge production check with Hugo 0.158.0; initial PR screenshots remain historical evidence."
+  }
 }
