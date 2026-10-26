@@ -4,7 +4,7 @@
   "scene": "one-drain",
   "source_pr": "https://github.com/timothywheelspro/timothywheels.com/pull/26",
   "source_scene_sha256": "a8ccbe4da8eb41569d27b131acb857d17c996c9fbeca8f64e272e164aaa5b946",
-  "release_state": "verified live",
+  "release_state": "distributed",
   "production_commit": "1f12ffa413312b55495a035e82546564bb2067ea",
   "production_verification": "https://github.com/timothywheelspro/timothywheels.com/actions/runs/40261499842",
   "assets": {
@@ -27,8 +27,13 @@
   },
   "distribution": {
     "linkedin": {
-      "status": "not recorded",
-      "public_url": null
+      "status": "published",
+      "public_url": "https://www.linkedin.com/posts/timothywheelspro_i-look-for-the-task-that-keeps-coming-backand-activity-7520352287299588098-vLrL",
+      "published_at": null,
+      "recorded_on": "2026-10-26",
+      "evidence": "Owner confirmed publication and supplied the public post URL. Exact publication time and the first comment were not confirmed.",
+      "first_comment_status": "not confirmed",
+      "first_comment_url": null
     },
     "instagram": {
       "status": "not recorded",
