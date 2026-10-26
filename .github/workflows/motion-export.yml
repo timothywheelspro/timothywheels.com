@@ -1,0 +1,65 @@
+name: Motion export
+
+on:
+  workflow_dispatch:
+    inputs:
+      scene:
+        description: Scene name under static/motion/scenes
+        required: true
+        default: one-drain
+        type: string
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/motion-export.yml'
+      - 'tools/motion/**'
+      - 'static/motion/scenes/**'
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      SCENE: ${{ inputs.scene || 'one-drain' }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: tools/motion/package-lock.json
+      - name: Validate scene
+        run: |
+          [[ "$SCENE" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]]
+          test -f "static/motion/scenes/$SCENE.js"
+      - name: Install locked renderer and Chromium
+        working-directory: tools/motion
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      - name: Export and record tool versions
+        run: |
+          mkdir -p dist/motion
+          node --version > dist/motion/tool-versions.txt
+          npm --prefix tools/motion ls playwright >> dist/motion/tool-versions.txt
+          ffmpeg -version >> dist/motion/tool-versions.txt
+          git rev-parse HEAD > dist/motion/source-commit.txt
+          node tools/motion/render.mjs "$SCENE" --out dist/motion
+      - name: Verify video dimensions and duration
+        run: |
+          python3 tools/motion/verify-export.py "$SCENE" --out dist/motion
+          sha256sum dist/motion/* > dist/motion-SHA256SUMS
+          mv dist/motion-SHA256SUMS dist/motion/SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: motion-${{ env.SCENE }}-${{ github.sha }}
+          path: dist/motion/
+          if-no-files-found: error
+          retention-days: 30

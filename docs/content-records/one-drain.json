@@ -1,0 +1,44 @@
+{
+  "essay": "hidden-cost-of-repetitive-work-building-someone-elses-empire",
+  "canonical_url": "https://timothywheels.com/blog/hidden-cost-of-repetitive-work-building-someone-elses-empire/",
+  "scene": "one-drain",
+  "source_pr": "https://github.com/timothywheelspro/timothywheels.com/pull/26",
+  "source_scene_sha256": "a8ccbe4da8eb41569d27b131acb857d17c996c9fbeca8f64e272e164aaa5b946",
+  "release_state": "verified live",
+  "production_commit": "1f12ffa413312b55495a035e82546564bb2067ea",
+  "production_verification": "https://github.com/timothywheelspro/timothywheels.com/actions/runs/40261499842",
+  "assets": {
+    "poster": "static/motion/posters/one-drain.png",
+    "landscape_mp4": "docs/pr-assets/one-drain/one-drain-16x9.mp4",
+    "portrait_mp4": "docs/pr-assets/one-drain/one-drain-4x5.mp4",
+    "screenshots": [
+      "docs/pr-assets/one-drain/1440-hero.jpg",
+      "docs/pr-assets/one-drain/1440-motion.jpg",
+      "docs/pr-assets/one-drain/390-hero.jpg"
+    ]
+  },
+  "asset_bytes": {
+    "static/motion/posters/one-drain.png": 122837,
+    "docs/pr-assets/one-drain/one-drain-16x9.mp4": 2111564,
+    "docs/pr-assets/one-drain/one-drain-4x5.mp4": 1451715,
+    "docs/pr-assets/one-drain/1440-hero.jpg": 129255,
+    "docs/pr-assets/one-drain/1440-motion.jpg": 62923,
+    "docs/pr-assets/one-drain/390-hero.jpg": 74236
+  },
+  "distribution": {
+    "linkedin": {
+      "status": "not recorded",
+      "public_url": null
+    },
+    "instagram": {
+      "status": "not recorded",
+      "public_url": null
+    },
+    "substack": {
+      "status": "not recorded",
+      "public_url": null
+    }
+  },
+  "export_provenance": "Original MP4s/poster: local browser harness at 30fps (macOS sandbox prevented normal Playwright launch). New exports: use Motion export workflow and record its run URL and artifact checksums.",
+  "latest_export_run": null
+}

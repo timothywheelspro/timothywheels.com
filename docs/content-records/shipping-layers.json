@@ -1,0 +1,44 @@
+{
+  "essay": "system-around-the-thing-is-the-thing",
+  "canonical_url": "https://timothywheels.com/blog/system-around-the-thing-is-the-thing/",
+  "scene": "shipping-layers",
+  "source_pr": "https://github.com/timothywheelspro/timothywheels.com/pull/27",
+  "source_scene_sha256": "d170c0fc7051e7c64d82f67ad0817a2dc0e09feba710828309f3060b97a6c424",
+  "release_state": "verified live",
+  "production_commit": "1f12ffa413312b55495a035e82546564bb2067ea",
+  "production_verification": "https://github.com/timothywheelspro/timothywheels.com/actions/runs/40261499842",
+  "assets": {
+    "poster": "static/motion/posters/shipping-layers.png",
+    "landscape_mp4": "docs/pr-assets/shipping-layers/shipping-layers-16x9.mp4",
+    "portrait_mp4": "docs/pr-assets/shipping-layers/shipping-layers-4x5.mp4",
+    "screenshots": [
+      "docs/pr-assets/shipping-layers/1440-hero.jpg",
+      "docs/pr-assets/shipping-layers/1440-motion.jpg",
+      "docs/pr-assets/shipping-layers/390-hero.jpg"
+    ]
+  },
+  "asset_bytes": {
+    "static/motion/posters/shipping-layers.png": 78589,
+    "docs/pr-assets/shipping-layers/shipping-layers-16x9.mp4": 283722,
+    "docs/pr-assets/shipping-layers/shipping-layers-4x5.mp4": 267380,
+    "docs/pr-assets/shipping-layers/1440-hero.jpg": 107033,
+    "docs/pr-assets/shipping-layers/1440-motion.jpg": 53762,
+    "docs/pr-assets/shipping-layers/390-hero.jpg": 66230
+  },
+  "distribution": {
+    "linkedin": {
+      "status": "not recorded",
+      "public_url": null
+    },
+    "instagram": {
+      "status": "not recorded",
+      "public_url": null
+    },
+    "substack": {
+      "status": "not recorded",
+      "public_url": null
+    }
+  },
+  "export_provenance": "Original MP4s/poster: local browser harness at 30fps (macOS sandbox prevented normal Playwright launch). New exports: use Motion export workflow and record its run URL and artifact checksums.",
+  "latest_export_run": null
+}
