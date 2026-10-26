@@ -4,7 +4,7 @@
   "scene": "shipping-layers",
   "source_pr": "https://github.com/timothywheelspro/timothywheels.com/pull/27",
   "source_scene_sha256": "d170c0fc7051e7c64d82f67ad0817a2dc0e09feba710828309f3060b97a6c424",
-  "release_state": "verified live",
+  "release_state": "distributed",
   "production_commit": "1f12ffa413312b55495a035e82546564bb2067ea",
   "production_verification": "https://github.com/timothywheelspro/timothywheels.com/actions/runs/40261499842",
   "assets": {
@@ -27,8 +27,13 @@
   },
   "distribution": {
     "linkedin": {
-      "status": "not recorded",
-      "public_url": null
+      "status": "published",
+      "public_url": "https://www.linkedin.com/posts/timothywheelspro_my-manuscript-was-finished-the-book-still-activity-7520426736258547713-fiAB",
+      "published_at": null,
+      "recorded_on": "2026-10-26",
+      "evidence": "Owner confirmed publication, supplied the public post URL, and confirmed adding the first comment with the essay link. Exact publication time and the separate comment permalink were not independently verified.",
+      "first_comment_status": "confirmed by owner",
+      "first_comment_url": null
     },
     "instagram": {
       "status": "not recorded",
