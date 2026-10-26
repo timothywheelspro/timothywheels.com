@@ -1,7 +1,6 @@
 name: PR smoke test
 
-# Every change, including Dependabot updates, has to build and pass the
-# smoke test before it can reach main.
+# Builds and smoke-tests PRs. Repository settings determine merge enforcement.
 
 on:
   pull_request:
@@ -24,6 +23,12 @@ jobs:
         with:
           hugo-version: "0.158.0"
           extended: true
+
+      - name: Test preflight boundaries
+        run: python3 tools/test-build-preflight.py
+
+      - name: Check build environment
+        run: python3 tools/build-preflight.py --environment ci
 
       - name: Build
         run: hugo --gc --minify -F --baseURL "https://timothywheels.com/"
