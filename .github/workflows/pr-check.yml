@@ -7,16 +7,6 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
-    inputs:
-      preview_hugo_mode:
-        description: One-time owner-approved Preview HUGO_VERSION operation
-        type: choice
-        options: [inventory, apply]
-        default: inventory
-      expected_preview_names:
-        description: Names from the read-only inventory, as a JSON array
-        type: string
-        default: '[]'
 
 permissions:
   contents: read
@@ -43,18 +33,3 @@ jobs:
           (cd public && python3 -m http.server 8000 >/dev/null 2>&1 &)
           sleep 2
           python3 tools/smoke-test.py --base http://localhost:8000
-
-  approved_preview_hugo_once:
-    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/chore/hugo-papermod'
-    runs-on: ubuntu-latest
-    concurrency:
-      group: approved-preview-hugo-once
-      cancel-in-progress: false
-    steps:
-      - uses: actions/checkout@v5
-      - name: Inventory or apply the approved Preview-only update
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          PREVIEW_HUGO_MODE: ${{ inputs.preview_hugo_mode }}
-          EXPECTED_PREVIEW_NAMES: ${{ inputs.expected_preview_names }}
-        run: python3 tools/preview-hugo-once.py
