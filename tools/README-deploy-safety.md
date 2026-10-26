@@ -75,4 +75,4 @@ Never push to a merged essay, upgrade, or follow-up branch. Open a fresh PR. The
 
 Use explicit states: **prepared**, **validated**, **merged**, **verified live**. Add **distributed** only when a platform post and public URL exist. The existing verification/rollback workflow remains the recovery authority; this documentation does not change its logic or credentials.
 
-Repository About text/topics still describing Netlify are owner metadata follow-ups; source documentation now points here. Keep `netlify.toml`: `tools/site-monitor.py` reads its redirects. Migrating that source requires a separate tested change.
+Repository About text/topics now identify Cloudflare Pages; source documentation points here. Keep `netlify.toml`: `tools/site-monitor.py` reads its redirects. Migrating that source requires a separate tested change.
