@@ -1,51 +1,65 @@
 ---
 name: "aia-house-style"
-description: "Use when drafting, rewriting, or editing essays, LinkedIn posts, newsletters, or any public-facing content in the Awareness In Action (AiA) / Control Your World voice. Applies the house style: first-person system-metaphor openings, peer tone, short punchy lines, the layered breakdown, and the signature closers. Trigger whenever the user asks to write or revise AiA, CYW, or \"Control Your World\" content."
+description: "Use when drafting, rewriting, or editing essays, LinkedIn posts, newsletters, or any public-facing content in the Awareness In Action (AiA) / Control Your World voice, including Contruil company posts."
 ---
 
 # AiA House Style Skill
 
 ## Goal
-Write or revise public-facing essays in the Awareness In Action / Control Your World voice: an operator writing to operators, where a system metaphor (routing, control, layers, load, source/sink) carries the actual argument, and the payoff is always a move the reader can make. Accurate, never alarmist. Peer, never preachy.
+Write or revise public-facing content in the Awareness In Action / Control Your World voice: an operator writing to operators, where a system metaphor (routing, control, layers, load, source/sink) carries the actual argument, and the payoff is always a move the reader can make. Accurate, never alarmist. Peer, never preachy.
 
 ## How to use this skill
 This voice is learned by pattern, not rule. Before drafting, read all three brief/essay pairs at the bottom of this file:
 
 - **Manifesto** — structure: three internal traits (communication, confidence, consistency).
-- **Battery** — structure: three external cables (attention, labor, data), on a Power-over-Ethernet source/load metaphor.
+- **Battery** — structure: three external cables (attention, labor, data), on a Power-over-Ethernet source/load metaphor. UNPUBLISHED reference draft (see the note on the examples).
 - **Road** — structure: NOT "three of something" at all — a set of defensive-driving principles, with one (road rage) breaking out into its own section. A follow-up essay that opens by referencing the prior one.
 
 These three have DELIBERATELY DIFFERENT skeletons. Borrow the MOVES, never the skeleton of any single one. Do not assume every essay is three-part. Do not reuse any one essay's specific metaphor, refrain, or closing sentence. Let the topic dictate the structure.
 
 The examples live inline in this file on purpose. An earlier version kept them in an `examples/` directory, which failed to sync twice and left drafts built from the rules alone. Keep this skill one file.
 
+First decide the format (essay or short post) and the voice (Fly in first person, or Contruil as "we"). Then follow the matching section below.
+
 ## The essay skeleton (flexible, not a template)
 1. Hook subtitle: one line naming the system and the counter to it.
 2. Open in first person, mid-realization — a real personal observation. Not a thesis, not a greeting, not a fill-in-the-blank.
 3. Name the system and how it operates on the reader. Weave routing/control language in naturally.
-4. The turn: pivot plainly into the central insight. Use "That's when I thought about it:" or "That's when I realized" when it fits, or state the insight directly. Do not force a stock phrase into every essay.
+4. The turn: pivot into the central insight. Default to stating the insight directly. When a spoken pivot fits, use one of the author's own phrasings (see PIVOTS under Hard constraints).
 5. Layered breakdown: 2-4 named sections, each a bold header. For each: name it, show how the system uses it, give the counter-move, end on a short standalone line. Every layer must load-bear — say what moves through it and what breaks without it. Never relabel nouns and call it a stack.
 6. The exercise: one concrete, small, deliberately boring rep per concept.
 7. The reframe: restate the thesis as something the reader owns.
 8. Sign off with the series closer: "This is how you Control Your World."
 9. References & context (real sources), then a short third-person bio.
 
+## Short-format posts (LinkedIn feed, company announcements)
+Use this for feed posts, launch announcements, and anything under roughly 300 words. The moves stay; the essay scaffolding comes off.
+
+- **Length:** about 150–300 words.
+- **Voice:** Fly's personal posts open in first person ("I"). Contruil company posts — product launches, milestones, tools — use "we." Pick one and hold it; never mix "I" and "we" in the same post.
+- **Keep:** a ripened opener (not reportage of today), the system named before the turn, 2-3 bold mini-layers, one rep for the reader, the "Control was never the X" reframe, and the closer "This is how you Control Your World."
+- **Drop:** the hook subtitle, references section, and bio. None of them are required in a post.
+- **Links:** never in the post body. Close the post with a line pointing to the first comment, and draft that first comment alongside the post.
+- **Product facts:** name tools by their real on-site names and describe only features that are confirmed live. If you cannot confirm a current detail (name, features, scoring, model lineup), use a bracketed placeholder like [CONFIRM CURRENT FEATURES] instead of guessing.
+
 ## Two timing rules the examples demonstrate
 - **The opener is an observation that ripened, not a thing that just happened.** "A while back I started paying attention to what was paying attention to me." "One night, tired in that specific way where you've done everything and somehow gained nothing, I did something I'd never thought to do." Never open as reportage of today's events.
-- **The realization arrives after a full section of evidence, not after one paragraph.** In all three examples the system is named, illustrated, and felt before the pivot fires. Firing it early wastes it.
+- **The realization arrives after a full section of evidence, not after one paragraph.** In all three examples the system is named, illustrated, and felt before the pivot fires. Firing it early wastes it. In short posts, "a full section" shrinks to a few lines, but the order holds: evidence first, turn second.
 
 ## Signature moves (vary the words, keep the move)
-- Use a plain pivot into the realization, such as "That's when I thought about it:" or "That's when I realized," or let the evidence lead directly into the insight. Vary the words with the piece.
+- Let the evidence lead into the insight, or use one of the author's pivot phrasings (see PIVOTS). Vary the words with the piece.
 - "That's not [easy negative read]. That's [truer reframe]." — VARY it every time ("That's not despair. That's just the road."). Never harden into one pair.
 - Short standalone lines for rhythm.
 - A refrain that recurs once or twice WITHIN a piece — but invent a fresh one per essay. Do not import another essay's refrain (e.g. do not graft "Be about your word, be about your business" onto an unrelated topic).
-- Close with "This is how you Control Your World." — this line is MEANT to repeat across every essay. It is the series sign-off, not a catchphrase to avoid.
-- The reframe frame "Control was never the [X]. The [X] belongs to [things outside you]. Control is the [Y you actually hold]." is a SANCTIONED signature closer — it is MEANT to recur across essays (see the Road essay below). Use it as the reframe's backbone, then fill X and Y from the essay's own metaphor. This is intentional series identity, not a repetition tell.
+- Close with "This is how you Control Your World." — this line is MEANT to repeat across every piece. It is the series sign-off, not a catchphrase to avoid.
+- The reframe frame "Control was never the [X]. The [X] belongs to [things outside you]. Control is the [Y you actually hold]." is a SANCTIONED signature closer — it is MEANT to recur across pieces (see the Road essay below). Use it as the reframe's backbone, then fill X and Y from the piece's own metaphor. This is intentional series identity, not a repetition tell.
 
 ## Hard constraints
-- ACCURACY: Never invent events, anecdotes, statistics, or claims the author did not actually do, say, or experience. The personal stories in these essays are real and verifiable. If a draft needs a personal example you cannot confirm, insert a bracketed placeholder like [REAL EXAMPLE NEEDED] for the author to fill. Never fabricate dramatic actions (e.g. "I unplugged someone," "I cut them off to reset them") that did not happen. This applies to the current session's own record too — do not restate a fact in a draft in a form the session's notes contradict.
+- PIVOTS: Never use "That's when it clicked" or close variants ("it clicked," "that's when it clicked for me"). The author has asked for this repeatedly. Default to stating the insight directly. When a spoken pivot fits, use one of the author's own phrasings: "That's when it hit me," "That's when I realized," or "That's when the realization materialized." Use at most one pivot phrase per piece, and do not settle on the same one piece after piece. This applies to essays, posts, READMEs, and PR descriptions. The historical examples below contain the retired phrase; it is marked inline and is never a model.
+- ACCURACY: Never invent events, anecdotes, statistics, or claims the author did not actually do, say, or experience. The personal stories in these essays are real and verifiable. If a draft needs a personal example you cannot confirm, insert a bracketed placeholder like [REAL EXAMPLE NEEDED] for the author to fill. Never fabricate dramatic actions (e.g. "I unplugged someone," "I cut them off to reset them") that did not happen. This applies to the current session's own record too — do not restate a fact in a draft in a form the session's notes contradict. The same rule covers products: never rename a tool or describe a feature you have not confirmed.
+- SECURITY CONTENT: In public security writing, discuss secure practices in general terms without revealing the author's own stack, tools, habits, methods, or workflows.
 - NO CONDESCENSION: Second person ("you") is core to the voice — but the register must DIAGNOSE or give PERMISSION, never scold. In-voice: "you're not the user, you're the power supply" (diagnosis); "you don't have to throw your phone in a lake" (permission). Out of voice: "you're missing the point," "you have to," "if you keep doing X" (accusation). Diagnose the system's effect on the reader; never blame the reader for being caught in it.
-- LEGIBILITY: Assume the reader has NOT read the book. Do not use CYW-internal jargon (e.g. "Layer 0") without explaining it in plain language inline, or cut it. The essay must work cold for a brand-new reader.
+- LEGIBILITY: Assume the reader has NOT read the book. Do not use CYW-internal jargon (e.g. "Layer 0," "VLAN 20") without explaining it in plain language inline, or cut it. The piece must work cold for a brand-new reader.
 - NOT ALARMIST: Where a topic invites conspiracy framing, defuse it explicitly (as Battery does: "This isn't a movie. Nobody's farming you in a pod."). The voice is accurate, grounded, and escapable — not paranoid.
 - BANNED reframe scaffold: do NOT close with 'X is how you author the Y; Z is the firewall on the W.' That specific construction is the manifesto's, and it should not be the default. (Note: the 'Control was never the X. Control is the Y.' frame is the OPPOSITE — it is a sanctioned signature closer; use it freely. See Signature moves.)
 - NO greeting or salutation at the top. Open on the hook.
@@ -63,7 +77,7 @@ The examples live inline in this file on purpose. An earlier version kept them i
 
 When the CONTRUIL refile is on file, update this section (new serial number, "application pending" becomes accurate) rather than assuming.
 
-## Canonical bio (use exactly; correct book title)
+## Canonical bio (essays only; use exactly; correct book title)
 Timothy Wheels is a U.S. Air Force veteran, founder of Contruil LLC, and author of *Get Rich or Get Free*. He builds Control Your World — a human-led architecture for routing your own attention, energy, and decisions instead of leasing them out.
 
 **Title warning:** the book is *Get Rich or Get Free*. A published version once carried the wrong title, "Get Rich or Die Free"; that has since been corrected. It is never a variant to reproduce.
@@ -87,9 +101,13 @@ Timothy Wheels is a U.S. Air Force veteran, founder of Contruil LLC, and author 
 
 # Example pairs
 
-> **Historical examples:** The published essays below predate the current pivot rule. Keep them verbatim as references for voice, structure, and timing. Their older pivot wording is not a model for new drafts; follow the current plain-pivot guidance above.
+> **About these examples:** Manifesto and Road are kept verbatim as published. **Battery is NOT the published version.** The live Substack "Stop Being the System's Battery" is a different essay (a pod-field / Layer 0–3 framing with a charge-log exercise). The Power-over-Ethernet version below was never published; it exists only as a reference draft for this skill. Never cite it, quote it, or describe it as published.
+>
+> All three examples predate the current pivot rule. Each use of the retired pivot is marked **[RETIRED PIVOT — do not reuse]**. Learn voice, structure, and timing from these pieces, never their pivot wording.
+>
+> **Short-format example pending:** add the Contruil Prompt Router launch post here (company "we" voice) once its placeholders are filled and it is final.
 
-The briefs below are RECONSTRUCTED from the published essays — they describe the assignment each essay answers. They are not original source documents. The essays are verbatim as published.
+The briefs below are RECONSTRUCTED from the essays — they describe the assignment each essay answers. They are not original source documents.
 
 ---
 
@@ -97,7 +115,7 @@ The briefs below are RECONSTRUCTED from the published essays — they describe t
 
 Write the series manifesto for Awareness In Action. Thesis: you cannot opt out of surveillance, algorithmic feeds, and AI systems from the outside — the only ground those systems can't reach is internal. Structure the breakdown around three internal traits: communication, confidence, consistency. Open on a personal observation about noticing what was tracking you. Defuse the paranoia reading explicitly — the author set out to be accurate, not paranoid. Close on the sanctioned reframe. Exercise: pick one C, put one rep on the board this week.
 
-## 1. MANIFESTO — essay
+## 1. MANIFESTO — essay (published)
 
 **Control Starts Where the Cameras Can't Reach**
 
@@ -119,7 +137,7 @@ You can delete the app. They kept ten years of your data. You can cover one came
 
 That's not despair. That's just the road.
 
-That's when it clicked: I'd been hunting for an exit that doesn't exist. You don't control the algorithm any more than you control the weather or the driver who runs the red. And if you burn your life raging at it, you've just handed over the one thing you actually owned — your attention — to the exact system that was built to take it.
+That's when it clicked: [RETIRED PIVOT — do not reuse] I'd been hunting for an exit that doesn't exist. You don't control the algorithm any more than you control the weather or the driver who runs the red. And if you burn your life raging at it, you've just handed over the one thing you actually owned — your attention — to the exact system that was built to take it.
 
 So where's the leverage? Same place it always was.
 
@@ -179,9 +197,9 @@ This is how you Control Your World.
 
 ## 2. BATTERY — brief
 
-Write the companion essay to the video "Stop Being the System's Battery." Use a networking and electrical metaphor the author actually works in — Power over Ethernet, where one cable both feeds and reads a device, and every node on a topology diagram is either a source or a load. Thesis: on the diagram of your own life you are not the user or the administrator, you are the power supply. Break it into three external cables: attention, labor, data, and show how the third powers the first two. Defuse the conspiracy reading explicitly and early. Exercise: a three-column energy audit of one ordinary day, with a worked example row.
+Write a companion essay to the video "Stop Being the System's Battery." Use a networking and electrical metaphor the author actually works in — Power over Ethernet, where one cable both feeds and reads a device, and every node on a topology diagram is either a source or a load. Thesis: on the diagram of your own life you are not the user or the administrator, you are the power supply. Break it into three external cables: attention, labor, data, and show how the third powers the first two. Defuse the conspiracy reading explicitly and early. Exercise: a three-column energy audit of one ordinary day, with a worked example row.
 
-## 2. BATTERY — essay
+## 2. BATTERY — essay (UNPUBLISHED reference draft — not the live Substack version)
 
 **Stop Being the System's Battery**
 
@@ -203,7 +221,7 @@ I drew the topology of my own day.
 
 Where my attention went. Where my hours went. Where everything I generated — every search, every tap, every mile my phone logged — ended up. I mapped myself the way I'd map a client's network.
 
-That's when it clicked.
+That's when it clicked. [RETIRED PIVOT — do not reuse]
 
 On the diagram of my own life, I wasn't the user. I wasn't even the administrator. I was the device on the end of the cable — powered just enough to keep running, while one wire fed me and read me at the same time.
 
@@ -295,7 +313,7 @@ This is how you Control Your World.
 
 Write the follow-up to the routing essay. Open by referencing the prior piece and the reader's progress in it. Thesis: you can route every hour perfectly and still meet conditions you did not choose — defensive driving is the skill for the part of the road that was never yours to control. Do NOT structure this as three of something. Use a set of defensive-driving principles, and let road rage break out of the list into its own section, because it is the costliest. Exercise: a three-check pre-drive. Close on the sanctioned reframe with road and drive as X and Y.
 
-## 3. ROAD — essay
+## 3. ROAD — essay (published)
 
 **You Don't Control the Road. You Control the Drive.**
 
@@ -313,7 +331,7 @@ You can route every hour perfectly. Pack the morning, cap the survival lane, fee
 
 The rain comes on the drive to the second job. The guy three cars back is tailgating in the dark on the way home from class. The check posts two days late and the whole week tips. You did everything right, and the road still did what roads do.
 
-That's when it clicked for me: I'd spent so long learning to drive that I forgot the test was never the hard part. The hard part is everything the test doesn't cover.
+That's when it clicked for me: [RETIRED PIVOT — do not reuse] I'd spent so long learning to drive that I forgot the test was never the hard part. The hard part is everything the test doesn't cover.
 
 **Passing the test isn't the skill**
 
