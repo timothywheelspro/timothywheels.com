@@ -40,7 +40,7 @@
     }
   },
   "export_provenance": "Original MP4s/poster: local browser harness at 30fps (macOS sandbox prevented normal Playwright launch). New exports: use Motion export workflow and record its run URL and artifact checksums.",
-  "latest_export_run": null,
+  "latest_export_run": "https://github.com/timothywheelspro/timothywheels.com/actions/runs/40263708265",
   "production_visual_check": {
     "viewport_widths": [
       1440,
@@ -53,5 +53,17 @@
       "docs/pr-assets/one-drain/390-live.jpg"
     ],
     "note": "Post-merge production check with Hugo 0.158.0; initial PR screenshots remain historical evidence."
+  },
+  "runner_export": {
+    "source_commit": "916fcb564484ee889fac22921d9d1451629180a9",
+    "validated_formats": [
+      "16x9.mp4",
+      "4x5.mp4",
+      "16x9.webm",
+      "16x9.gif",
+      "poster.png"
+    ],
+    "video_duration_seconds": 14,
+    "note": "Successful export of the unchanged scene; original versioned media remains the reviewed delivery package. GitHub artifact expires after 30 days."
   }
 }
