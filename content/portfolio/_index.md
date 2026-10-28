@@ -29,7 +29,7 @@ A systems-thinking framework for personal sovereignty and economic independence.
 ## Applications
 
 ### Cert Drill
-*Live — October 2026 — [cert-drill.pages.dev](https://cert-drill.pages.dev)*
+*Live — October 2026 — [certdrill.timothywheels.com](https://certdrill.timothywheels.com)*
 
 An offline-first study app for IT certification exams, built while preparing for CompTIA Security+. One codebase installs as an app on iPhone, Android, Windows and Mac and works without a connection after the first visit.
 
@@ -40,7 +40,7 @@ An offline-first study app for IT certification exams, built while preparing for
 
 **Stack:** JavaScript, service worker caching, web app manifest, Cloudflare Pages, GitHub
 
-**[Open Cert Drill →](https://cert-drill.pages.dev)**
+**[Open Cert Drill →](https://certdrill.timothywheels.com)**
 
 *Independent study aid. Not affiliated with or endorsed by CompTIA.*
 
