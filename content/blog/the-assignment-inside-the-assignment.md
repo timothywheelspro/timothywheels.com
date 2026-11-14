@@ -6,6 +6,8 @@ description: "Two technical writing assignments connect a Cloudflare Pages setup
 summary: "What did the prompt ask for? What did the employee receive? Two Technical Writing assignments led me to five questions about handoffs and accountability."
 date: 2026-11-14
 draft: false
+layout: essay
+ghost: "HANDOFF"
 series: ["Awareness In Action"]
 cover:
   image: "/images/blog/the-assignment-inside-the-assignment.jpg"
@@ -41,6 +43,8 @@ On Friday, a supervisor looking at the record can see who was assigned to train 
 
 Those are different facts. A well-written memo can explain what the job requires. The handoff is where the team finds out whether the person can do it.
 
+{{< motion name="assignment-handoff" label="The onboarding handoff" alt="An onboarding assignment is logged Monday. It reaches the trainer Tuesday, who sends an acknowledgement back." caption="Confirm when the instructions arrived, then ask whether the trainer has time and support to act." >}}
+
 ## Check one handoff
 
 Pick one recurring task that depends on somebody passing information to somebody else. Take the most recent instance and see what you can verify.
@@ -58,4 +62,3 @@ This is how you Control Your World.
 *Academic context: DeVry University, ENGL216 Technical Writing, Weeks 2–3, Fall 2026. The reflections are my own.*
 
 *Timothy Wheels is a U.S. Air Force veteran, founder of Contruil LLC, and author of* Get Rich or Get Free. *He builds Control Your World — a human-led architecture for routing your own attention, energy, and decisions instead of leasing them out.*
-
