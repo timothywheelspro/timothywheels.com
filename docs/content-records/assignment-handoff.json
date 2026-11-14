@@ -1,0 +1,54 @@
+{
+  "essay": "the-assignment-inside-the-assignment",
+  "canonical_url": "https://timothywheels.com/blog/the-assignment-inside-the-assignment/",
+  "scene": "assignment-handoff",
+  "source_pr": "https://github.com/timothywheelspro/timothywheels.com/pull/43",
+  "source_scene_sha256": "d24a4460aedf4969e6a91f59c3eac712c09d872dbf08a56fc1ab367002bd0d0b",
+  "release_state": "verified live",
+  "production_commit": "f1c4cb506cb94f1ea878c224bc62b20a8db46db8",
+  "production_verification": "https://github.com/timothywheelspro/timothywheels.com/actions/runs/43636857914",
+  "assets": {
+    "poster": "static/motion/posters/assignment-handoff.png"
+  },
+  "asset_bytes": {
+    "static/motion/posters/assignment-handoff.png": 55018
+  },
+  "distribution": {
+    "linkedin": {
+      "status": "not recorded",
+      "public_url": null
+    },
+    "instagram": {
+      "status": "not recorded",
+      "public_url": null
+    },
+    "facebook": {
+      "status": "not recorded",
+      "public_url": null
+    },
+    "substack": {
+      "status": "not recorded",
+      "public_url": null
+    }
+  },
+  "export_provenance": "Exported via GitHub Actions Motion export workflow on Ubuntu 24.04 (Node v22.23.4, Playwright 1.64.1 Chromium, ffmpeg 6.1.1-3ubuntu5) and retained locally in /Users/timothywheels/aia-campaign/dist-motion/motion-assignment-handoff-f1c4cb506cb94f1ea878c224bc62b20a8db46db8/.",
+  "latest_export_run": "https://github.com/timothywheelspro/timothywheels.com/actions/runs/43636858418",
+  "runner_export": {
+    "source_commit": "f1c4cb506cb94f1ea878c224bc62b20a8db46db8",
+    "validated_formats": [
+      "16x9.mp4",
+      "4x5.mp4",
+      "16x9.webm",
+      "16x9.gif",
+      "poster.png"
+    ],
+    "video_duration_seconds": 9,
+    "sha256": {
+      "assignment-handoff-16x9.gif": "57536520296480918669e9cb787c60384674a22ced175bd7450cac33f01a6abc",
+      "assignment-handoff-16x9.mp4": "4061fb398e16d97a807dab887a7445adc20ddbe9474215b1ba816277c7c24326",
+      "assignment-handoff-16x9.webm": "07d9c085fd691d820d58c9754d7a7441877d26ddda09e9bc714ba58e0e70a38b",
+      "assignment-handoff-4x5.mp4": "81b8f44735f98f976af5497b0f8d68af043a202f13de5b03c3be7de24c6c01c7",
+      "assignment-handoff-poster.png": "f1ba3fa46611c004e512094a788511481aa9b712003f92810c3c82ef74d3aa28"
+    }
+  }
+}
