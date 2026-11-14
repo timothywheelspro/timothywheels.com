@@ -17,9 +17,9 @@ cover:
 
 **By Timothy Wheels | Awareness In Action**
 
-In October, I tried to share an application I’d built and ran into a problem. LinkedIn was blocking the Cloudflare Pages address that came with the project. I wanted people to be able to open the app through my own domain, so I worked through Cloudflare’s documentation, configured DNS, and tested the new subdomain.
+In June, I tried to share an application I’d built and ran into a problem. LinkedIn was blocking the Cloudflare Pages address that came with the project. I wanted people to be able to open the app through my own domain, so I worked through Cloudflare’s documentation, configured DNS, and tested the new subdomain.
 
-A few weeks later, my Technical Writing course at DeVry University asked us to choose a process we knew, have generative AI explain it, and compare the answer with an authoritative source. I already had a process I could test against firsthand experience.
+A few months later, my Technical Writing course at DeVry University asked us to choose a process we knew, have generative AI explain it, and compare the answer with an authoritative source. I already had a process I could test against firsthand experience.
 
 ## What I asked the AI to do
 
@@ -58,3 +58,4 @@ This is how you Control Your World.
 *Academic context: DeVry University, ENGL216 Technical Writing, Weeks 2–3, Fall 2026. The reflections are my own.*
 
 *Timothy Wheels is a U.S. Air Force veteran, founder of Contruil LLC, and author of* Get Rich or Get Free. *He builds Control Your World — a human-led architecture for routing your own attention, energy, and decisions instead of leasing them out.*
+
