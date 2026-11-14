@@ -132,3 +132,27 @@ It is disciplined routing.
 ---
 
 *Not a resume. A network diagram of a 20-year routing protocol.*
+
+---
+
+<section id="press" aria-labelledby="press-heading">
+  <h2 id="press-heading">Press &amp; In the Community</h2>
+
+  <h3>Suffolk City Council: data center pause (October 21, 2026)</h3>
+  <p>I spoke as a Suffolk resident at the City Council public hearing on a temporary pause on new data centers. I was the only member of the public to speak, and I spoke in support. Council passed it unanimously. The city is now writing the rules that come next.</p>
+
+  <figure>
+    <iframe src="https://www.youtube-nocookie.com/embed/Tci1nGt1dUg"
+      title="Behind the scenes: talking to WTKR after Suffolk's data center vote"
+      style="display:block;width:100%;max-width:320px;aspect-ratio:9 / 16;border:0"
+      allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen
+      loading="lazy"></iframe>
+    <figcaption>Behind the scenes with Jessica Davis, WTKR News 3. Footage: Marquitta Colley.</figcaption>
+  </figure>
+
+  <ul>
+    <li><a href="https://www.wtkr.com/news/in-the-community/suffolk/suffolk-city-council-approves-temporary-moratorium-on-data-centers">WTKR News 3</a>: Suffolk City Council approves temporary moratorium on data centers</li>
+    <li><a href="https://www.13newsnow.com/article/news/local/mycity/suffolk/suffolk-va-bans-data-centers/291-9e698d38-49e9-417a-b2fb-b95840e153e5">13News Now</a>: coverage of the Council vote</li>
+    <li><a href="https://contruil.com/blog/cost-runs-downhill">Cost Runs Downhill</a>: the essay on who pays for grid growth</li>
+  </ul>
+</section>
