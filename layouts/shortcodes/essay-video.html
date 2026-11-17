@@ -1,0 +1,15 @@
+{{- /*
+  essay-video: short silent clip that autoplays, loops and plays inline (phones included).
+  Usage in a post:
+    {{< essay-video src="/images/blog/my-clip.mp4" poster="/images/blog/my-poster.png" label="What the clip shows" >}}
+  Optional: caption="Text under the clip"  maxwidth="540px" (default 540px)
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- $label := .Get "label" | default "Short video clip" -}}
+{{- $max := .Get "maxwidth" | default "540px" -}}
+<figure class="essay-video" style="margin:2rem auto;max-width:{{ $max }};">
+  <video src="{{ $src | relURL }}"{{ with .Get "poster" }} poster="{{ . | relURL }}"{{ end }} autoplay muted loop playsinline preload="metadata" aria-label="{{ $label }}" style="width:100%;height:auto;display:block;border-radius:6px;"></video>
+  {{- with .Get "caption" }}
+  <figcaption style="text-align:center;font-size:0.85em;opacity:0.7;margin-top:0.5rem;">{{ . }}</figcaption>
+  {{- end }}
+</figure>

@@ -65,7 +65,7 @@ A plan like that isn't pessimism. It's what lets you stay calm when everyone els
 
 We've all been broke before, but we don't want to be broken. The difference is usually whether the plan existed before the bad day did.
 
-![Dark graphic with a faint grid, labeled "Control Your World" and "Contruil." Large headline: "What's your code yellow?" Below it: "Secure isn't the same as available." A three-segment status bar has the middle segment lit, labeled "Level 2 · Code Yellow." Under the heading "If it's down at 8 a.m. tomorrow:" are three numbered questions: "What still has to happen? What can wait? What's the fallback?" Then: "Three lines. Boring on purpose." Closing line: "Control is the plan you wrote before you needed it." Footer: "Awareness in Action."](/images/blog/code-yellow-card.png)
+{{< essay-video src="/images/blog/code-yellow-clip.mp4" poster="/images/blog/code-yellow-card.png" label="Animated card: a status bar steps from Level 1 to Level 2, Code Yellow. Then three questions appear: What still has to happen? What can wait? What's the fallback? Closing line: Control is the plan you wrote before you needed it." >}}
 
 **The exercise: write one code yellow**
 
