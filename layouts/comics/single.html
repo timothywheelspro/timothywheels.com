@@ -1,0 +1,19 @@
+{{- define "main" }}
+<style>
+  .main:has(> .comic-issue) { max-width: 1080px; padding-inline: 0; }
+  .comic-issue .post-header,
+  .comic-issue .post-content > p:not(:has(> .comic-slide)) { padding-inline: var(--gap); }
+  .comic-issue .comic-slide { display: block; width: 100%; height: auto; margin: 0 auto 1rem; border-radius: 0; }
+</style>
+
+<article class="post-single comic-issue">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    <div class="post-meta">{{ .Date | time.Format "January 2, 2006" }}</div>
+  </header>
+  <div class="post-content">
+    <p>{{ .Description }}</p>
+    {{ .Content }}
+  </div>
+</article>
+{{- end }}

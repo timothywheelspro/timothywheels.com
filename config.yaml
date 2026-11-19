@@ -54,6 +54,9 @@ menu:
     - name: "Blog"
       url: "/blog/"
       weight: 5
+    - name: "Comics"
+      url: "/comics/"
+      weight: 6
     - name: "Frameworks"
       url: "/frameworks/"
       weight: 10
