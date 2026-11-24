@@ -49,9 +49,9 @@ Cause and effect, that's the law of attraction<br>
 Empty reserved seats behind me, don't let your voice be postponed<br>
 Let your word lead to action</p>
 
-## Email signup
+## Get Awareness In Action updates
 
-> TODO: Add the Kit signup form.
+<script async data-uid="43843089ef" src="https://awareness-in-action-subscribe.kit.com/43843089ef/index.js"></script>
 
 ## Explore more
 
