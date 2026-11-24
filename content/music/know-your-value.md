@@ -56,7 +56,7 @@ Let your word lead to action</p>
 ## Explore more
 
 - [Get Rich Or Get Free](https://getrichorgetfree.com)
-- [Awareness In Action Comics](/comics/)
+- [Read Awareness In Action Comics, Season 1, Issue 1](/comics/season-1-issue-1/)
 
 ## Credits
 
