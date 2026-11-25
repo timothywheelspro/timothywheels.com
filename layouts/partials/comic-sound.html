@@ -11,8 +11,8 @@
       "5": { hum: 0.35, theme: 1, once: /audio/comics/s1i2/voice.mp3 }   # once: plays one time on arrival
 
   Adding a sound = drop the file in static/audio/comics/<issue>/ and add a line here. No code changes.
-  Sound is off until the reader taps the button. Video clips with their own audio (effects) are
-  unmuted only while they are the panel in view.
+  Sound is off until the reader taps the button. Video clips with their own audio (effects) need
+  data-has-audio on their <video> tag; they are unmuted only while they are the panel in view.
 */ -}}
 <div class="comic-sound"><button type="button" class="comic-sound-btn" aria-pressed="false"><span class="comic-sound-label">Sound: Off</span></button></div>
 <script type="application/json" id="comic-sound-cues">{{ .Params.sound | jsonify | safeJS }}</script>
@@ -118,14 +118,19 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.setAttribute('aria-pressed', on ? 'true' : 'false');
     label.textContent = 'Sound: ' + (on ? 'On' : 'Off');
     if (on) {
+      // iPhone: without this, the ring/silent switch mutes Web Audio (the beds) while video sound still plays.
+      try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) {}
       build();
       if (ctx && ctx.resume) ctx.resume();
       Object.keys(tracks).forEach(function (name) { var p = tracks[name].el.play(); if (p && p.catch) p.catch(function () { setOn(false); }); });
       // Inside this tap: unlock inline videos for sound (iOS Safari); applyClips() re-mutes all but the panel in view.
-      if (!reduced) vids.forEach(function (v) { v.muted = false; var q = v.play(); if (q && q.catch) q.catch(noop); });
+      if (!reduced) vids.forEach(function (v) {
+        if (!v.hasAttribute('data-has-audio')) return;   // silent loops don't need unlocking
+        v.muted = false; var q = v.play(); if (q && q.catch) q.catch(noop);
+      });
       played = {};
       if (active < 0) active = 0;
-      applyBeds(0.6); applyClips();
+      applyBeds(0.6); update();
     } else {
       Object.keys(tracks).forEach(function (name) { var t = tracks[name]; ramp(t, 0, 0.3); setTimeout(function () { if (!on) t.el.pause(); }, 350); });
       applyClips();
