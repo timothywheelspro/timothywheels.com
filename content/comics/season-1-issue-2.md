@@ -4,6 +4,20 @@ description: "The kitchen is closed. There's one light still on and one message 
 date: 2026-11-26
 publishDate: 2026-11-24
 draft: false
+sound:
+  fade: 1.5
+  tracks:
+    hum: { src: "/audio/comics/s1i2/AIA_S1I2_kitchen_ambience.mp3", volume: 0.25 }
+    theme: { src: "/audio/comics/s1i2/AIA_S1I2_theme_loop.mp3", volume: 0.45 }
+  panels:
+    "1": { hum: 1 }
+    "2": { hum: 1 }
+    "3": { hum: 1 }
+    "4": { hum: 1 }
+    "5": { hum: 0.35, theme: 1 }
+    "6": { theme: 0.5 }
+    "7": { theme: 1 }
+    "8": { theme: 0.35 }
 cover:
   image: "/images/comics/s1i2/AIA_S1I2_01_Cover.png"
   alt: "A lone man in a cap and sunglasses sits hunched at a steel prep table under a single pendant lamp in a dark purple kitchen, his phone beside him. Title: Awareness In Action Comics, Season 1, Issue 2: The Isolation Trap. Tagline: When the room goes quiet."
@@ -12,78 +26,6 @@ cover:
 
 **Previously:** During a holiday rush, Virgil helped the hero see where the work was stuck and who was already there to help. [Read Issue 1](/comics/season-1-issue-1/)
 
-<div class="s1i2-sound"><button type="button" class="s1i2-sound-btn" aria-pressed="false" aria-controls="s1i2-ambience"><span class="s1i2-sound-label">Sound: Off</span></button><audio id="s1i2-ambience" src="/audio/comics/s1i2/AIA_S1I2_kitchen_ambience.mp3" loop preload="none"></audio></div>
-<style>
-.comic-issue .s1i2-sound { padding-inline: var(--gap); margin: 0 0 1rem; }
-.comic-issue .s1i2-sound-btn { min-height: 44px; padding: .5rem 1.15rem; border: 1px solid var(--border); border-radius: 999px; background: var(--entry); color: var(--primary); font: inherit; font-weight: 600; cursor: pointer; touch-action: manipulation; }
-.comic-issue .s1i2-sound-btn[aria-pressed="true"] { background: var(--primary); color: var(--theme); }
-.comic-issue .s1i2-sound-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
-</style>
-<script>
-// Issue 2 sound. Off by default, never autoplays: nothing makes noise until the reader presses the button.
-(function () {
-  var root = document.querySelector('.comic-issue');
-  var btn = root && root.querySelector('.s1i2-sound-btn');
-  var amb = root && root.querySelector('#s1i2-ambience');
-  if (!btn || !amb) return;
-  var label = btn.querySelector('.s1i2-sound-label');
-  var vids = [].slice.call(root.querySelectorAll('video'));
-  var reduced = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
-  var on = false, active = null, ratios = new Map(), gain = null, ctx = null;
-  var noop = function () {};
-  vids.forEach(function (v) { v.muted = true; });
-  // Ambience level 0.25. iOS ignores element.volume, so use a Web Audio gain there.
-  amb.volume = 0.25;
-  if (amb.volume !== 0.25) {
-    try {
-      var AC = window.AudioContext || window.webkitAudioContext;
-      ctx = new AC(); gain = ctx.createGain(); gain.gain.value = 0.25;
-      ctx.createMediaElementSource(amb).connect(gain); gain.connect(ctx.destination);
-    } catch (e) { ctx = null; }
-  }
-  function apply() {
-    vids.forEach(function (v) { v.muted = !(on && !reduced && v === active); });
-  }
-  function update() {
-    if (!reduced) {
-      vids.forEach(function (v) {
-        var vis = (ratios.get(v) || 0) > 0;
-        if (vis && v.paused) { if (v._s1i2off) v.currentTime = 0; v._s1i2off = false; var p = v.play(); if (p && p.catch) p.catch(noop); }
-        else if (!vis && !v.paused) { v.pause(); v._s1i2off = true; }
-      });
-    }
-    var best = null, br = 0.45;
-    vids.forEach(function (v) { var r = ratios.get(v) || 0; if (r >= br) { br = r; best = v; } });
-    active = best; apply();
-  }
-  if ('IntersectionObserver' in window && !reduced) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) { ratios.set(e.target, e.isIntersecting ? e.intersectionRatio : 0); });
-      update();
-    }, { threshold: [0, 0.25, 0.45, 0.6, 0.8, 1] });
-    vids.forEach(function (v) { io.observe(v); });
-  }
-  function setOn(next) {
-    on = next;
-    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-    label.textContent = 'Sound: ' + (on ? 'On' : 'Off');
-    if (on) {
-      if (ctx && ctx.resume) ctx.resume();
-      var p = amb.play(); if (p && p.catch) p.catch(function () { setOn(false); });
-      // Inside this tap: unlock the inline videos for sound (iOS Safari), then apply() re-mutes all but the visible one.
-      if (!reduced) vids.forEach(function (v) { v.muted = false; var q = v.play(); if (q && q.catch) q.catch(noop); });
-      update();
-    } else {
-      amb.pause(); apply();
-    }
-  }
-  btn.addEventListener('click', function () { setOn(!on); });
-  document.addEventListener('visibilitychange', function () {
-    if (document.hidden) amb.pause();
-    else if (on) { var p = amb.play(); if (p && p.catch) p.catch(noop); }
-  });
-})();
-</script>
 
 <video class="comic-slide" src="/videos/comics/s1i2/AIA_S1I2_01_Cover.mp4" poster="/images/comics/s1i2/AIA_S1I2_01_Cover.png" autoplay muted loop playsinline preload="metadata" role="img" aria-label="A lone man in a cap and sunglasses sits hunched at a steel prep table under a single pendant lamp in a dark purple kitchen, his phone beside him. Title: Awareness In Action Comics, Season 1, Issue 2: The Isolation Trap. Tagline: When the room goes quiet."><img class="comic-slide" src="/images/comics/s1i2/AIA_S1I2_01_Cover.png" alt="A lone man in a cap and sunglasses sits hunched at a steel prep table under a single pendant lamp in a dark purple kitchen, his phone beside him. Title: Awareness In Action Comics, Season 1, Issue 2: The Isolation Trap. Tagline: When the room goes quiet." loading="eager"></video>
 

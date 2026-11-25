@@ -13,6 +13,7 @@
   </header>
   <div class="post-content">
     <p>{{ .Description }}</p>
+    {{- if .Params.sound }}{{ partial "comic-sound.html" . }}{{ end }}
     {{ .Content }}
   </div>
 </article>
