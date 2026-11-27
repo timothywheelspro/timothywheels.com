@@ -1,0 +1,153 @@
+{{- /*
+  Comic sound player, driven by a cue sheet in the issue's front matter.
+
+  sound:
+    fade: 1.5                      # seconds to blend between panels
+    tracks:                        # looping beds; volume is the track's full level
+      hum:   { src: /audio/comics/s1i2/hum.mp3,   volume: 0.25 }
+      theme: { src: /audio/comics/s1i2/theme.mp3, volume: 0.45 }
+    panels:                        # panel number (reading order) -> level of each track, 0..1
+      "1": { hum: 1 }              # a track left out of a panel is silent there
+      "5": { hum: 0.35, theme: 1, once: /audio/comics/s1i2/voice.mp3 }   # once: plays one time on arrival
+
+  Adding a sound = drop the file in static/audio/comics/<issue>/ and add a line here. No code changes.
+  Sound is off until the reader taps the button. Video clips with their own audio (effects) need
+  data-has-audio on their <video> tag; they are unmuted only while they are the panel in view.
+*/ -}}
+<div class="comic-sound"><button type="button" class="comic-sound-btn" aria-pressed="false"><span class="comic-sound-label">Sound: Off</span></button></div>
+<script type="application/json" id="comic-sound-cues">{{ .Params.sound | jsonify | safeJS }}</script>
+<style>
+.comic-issue .comic-sound { padding-inline: var(--gap); margin: 0 0 1rem; }
+.comic-issue .comic-sound-btn { min-height: 44px; padding: .5rem 1.15rem; border: 1px solid var(--border); border-radius: 999px; background: var(--entry); color: var(--primary); font: inherit; font-weight: 600; cursor: pointer; }
+.comic-issue .comic-sound-btn[aria-pressed="true"] { background: var(--primary); color: var(--theme); }
+.comic-issue .comic-sound-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var root = document.querySelector('.comic-issue');
+  var btn = root && root.querySelector('.comic-sound-btn');
+  var cueEl = document.getElementById('comic-sound-cues');
+  if (!btn || !cueEl) return;
+  var cues; try { cues = JSON.parse(cueEl.textContent) || {}; } catch (e) { return; }
+  var label = btn.querySelector('.comic-sound-label');
+  var fade = Number(cues.fade) || 1.5;
+  var trackDefs = cues.tracks || {};
+  var panelCues = cues.panels || {};
+  var noop = function () {};
+  var reduced = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+  // Panels in reading order (skip the fallback <img> inside each <video>).
+  var slides = [].slice.call(root.querySelectorAll('.comic-slide')).filter(function (el) {
+    return !(el.parentElement && el.parentElement.tagName === 'VIDEO');
+  });
+  var vids = slides.filter(function (el) { return el.tagName === 'VIDEO'; });
+  vids.forEach(function (v) { v.muted = true; });
+
+  var on = false, active = -1, ratios = new Map(), ctx = null, tracks = {}, played = {};
+
+  function level(panel, name) {
+    var c = panelCues[String(panel + 1)] || {};
+    var lv = Number(c[name]) || 0;
+    var def = trackDefs[name] || {};
+    return Math.max(0, Math.min(1, lv)) * (def.volume == null ? 1 : Number(def.volume));
+  }
+  function ramp(t, target, secs) {
+    if (t.gain && ctx) {
+      var now = ctx.currentTime, g = t.gain.gain;
+      g.cancelScheduledValues(now); g.setValueAtTime(g.value, now); g.linearRampToValueAtTime(target, now + secs);
+    } else {
+      clearInterval(t.timer);
+      var start = t.el.volume, steps = Math.max(1, Math.round(secs * 20)), i = 0;
+      t.timer = setInterval(function () {
+        i++; t.el.volume = start + (target - start) * (i / steps);
+        if (i >= steps) clearInterval(t.timer);
+      }, 50);
+    }
+  }
+  function route(el) {
+    if (!ctx) return null;
+    try { var g = ctx.createGain(); g.gain.value = 0; ctx.createMediaElementSource(el).connect(g); g.connect(ctx.destination); return g; }
+    catch (e) { return null; }
+  }
+  function build() {
+    if (Object.keys(tracks).length) return;
+    var AC = window.AudioContext || window.webkitAudioContext;
+    if (AC) { try { ctx = new AC(); } catch (e) { ctx = null; } }
+    Object.keys(trackDefs).forEach(function (name) {
+      var el = new Audio(trackDefs[name].src); el.loop = true; el.preload = 'auto';
+      var t = { el: el, gain: route(el) };
+      if (!t.gain) el.volume = 0;   // fallback (iOS ignores element.volume, so Web Audio is preferred)
+      tracks[name] = t;
+    });
+  }
+  function applyClips() {
+    vids.forEach(function (v) { v.muted = !(on && !reduced && slides[active] === v); });
+  }
+  function applyBeds(secs) {
+    if (!on || active < 0) return;
+    Object.keys(tracks).forEach(function (name) { ramp(tracks[name], level(active, name), secs); });
+    var c = panelCues[String(active + 1)] || {};
+    if (c.once && !played[active]) {
+      played[active] = true;
+      var s = new Audio(c.once); var g = route(s); if (g) g.gain.value = 1;
+      var p = s.play(); if (p && p.catch) p.catch(noop);
+    }
+  }
+  function update() {
+    if (!reduced) {
+      vids.forEach(function (v) {
+        var vis = (ratios.get(v) || 0) > 0;
+        if (vis && v.paused) { if (v._off) v.currentTime = 0; v._off = false; var p = v.play(); if (p && p.catch) p.catch(noop); }
+        else if (!vis && !v.paused) { v.pause(); v._off = true; }
+      });
+    }
+    var best = -1, br = 0.45;
+    slides.forEach(function (el, i) { var r = ratios.get(el) || 0; if (r >= br) { br = r; best = i; } });
+    if (best !== -1 && best !== active) { active = best; applyBeds(fade); }
+    applyClips();
+  }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { ratios.set(e.target, e.isIntersecting ? e.intersectionRatio : 0); });
+      update();
+    }, { threshold: [0, 0.25, 0.45, 0.6, 0.8, 1] });
+    slides.forEach(function (el) { io.observe(el); });
+  }
+  function setOn(next) {
+    on = next;
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    label.textContent = 'Sound: ' + (on ? 'On' : 'Off');
+    if (on) {
+      // iPhone: without this, the ring/silent switch mutes Web Audio (the beds) while video sound still plays.
+      try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) {}
+      build();
+      if (ctx && ctx.resume) ctx.resume();
+      Object.keys(tracks).forEach(function (name) { var p = tracks[name].el.play(); if (p && p.catch) p.catch(function () { setOn(false); }); });
+      // Inside this tap: unlock inline videos for sound (iOS Safari); applyClips() re-mutes all but the panel in view.
+      if (!reduced) vids.forEach(function (v) {
+        if (!v.hasAttribute('data-has-audio')) return;   // silent loops don't need unlocking
+        v.muted = false; var q = v.play(); if (q && q.catch) q.catch(noop);
+      });
+      played = {};
+      if (active < 0) active = 0;
+      applyBeds(0.6); update();
+    } else {
+      Object.keys(tracks).forEach(function (name) { var t = tracks[name]; ramp(t, 0, 0.3); setTimeout(function () { if (!on) t.el.pause(); }, 350); });
+      applyClips();
+    }
+  }
+  btn.addEventListener('click', function () { setOn(!on); });
+  // Read-only status for testing in the browser console: document.querySelector('.comic-issue')._comicSound
+  root._comicSound = { state: function () {
+    var out = { on: on, panel: active + 1, tracks: {} };
+    Object.keys(tracks).forEach(function (n) { var t = tracks[n]; out.tracks[n] = { playing: !t.el.paused, level: +(t.gain ? t.gain.gain.value : t.el.volume).toFixed(3) }; });
+    out.unmutedClip = (vids.filter(function (v) { return !v.muted; })[0] || {}).currentSrc || null;
+    return out; } };
+  document.addEventListener('visibilitychange', function () {
+    Object.keys(tracks).forEach(function (name) {
+      var el = tracks[name].el;
+      if (document.hidden) el.pause(); else if (on) { var p = el.play(); if (p && p.catch) p.catch(noop); }
+    });
+  });
+});
+</script>

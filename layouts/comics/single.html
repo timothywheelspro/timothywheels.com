@@ -13,7 +13,16 @@
   </header>
   <div class="post-content">
     <p>{{ .Description }}</p>
+    {{- if .Params.sound }}{{ partial "comic-sound.html" . }}{{ end }}
     {{ .Content }}
   </div>
 </article>
+<script>
+  // Motion panels: honor reduced-motion by showing the still poster instead of the loop.
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.comic-issue video').forEach(function (v) {
+      v.removeAttribute('autoplay'); v.pause(); v.load();
+    });
+  }
+</script>
 {{- end }}
